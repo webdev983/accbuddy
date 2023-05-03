@@ -285,7 +285,7 @@ p {
 }
 @media screen and (max-width: 991px) {
   .ab-footer-wrapper .ab-footer-main {
-    padding: 0px 24px 44px 42px;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -316,9 +316,15 @@ p {
     .ab-footer-content-left {
       margin-bottom: 46px;
       padding-top: 2px;
+      padding-left: 42px;
+      padding-right: 24px;
   }
   .ab-footer-main-content .ab-footer-main-top {
     display: block;
+  }
+  .ab-footer-content-right {
+    padding-left: 39px;
+    padding-right: 32px;
   }
 }
 .ab-footer-main-content .ab-main-footer-links {
@@ -348,6 +354,12 @@ p {
     row-gap: 25px;
     padding-top: 34px;
     border-top: 1px solid var(--ab_violet);
+ 
+  }
+  .ab-footer-link-wrap{
+    padding-left: 42px;
+    padding-right: 35px;
+    padding-bottom: 54px;
   }
   .ab-footer-main-content .ab-main-footer-links li {
     flex: 0 0 50%;
@@ -424,24 +436,42 @@ p {
 @media screen and (max-width: 1280px) and (min-width:992px) {
   .ab-textarea-group,
 .ab-button-group {
-  width: 256px;
+  min-width: 256px;
 }
 .ab-input-group {
-	width: 250px;
+	min-width: 250px;
+}
+}
+@media screen and (max-width: 1199px) and (min-width:992px) {
+  .ab-textarea-group,
+.ab-button-group {
+  min-width: 100%;
+  width: 100% !important;
+  display: block;
+  max-width: 256px;
+}
+.ab-input-group {
+	min-width: 100%;
+  width: 100% !important;
+  display: block;
+  max-width: 250px;
 }
 }
 @media screen and (max-width:991px) {
   .ab-button-group {
     margin-top: 24px;
 }
+
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:991px){
   .ab-textarea-group,
 .ab-button-group {
+  min-width: 100%;
   width: 100%;
 }
   .ab-check-requred,
   .ab-input-group {
+    min-width: 100%;
     width: 100%;
   }
 }
