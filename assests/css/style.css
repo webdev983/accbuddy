@@ -107,7 +107,12 @@ h1 {
   }
 }
 h2 {
-  font-size: 32px;
+font-family: var(--ab_primary-font);
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 35px;
+color: var(--ab_violet);
 }
 h3 {
   font-family: var(--ab_primary-font);
@@ -240,6 +245,24 @@ p {
   color: #000000;
   margin-bottom: 0;
 }
+
+/* =========>>>promo content styles here */
+.promo-content-box {
+  padding: 23px 38px 25px 42px;
+  position: relative;
+  background: var(--ab_orange);
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.promo-content-box .promo-title {
+  color: var(--ab_white);
+}
+
+/* =========>>>articles content styles here */
+
+
 /*===============================
    [page layout style here]
   ===============================*/
