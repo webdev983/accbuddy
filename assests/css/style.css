@@ -217,7 +217,7 @@ p {
   .ab-header-nav-box .ab-header-nav {
     gap: 42px;
   }
-  .ab-header-top .ab-header-nav-box {
+ .ab-header-nav-box {
     gap: 70px;
   }
 }
@@ -225,10 +225,11 @@ p {
   .ab-header-nav-box .ab-header-nav {
     gap: 32px;
   }
-  .ab-header-top .ab-header-nav-box {
+ .ab-header-nav-box {
     gap: 50px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .ab-header-nav-box .ab-header-nav {
    display: none;
@@ -253,7 +254,7 @@ p {
     align-items: flex-start;
   }
 
-  .ab-header-top .ab-header-nav-box {
+ .ab-header-nav-box {
     display: block;
     padding-left: 4px;
     padding-right: 4px;
