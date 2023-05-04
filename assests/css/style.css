@@ -28,7 +28,18 @@ button {
   outline: 0;
   border: 0;
 }
-
+textarea,
+input,
+input:focus{
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+textarea::placeholder,
+input::placeholder{
+  color: var(--ab_violet);
+  opacity: 1;
+}
 ul,
 ol,
 li {
