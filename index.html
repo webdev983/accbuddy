@@ -44,75 +44,247 @@
                     </div>
                     <div class="ab-header-auth-box">
                         <button class="ab-auth-button"><img src="./assests/image/user.svg" alt="user icons"></button>
-                        <button class="ab-trigger-button"><img src="./assests/image/nav-trigger.svg" alt="trigger icons"></button>
+                        <button class="ab-trigger-button"><img src="./assests/image/nav-trigger.svg"
+                                alt="trigger icons"></button>
                     </div>
                 </div>
 
                 <!-- [mobile menu here to start] -->
                 <div class="ab-mobile-slide-nav">
-                   <div class="ab-alide-nav-brand">
-                    <a href="./index.html" class="ab-header-brand">
-                        <img src="./assests/image/brand-logo-mobo.svg" class="mobo-logo" alt="ab brand logo">
-                    </a>
-                    <button class="ab-close-button "><img src="./assests/image/close.svg" alt="trigger icons"></button>
-                   </div>
-                   <div class="ab-slide-nav-content">
-                    <div class="ab-header-nav">
-                        <ul class="ab-header-nav-items">
-                            <li class="ab-nav-link-items"><a href="/">price</a></li>
-                            <li class="ab-nav-link-items"><a href="/">news</a></li>
-                            <li class="ab-nav-link-items"><a href="/">articles</a></li>
-                            <li class="ab-nav-link-items"><a href="/">about us</a></li>
-                            <li class="ab-nav-link-items"><a href="/">contacts</a></li>
-                            <li class="ab-nav-link-items"><a href="/">FAQ</a></li>
-                        </ul>
-                        <div class="ab-currency-button">
-                            <img src="./assests/image/currency-icons.svg" alt="currency icons"
-                                class="currency-icons">
-                            <span>Earn Money Selling Accounts</span>
+                    <div class="ab-alide-nav-brand">
+                        <a href="./index.html" class="ab-header-brand">
+                            <img src="./assests/image/brand-logo-mobo.svg" class="mobo-logo" alt="ab brand logo">
+                        </a>
+                        <button class="ab-close-button "><img src="./assests/image/close.svg"
+                                alt="trigger icons"></button>
+                    </div>
+                    <div class="ab-slide-nav-content">
+                        <div class="ab-header-nav">
+                            <ul class="ab-header-nav-items">
+                                <li class="ab-nav-link-items"><a href="/">price</a></li>
+                                <li class="ab-nav-link-items"><a href="/">news</a></li>
+                                <li class="ab-nav-link-items"><a href="/">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="/">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="/">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="/">FAQ</a></li>
+                            </ul>
+                            <div class="ab-currency-button">
+                                <img src="./assests/image/currency-icons.svg" alt="currency icons"
+                                    class="currency-icons">
+                                <span>Earn Money Selling Accounts</span>
+                            </div>
                         </div>
                     </div>
-                   </div>
-                   <form action="/post" class="ab-header-input-form">
-                    <div class="ab-form-input-box">
-                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                        <div class="ab-input-group">
-                            <input name="name" type="name" class="ab-input" required
-                                placeholder="Name">
-                            <span class="warn-text">Please enter your name</span>
+                    <form action="/post" class="ab-header-input-form">
+                        <div class="ab-form-input-box">
+                            <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                            <div class="ab-input-group">
+                                <input name="name" type="name" class="ab-input" required placeholder="Name">
+                                <span class="warn-text">Please enter your name</span>
+                            </div>
+                            <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                            <div class="ab-input-group">
+                                <input name="email" type="email" class="ab-input" placeholder="Email">
+                                <span class="warn-text">Please enter a valid email address</span>
+                            </div>
+                            <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                            <div class="ab-textarea-group">
+                                <textarea name="text" id="text" placeholder="Message"></textarea>
+                                <span class="warn-text">Please enter a message between 10 and 1000
+                                    characters</span>
+                            </div>
+                            <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                            <div class="ab-check-requred">
+                                <label for="checkedRequered">
+                                    <input type="checkbox" id="checkedRequered" class="check-mark">
+                                    <div class="ab-check-mark-box"></div>
+                                    <p class="text">I have read and agree to the Privacy Policy and
+                                        Terms of Service</p>
+                                </label>
+                            </div>
+                            <div class="ab-button-group">
+                                <button class="ab-button-style ab-footer-button">Send</button>
+                            </div>
                         </div>
-                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                        <div class="ab-input-group">
-                            <input name="email" type="email" class="ab-input"
-                                placeholder="Email">
-                            <span class="warn-text">Please enter a valid email address</span>
-                        </div>
-                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                        <div class="ab-textarea-group">
-                            <textarea name="text" id="text" placeholder="Message"></textarea>
-                            <span class="warn-text">Please enter a message between 10 and 1000
-                                characters</span>
-                        </div>
-                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                        <div class="ab-check-requred">
-                            <label for="checkedRequered">
-                                <input type="checkbox" id="checkedRequered" class="check-mark">
-                                <div class="ab-check-mark-box"></div>
-                                <p class="text">I have read and agree to the Privacy Policy and
-                                    Terms of Service</p>
-                            </label>
-                        </div>
-                        <div class="ab-button-group">
-                            <button class="ab-button-style ab-footer-button">Send</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
                 </div>
                 <!-- [END] -->
 
             </div>
         </header>
         <!-- ============header section styles==========[end] -->
+
+        <!-- ============main content wrapper==========[start] -->
+        <div class="ab-main-content-wrapper">
+            <div class="ab-container">
+                <div class="ab-main-content-box">
+
+                    <!-- main content start here -->
+                    <main class="ab-main--content">
+                        
+                    </main>
+
+                    <!-- sidebar content start here -->
+                    <aside class="ab-main--sidebar-content">
+
+                        <!-- text block content start -->
+                        <div class="ab-block-content-box white-bg-block">
+                            <h3 class="block-text-title">
+                                We accept most popular <span class="ab-color-text">Cryptocurrencies</span> (Bitcoin,
+                                Ethereum, Litecoin and Bitcoin Cash),
+                                Perfectmoney, and credit card payments are also <span
+                                    class="ab-color-text">available</span>.
+                            </h3>
+                        </div>
+                        <!-- [END] -->
+
+                        <!-- text block content start -->
+                        <div class="ab-block-content-box color-bg-block">
+                            <h3 class="block-text-title">
+                                <span class="ab-color2-text">Your</span> One-Stop <br> Destination <br> To Buy <span
+                                    class="ab-color2-text">Verified</span> <br> Social Media <br> & Email <br> <span
+                                    class="ab-color2-text">Accounts</span>!
+                            </h3>
+                            <div class="block-box-brand"><img src="./assests/image/block-brand-logo1.svg"
+                                    alt="brand logo"></div>
+                        </div>
+                        <!-- [END] -->
+
+                        <!-- news content start -->
+                        <div class="ab-news-content-box">
+                            <h3 class="news-title">News</h3>
+                            <ul class="news-content-items">
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- [END] -->
+
+                        <!-- text block content start -->
+                        <div class="ab-block-content-box white-bg-block ab-block-3">
+                            <h3 class="block-text-title">
+                                We accept most popular <span class="ab-color-text">Cryptocurrencies</span> (Bitcoin,
+                                Ethereum, Litecoin and Bitcoin Cash),
+                                Perfectmoney, and credit card payments are also <span
+                                    class="ab-color-text">available</span>.
+                            </h3>
+                        </div>
+                        <!-- [END] -->
+
+                        <!-- text block content start -->
+                        <div class="ab-block-content-box color-bg-block ab-block-4">
+                            <h3 class="block-text-title">
+                                <span class="ab-color2-text">Your</span> One-Stop <br> Destination <br> To Buy <span
+                                    class="ab-color2-text">Verified</span> <br> Social Media <br> & Email <br> <span
+                                    class="ab-color2-text">Accounts</span>!
+                            </h3>
+                            <div class="block-box-brand"><img src="./assests/image/block-brand-logo1.svg"
+                                    alt="brand logo"></div>
+                        </div>
+                        <!-- [END] -->
+
+                        <!-- news content start -->
+                        <div class="ab-news-content-box">
+                            <ul class="news-content-items">
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+                                <li class="news-items">
+                                    <span class="news-dates">12 may 2023</span>
+                                    <p class="news-details-text">Please, note, that you MUST save invoice ID in order to
+                                        get your accounts! No orders will be delivered to customers, who don't have
+                                        invoice id!</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- [END] -->
+
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+        <!-- ============main content wrapper==========[end] -->
 
         <!-- ============footer section styles==========[start] -->
         <footer class="ab-footer-section">
