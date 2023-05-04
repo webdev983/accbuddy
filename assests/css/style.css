@@ -894,6 +894,7 @@ p {
   position: relative;
   cursor: pointer;
 }
+#checkedRequered1,
 #checkedRequered {
   position: absolute;
   right: 0;
