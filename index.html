@@ -1125,13 +1125,21 @@
 
         <!-- ============reset password section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap">
+        <div class="ab-authentication-wrap reset-password1">
             <div class="ab-reset-password-content">
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title">Reset password</h6>
-                    <div class="ab-input-group-content-box">
-                        <div class="ab-input-group">
-                            <input type="email" name="email" class="ab-input-items" placeholder="user@gmail.com">
+                    <!-- NOTE: [no-access-warning,email-warning] those class 
+                                    need to pass based on topic when showing error for requered items -->
+                    <div class="ab-input-group-content-box email-warning">
+                        <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
+                            your internet connection and try again.</span>
+                        <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Email not
+                            registered, you may register now.</span>
+                        <div class="ab-input-group alart">
+                            <input type="email" required name="email" class="ab-input-items"
+                                placeholder="user@gmail.com">
+                            <span class="alart-text">Please enter a valid email address.</span>
                         </div>
                         <button class="ab-button-style ab-submite-btn">Next</button>
                     </div>
@@ -1141,7 +1149,7 @@
         <!-- ============reset password section styles==========[end] -->
         <!-- ============reset password2 section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap">
+        <div class="ab-authentication-wrap reset-password2">
             <div class="ab-reset-password-content">
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title">Reset password</h6>
@@ -1158,21 +1166,30 @@
         <!-- ============reset password section styles==========[end] -->
         <!-- ============creat new  password section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap">
+        <div class="ab-authentication-wrap create-new-password">
             <div class="ab-reset-password-content">
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title">Create new password</h6>
+                    <!-- NOTE: [no-access-warning,email-warning] those class 
+                                    need to pass based on topic when showing error for requered items -->
                     <div class="ab-input-group-content-box">
+                        <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
+                            your internet connection and try again.</span>
+
                         <div class="ab-input-group">
                             <label for="password" class="password-view"><img src="./assests/image/eye.svg"
                                     alt="eye icons"></label>
-                            <input type="password" name="password" class="ab-input-items" placeholder="Password">
+                            <input type="password" required name="password" class="ab-input-items"
+                                placeholder="Password">
+                            <span class="alart-text">Password must be at least 8 characters in length and contain
+                                uppercase, lowercase letters, and special characters.</span>
                         </div>
                         <div class="ab-input-group">
                             <label for="password" class="password-view"><img src="./assests/image/eye.svg"
                                     alt="eye icons"></label>
-                            <input type="password" name="password" class="ab-input-items"
+                            <input type="password" required name="password" class="ab-input-items"
                                 placeholder="Confirm password">
+                            <span class="alart-text">Passwords don't match.</span>
                         </div>
                         <button class="ab-button-style ab-submite-btn">Save</button>
                     </div>
@@ -1187,7 +1204,11 @@
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title"><img src="./assests/image/checkmark.svg" alt="mark icons"
                             class="check-mark-icons"> Successfully</h6>
+                    <!-- NOTE: [password-reset-success] those class 
+                                    need to pass based on topic when showing error for requered items -->
                     <div class="ab-input-group-content-box">
+                        <span class="success-text"><img src="./assests/image/checkmark.svg" alt=""> Password updated.
+                            Log in now.</span>
                         <p class="ab-input-text">
                             New password created succesfully.
                         </p>
@@ -1201,27 +1222,43 @@
 
         <!-- ============signIn section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap sign-in-popups">
+        <div class="ab-authentication-wrap sign-in-popups open-info">
             <div class="ab-auth-main-content">
                 <div class="ab-auth-left-content">
+                    <!-- NOTE: passing extra class('incorrect-password') for invalid/required 
+                        incorrect password steps for reset password  -->
                     <div class="ab-auth-info-content sign-in-content">
                         <h6 class="ab-title"><img src="./assests/image/useer-violet-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Sign in</h6>
+                        <!-- NOTE: [email-warning,no-access-warning,account-lock-warning,pass-warning] those class 
+                                    need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Incorrect
+                                password.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Account
+                                locked, please contact us.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt="">Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Email not
+                                registered, you may register now.</span>
                             <div class="ab-input-group">
-
-                                <input type="email" name="email" class="ab-input-items" placeholder="user@gmail.com">
+                                <input type="email" required name="email" class="ab-input-items"
+                                    placeholder="user@gmail.com">
+                                <span class="alart-text">Please enter a valid email address.</span>
                             </div>
                             <div class="ab-input-group">
                                 <label for="password" class="password-view"><img src="./assests/image/eye.svg"
                                         alt="eye icons"></label>
-                                <input type="password" name="password" class="ab-input-items"
+                                <input type="password" required name="password" class="ab-input-items"
                                     placeholder="password">
-                                    <button class="ab-button-style ab-submite-button"><img src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <button class="ab-button-style ab-submite-button"><img
+                                        src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <span class="alart-text">Please enter password.</span>
                             </div>
 
                         </div>
                     </div>
+                    <a href="/" class="ab-reset-password-popup">Reset password</a>
                     <div class="ab-auth-info-content sign-up-content">
                         <h6 class="ab-title"><img src="./assests/image/users-union-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> New user? Sign up</h6>
@@ -1231,13 +1268,22 @@
                     <div class="ab-auth-info-content guest-order-content">
                         <h6 class="ab-title"><img src="./assests/image/chart-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Find a guest order</h6>
+                        <!-- NOTE: [no-access-warning,not-found-order] those class 
+                                    need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Email not
+                                registered, you may register now.</span>
                             <div class="ab-input-group">
                                 <input type="text" name="text" class="ab-input-items" placeholder="Order number">
+                                <span class="alart-text">Enter the correct order number.</span>
                             </div>
                             <div class="ab-input-group">
                                 <input type="email" name="email" class="ab-input-items" placeholder="Email">
-                                <button class="ab-button-style ab-submite-button"><img src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <button class="ab-button-style ab-submite-button"><img
+                                        src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <span class="alart-text">Please enter a valid email address.</span>
                             </div>
 
                         </div>
@@ -1248,7 +1294,7 @@
         <!-- ============signIn section styles==========[end] -->
         <!-- ============signUp section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap sign-up-popups ">
+        <div class="ab-authentication-wrap sign-up-popups">
             <div class="ab-auth-main-content">
                 <div class="ab-auth-left-content">
                     <div class="ab-auth-info-content sign-in-content">
@@ -1258,21 +1304,36 @@
                     <div class="ab-auth-info-content sign-up-content">
                         <h6 class="ab-title"><img src="./assests/image/users-union-icons.svg" alt="mark icons"
                                 class="check-mark-icons">Sign up</h6>
+                        <!-- NOTE: [no-access-warning,pass-warning,already-in-warning,password-not-match] those class 
+                                    need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Incorrect
+                                password.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Email
+                                already registered, please sign in.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Password
+                                mismatch</span>
                             <div class="ab-input-group">
-                                <input type="email" name="email" class="ab-input-items" placeholder="user@gmail.com">
+                                <input type="email" required name="email" class="ab-input-items"
+                                    placeholder="user@gmail.com">
+                                <span class="alart-text">Please enter a valid email address.</span>
                             </div>
                             <div class="ab-input-group">
                                 <label for="password" class="password-view"><img src="./assests/image/eye.svg"
                                         alt="eye icons"></label>
-                                <input type="password" name="password" class="ab-input-items"
+                                <input type="password" required name="password" class="ab-input-items"
                                     placeholder="password">
+                                <span class="alart-text">Password must be at least 8 characters in length and contain
+                                    uppercase, lowercase letters, and special characters.</span>
                             </div>
                             <div class="ab-input-group">
                                 <label for="password" class="password-view"><img src="./assests/image/eye.svg"
                                         alt="eye icons"></label>
-                                <input type="password" name="password" class="ab-input-items"
+                                <input type="password" required name="password" class="ab-input-items"
                                     placeholder="Confirm password">
+                                <span class="alart-text">Passwords don't match.</span>
                             </div>
                             <div class="ab-check-requred">
                                 <label for="checkedRequered3">
@@ -1281,6 +1342,8 @@
                                     <p class="text">I have read and agree to the Privacy Policy and
                                         Terms of Service</p>
                                 </label>
+                                <span class="alart-text">In order to register, you should accept the terms and
+                                    conditions.</span>
                             </div>
                             <button class="ab-button-style ab-submite-btn">Sign up</button>
                         </div>
@@ -1290,13 +1353,22 @@
                     <div class="ab-auth-info-content guest-order-content">
                         <h6 class="ab-title"><img src="./assests/image/chart-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Find a guest order</h6>
+                        <!-- NOTE: [no-access-warning,not-found-order] those class 
+                                    need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Email not
+                                registered, you may register now.</span>
                             <div class="ab-input-group">
                                 <input type="text" name="text" class="ab-input-items" placeholder="Order number">
+                                <span class="alart-text">Enter the correct order number.</span>
                             </div>
                             <div class="ab-input-group">
                                 <input type="email" name="email" class="ab-input-items" placeholder="Email">
-                                <button class="ab-button-style ab-submite-button"><img src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <button class="ab-button-style ab-submite-button"><img
+                                        src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <span class="alart-text">Please enter a valid email address.</span>
                             </div>
 
                         </div>
@@ -1305,28 +1377,37 @@
             </div>
         </div>
         <!-- ============signUp section styles==========[end] -->
-             <!-- ============guests order section styles==========[start] -->
+        <!-- ============guests order section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
         <div class="ab-authentication-wrap guest-order-popups">
             <div class="ab-auth-main-content">
                 <div class="ab-auth-left-content">
-                    <div class="ab-auth-info-content sign-in-content">
+                    <!-- NOTE: passing extra class('incorrect-password') for invalid/required 
+                        incorrect password steps for reset password  -->
+                    <div class="ab-auth-info-content sign-in-content incorrect-password">
                         <h6 class="ab-title"><img src="./assests/image/useer-violet-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Sign in</h6>
-                        <div class="ab-input-group-content-box">
-                            <div class="ab-input-group">
 
-                                <input type="email" name="email" class="ab-input-items" placeholder="user@gmail.com">
+                        <div class="ab-input-group-content-box">
+
+                            <div class="ab-input-group">
+                                <input type="email" required name="email" class="ab-input-items"
+                                    placeholder="user@gmail.com">
+                                <span class="alart-text">Please enter a valid email address.</span>
                             </div>
                             <div class="ab-input-group">
                                 <label for="password" class="password-view"><img src="./assests/image/eye.svg"
                                         alt="eye icons"></label>
-                                <input type="password" name="password" class="ab-input-items"
-                                    placeholder="Confirm password">
+                                <input type="password" required name="password" class="ab-input-items"
+                                    placeholder="password">
+                                <button class="ab-button-style ab-submite-button"><img
+                                        src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <span class="alart-text">Please enter password.</span>
                             </div>
 
                         </div>
                     </div>
+                    <a href="/" class="ab-reset-password-popup">Reset password</a>
                     <div class="ab-auth-info-content sign-up-content">
                         <h6 class="ab-title"><img src="./assests/image/users-union-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> New user? Sign up</h6>
@@ -1336,13 +1417,24 @@
                     <div class="ab-auth-info-content guest-order-content">
                         <h6 class="ab-title"><img src="./assests/image/chart-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Find a guest order</h6>
+                        <!-- NOTE: [no-access-warning,not-found-order] those class 
+                                    need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Order not
+                                found.</span>
                             <div class="ab-input-group">
                                 <input type="text" name="text" class="ab-input-items" placeholder="Order number">
+                                <span class="alart-text"><img src="./assests/image/warning-small-icons.svg" alt="">
+                                    Enter the correct order number.</span>
                             </div>
                             <div class="ab-input-group">
                                 <input type="email" name="email" class="ab-input-items" placeholder="Email">
-                                <button class="ab-button-style ab-submite-button"><img src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <button class="ab-button-style ab-submite-button"><img
+                                        src="./assests/image/arrow-right-icons.svg" alt="right arrow icons"></button>
+                                <span class="alart-text"><img src="./assests/image/warning-small-icons.svg" alt="">
+                                    Please enter a valid email address.</span>
                             </div>
 
                         </div>

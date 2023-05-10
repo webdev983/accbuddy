@@ -49,13 +49,23 @@ input::placeholder {
 .ab-textarea-group.warning textarea::placeholder,
 .ab-textarea-group.warning textarea,
 .ab-input-group.warning input::placeholder,
-.ab-input-group.warning input {
+.ab-input-group.warning input ,
+.ab-textarea-group.alart textarea::placeholder,
+.ab-textarea-group.alart textarea,
+.ab-input-group.alart input::placeholder,
+.ab-input-group.alart input 
+{
   color: var(--ab_warning);
 }
+.ab-textarea-group.alart textarea,
+.ab-input-group.alart input ,
 .ab-textarea-group.warning textarea,
-.ab-input-group.warning input {
+.ab-input-group.warning input 
+{
   border: 1px solid var(--ab_warning);
 }
+.success-text,
+.alart-text,
 .warn-text {
   display: block;
   font-family: var(--ab_primary-font);
@@ -70,10 +80,50 @@ input::placeholder {
 .ab-textarea-group .warn-text {
   margin-bottom: 20px;
 }
-
+.success-text,
+.alart .alart-text,
 .warning .warn-text {
-  display: block;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  margin-top: 14px;
 }
+.success-text{color: var(--ab_violet);}
+.alart .ab-check-mark-box{border-color: var(--ab_warning) !important;}
+.alart label .text{color: var(--ab_warning) !important;}
+.success-text,
+.warning-text {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 15px;
+	background: var(--ab_warning);
+	margin-bottom: 15px;
+	color: var(--ab_white);
+  display: none;
+}
+.success-text{background: var(--ab_violet);}
+.ab-auth-info-content.guest-order-content .ab-input-group.alart .alart-text {
+	color: var(--ab_white);
+}
+.ab-authentication-wrap.reset-successfully .password-reset-success .success-text {
+	display: flex;
+}
+.ab-authentication-wrap.create-new-password .no-access-warning .warning-text:nth-child(1),
+.ab-authentication-wrap.reset-password1 .no-access-warning .warning-text:nth-child(1),
+.ab-authentication-wrap.reset-password1 .email-warning .warning-text:nth-child(2),
+.ab-auth-info-content.guest-order-content .no-access-warning .warning-text:nth-child(1),
+.ab-auth-info-content.guest-order-content .not-found-order .warning-text:nth-child(2),
+.ab-auth-info-content.sign-up-content .pass-warning  .warning-text:nth-child(1),
+.ab-auth-info-content.sign-up-content .no-access-warning  .warning-text:nth-child(2),
+.ab-auth-info-content.sign-up-content .already-in-warning  .warning-text:nth-child(3),
+.ab-auth-info-content.sign-up-content .password-not-match  .warning-text:nth-child(4),
+
+.ab-authentication-wrap.sign-in-popups .email-warning .warning-text:nth-child(4),
+.ab-authentication-wrap.sign-in-popups .no-access-warning .warning-text:nth-child(3),
+.ab-authentication-wrap.sign-in-popups .account-lock-warning .warning-text:nth-child(2),
+.ab-authentication-wrap.sign-in-popups .pass-warning .warning-text:nth-child(1){display: flex;}
+
 
 .ab-textarea-group.warning textarea,
 .ab-input-group.warning input {
@@ -230,21 +280,22 @@ tr:nth-child(even) {
 /*===========================================
     authentication styles start 
   ======================================*/
-.ab-authentication-wrap {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  padding-top: 127px;
-  background: rgb(204, 189, 227, 0.75);
-  z-index: 999;
-  padding-left: 4px;
-  padding-right: 4px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+  .ab-authentication-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 127px;
+    background: rgb(204, 189, 227, 0.75);
+    z-index: 999;
+    padding-left: 4px;
+    padding-right: 4px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding-bottom: 72px;
+  }
 .ab-authentication-wrap.open-info {
   opacity: 1;
   visibility: visible;
@@ -314,25 +365,27 @@ tr:nth-child(even) {
 }
 
 .ab-authentication-wrap .ab-auth-main-content {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--ab_violet);
-  padding: 77px 79px 78px 80px;
-  display: flex;
-  gap: 20px;
-  width: 100%;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	background: var(--ab_violet);
+	padding: 77px 79px 78px 80px;
+	display: flex;
+	gap: 20px;
+	width: 100%;
 }
 
 .ab-authentication-wrap .ab-auth-main-content .ab-auth-left-content {
   width: 100%;
 }
-.ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content {
+.ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content  {
 	width: 100%;
+	max-width: 380px;
+}
+.ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content .ab-auth-info-content.guest-order-content {
 	padding: 25px 34px;
 	background: var(--ab_orange);
-	height: 248px;
-	max-width: 380px;
+	height: auto;
 }
 .ab-auth-main-content .ab-auth-left-content .ab-auth-info-content {
   padding: 25px 34px;
@@ -379,6 +432,26 @@ tr:nth-child(even) {
   background: var(--ab_violet);
   padding-top: 17px;
   z-index: 99;
+}
+.ab-reset-password-popup{
+  display: none;
+}
+ .ab-auth-info-content.sign-in-content.incorrect-password  {
+	margin-bottom: 29px !important;
+}
+ .ab-auth-info-content.sign-in-content.incorrect-password ~ .ab-reset-password-popup {
+	display: block;
+	margin-bottom: 29px;
+	text-align: center;
+	color: var(--ab_white);
+	text-decoration: underline;
+	font-family: var(--ab_primary-font);
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration-line: underline;
+	color: var(--ab_white);
 }
 @media screen and (max-width: 991px) {
   .ab-authentication-wrap .ab-reset-password-content {
@@ -2896,14 +2969,18 @@ tr:nth-child(even) {
 .ab-check-requred label input:checked ~ .ab-check-mark-box:before {
   display: block;
 }
+.ab-check-requred.alart .alart-text {
+	margin-bottom: 14px;
+}
+.ab-check-requred.alart p{margin-bottom: 0;}
 .ab-check-requred p {
-  font-family: var(--ab_primary-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: var(--ab_violet);
-  max-width: 248px;
+	font-family: var(--ab_primary-font);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: var(--ab_violet);
+	max-width: 248px;
 }
 .ab-check-requred.warning p {
   color: var(--ab_warning);
