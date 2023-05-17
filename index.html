@@ -42,7 +42,8 @@
                         </div>
                     </div>
                     <div class="ab-header-auth-box">
-                        <button class="ab-auth-button"><img src="./assests/image/user.svg" alt="user icons"></button>
+                        <button class="ab-auth-button"><img src="./assests/image/user.svg" alt="user icons"> <span>Hi,
+                                Buddy!</span></button>
                         <button class="ab-trigger-button"><img src="./assests/image/nav-trigger.svg"
                                 alt="trigger icons"></button>
                     </div>
@@ -61,7 +62,6 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="/">price</a></li>
-                                <li class="ab-nav-link-items"><a href="/">news</a></li>
                                 <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
                                 <li class="ab-nav-link-items"><a href="/">about us</a></li>
                                 <li class="ab-nav-link-items"><a href="/">contacts</a></li>
@@ -144,9 +144,8 @@
                                 </div>
                                 <div class="ab-account-types-list-overview">
                                     <div class="ab-account-category-tabs">
-                                        <button class="account-category-btn active"><img
-                                                src="./assests/image/fire-icons.svg" alt="icons intract"
-                                                class="intract-icon"> Hot</button>
+                                        <button class="account-category-btn"><img src="./assests/image/fire-icons.svg"
+                                                alt="icons intract" class="intract-icon"> Hot</button>
                                         <button class="account-category-btn"><img
                                                 src="./assests/image/pin-mark-icons.svg" alt="icons intract"
                                                 class="intract-icon"> Sale</button>
@@ -163,13 +162,49 @@
                                                     <th>Price</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+
+                                            <tbody class="">
+                                                <tr class="no-search-result">
+                                                    <td colspan="3">
+                                                        <p class="not-fount-text">Sorry, no results for <span
+                                                                class="search-keywords">Mailru</span>. Please try
+                                                            another search.</p>
+                                                    </td>
+                                                </tr>
                                                 <tr>
                                                     <td>Mail.ru old</td>
                                                     <td>4141241</td>
                                                     <td><span>$0.19</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Mail.ru Mix</td>
@@ -179,12 +214,68 @@
                                                         <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
-                                                <tr>
+                                                <tr >
                                                     <td>Mail.ru Biz</td>
                                                     <td>7236</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -193,12 +284,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2017</td>
                                                     <td>1200</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style not-available-button">Not available</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -209,12 +356,67 @@
                                                         <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2018</td>
                                                     <td>546</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -223,6 +425,33 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2020</td>
@@ -230,12 +459,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2020</td>
                                                     <td>430</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -244,12 +529,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Mail.ru Mix</td>
                                                     <td>23525</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -258,12 +599,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>234</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -272,12 +669,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>557457</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -286,12 +739,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>3</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -300,12 +809,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2020</td>
                                                     <td>430</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
 
@@ -315,12 +880,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Mail.ru Mix</td>
                                                     <td>23525</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -329,12 +950,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>234</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -343,12 +1020,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>557457</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -357,12 +1090,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>3</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -371,12 +1160,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2020</td>
                                                     <td>430</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -385,12 +1230,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Mail.ru Mix</td>
                                                     <td>23525</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -399,12 +1300,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>234</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -413,12 +1370,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>557457</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -427,12 +1440,68 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Gmail.com PVA</td>
                                                     <td>3</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -441,44 +1510,74 @@
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
                                                     </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Global 2020</td>
                                                     <td>430</td>
                                                     <td><span>$0.15</span> <button class="ab-buy-button">Buy</button>
                                                         <button class="ab-available-button">Not available</button>
+                                                    </td>
+                                                    <td class="popup-box-item">
+                                                        <!-- [NOTE:]when click user select account 'buy button', 
+                                            thet time need to pass class 'open-info' 
+                                            this popup will be visible for user buy -->
+
+                                                        <div class="ab-account-select-popups">
+                                                            <div class="ab-account-select-left-content">
+                                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
+                                                                <p class="ab-description">Accounts are phone verified
+                                                                    with USA numbers.
+                                                                    Secret answers are NOT included, recovery e-mails
+                                                                    are included with
+                                                                    passwords. US IPs only.
+                                                                    <br><br>
+                                                                    Accounts are NOT SUITABLE for Cash App or Google
+                                                                    Voice creation!
+                                                                    <br><br>
+                                                                    Gmail.com Stable USA Plus
+                                                                </p>
+                                                            </div>
+                                                            <div class="ab-account-select-right-content">
+                                                                <img src="./assests/image/gmail-icons.svg"
+                                                                    alt="google icons" class="account-types-icons">
+                                                                <button class="ab-button-style buy-button">Buy</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- [END] -->
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
 
-                                        <!-- account select popups -->
 
-                                        <!-- [NOTE:]when click user select account 'buy button', 
-                                            thet time need to pass class 'open-info' 
-                                            this popup will be visible for user buy -->
-
-                                        <div class="ab-account-select-popups">
-                                            <div class="ab-account-select-left-content">
-                                                <h6 class="ab-account-select-title">Gmail.com PVA</h6>
-                                                <p class="ab-description">Accounts are phone verified with USA numbers.
-                                                    Secret answers are NOT included, recovery e-mails are included with
-                                                    passwords. US IPs only.
-                                                    <br><br>
-                                                    Accounts are NOT SUITABLE for Cash App or Google Voice creation!
-                                                    <br><br>
-                                                    Gmail.com Stable USA Plus
-                                                </p>
-                                            </div>
-                                            <div class="ab-account-select-right-content">
-                                                <img src="./assests/image/gmail-icons.svg" alt="google icons"
-                                                    class="account-types-icons">
-                                                <button class="ab-button-style buy-button">Buy</button>
-                                            </div>
-                                        </div>
-                                        <!-- [END] -->
-
-                                        <!-- account select popups -->
                                         <!-- [NOTE:]when click user select account 'buy button', 
                                             thet time need to pass class 'open-info' 
                                             this popup will be visible for user buy -->
@@ -505,34 +1604,34 @@
                                         <!-- [NOTE:]when click user select account 'buy button', 
                                             thet time need to pass class 'open-info' 
                                             this popup will be visible for user buy -->
-                                        <div class="ab-order-details-content">
+                                        <div class="ab-order-details-content ab-order-details-popup">
                                             <div class="ab-order-details-wrapper">
                                                 <h2 class="ab-order-title">Order details</h2>
+                                                <button class="popups-close-btn"><img
+                                                        src="./assests/image/close-light-icon.svg"
+                                                        alt="close icons"></button>
                                                 <div class="ab-order-details-info-box">
-                                                    <div class="ab-order-details-left">
-                                                        <div class="ab-order-title-box">
-                                                            <h6 class="ab-order-info-title">Gmail.com PVA</h6>
-                                                            <img src="./assests/image/gmail-small-icons0.svg"
-                                                                alt="gmail icons" class="ab-order-account-icons">
-                                                        </div>
-                                                        <p class="ab-order-info-desc">Accounts are phone verified with
-                                                            USA
-                                                            numbers. Secret answers are NOT included, recovery e-mails
-                                                            are
-                                                            included with passwords. US IPs only.
-                                                            <br><br>
-                                                            Accounts are NOT SUITABLE for Cash App or Google Voice
-                                                            creation!
-                                                            <br><br>
-                                                            Gmail.com Stable USA Plus
-                                                        </p>
-                                                        <div class="ab-order-info-input-group">
-                                                            <label class="ab-order-input-info-title">Email</label>
-                                                            <input type="email" name="email" id="email" placeholder=""
-                                                                class="ab-input-info-item">
-                                                        </div>
-                                                    </div>
                                                     <div class="ab-order-details-order-info">
+                                                        <div class="ab-order-details-left">
+                                                            <div class="ab-order-title-box">
+                                                                <h6 class="ab-order-info-title">Gmail.com PVA</h6>
+                                                                <img src="./assests/image/gmail-small-icons0.svg"
+                                                                    alt="gmail icons" class="ab-order-account-icons">
+                                                            </div>
+                                                            <p class="ab-order-info-desc">Accounts are phone verified
+                                                                with
+                                                                USA
+                                                                numbers. Secret answers are NOT included, recovery
+                                                                e-mails
+                                                                are
+                                                                included with passwords. US IPs only.
+                                                                <br><br>
+                                                                Accounts are NOT SUITABLE for Cash App or Google Voice
+                                                                creation!
+                                                                <br><br>
+                                                                Gmail.com Stable USA Plus
+                                                            </p>
+                                                        </div>
                                                         <div class="ab-order-info-details">
                                                             <div class="ab-order-info-item">
                                                                 <p class="ab-quantity-title">Quantity</p>
@@ -552,40 +1651,110 @@
                                                                 <span class="ab-order-price">$13.00</span>
                                                             </div>
                                                         </div>
-                                                        <div class="ab-order-payment-method">
-                                                            <h6 class="ab-title">Select payment method</h6>
-                                                            <ul class="ab-payment-method-lits">
-                                                                <li class="ab-payment-items">
-                                                                    <div class="ab-check-box-select">
-                                                                        <label for="abPayment1"
-                                                                            class="ab-checkbox-content">
-                                                                            <div class="ab-ckeck-mark-box">
-                                                                                <input type="checkbox" name="checkbox"
-                                                                                    id="abPayment1">
-                                                                                <div class="ab-custom-check"></div>
-                                                                            </div>
-                                                                            <div class="payment-methods"><img
-                                                                                    src="./assests/image/paypal.svg"
-                                                                                    alt="paypal icons"
-                                                                                    class="payment-methods-img"></div>
-                                                                        </label>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="ab-payment-items">
-                                                                    <div class="ab-check-box-select">
-                                                                        <label for="abPayment2"
-                                                                            class="ab-checkbox-content">
-                                                                            <div class="ab-ckeck-mark-box">
-                                                                                <input type="checkbox" name="checkbox"
-                                                                                    id="abPayment2">
-                                                                                <div class="ab-custom-check"></div>
-                                                                            </div>
-                                                                            <div class="payment-methods">Another
-                                                                                merchant</div>
-                                                                        </label>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
+                                                    </div>
+                                                    <div class="ab-order-payment-method">
+                                                        <h6 class="ab-title">Select payment method</h6>
+                                                        <ul class="ab-payment-method-lits">
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment1" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment1">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods"><img
+                                                                                src="./assests/image/paypal.svg"
+                                                                                alt="paypal icons"
+                                                                                class="payment-methods-img"></div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment2" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment2">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods">Another
+                                                                            merchant</div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment3" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment3">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods">Another
+                                                                            merchant</div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment4" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment4">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods">Another
+                                                                            merchant</div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment5" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment5">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods">Another
+                                                                            merchant</div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment6" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment6">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods">Another
+                                                                            merchant</div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="ab-payment-items">
+                                                                <div class="ab-check-box-select">
+                                                                    <label for="abPayment7" class="ab-checkbox-content">
+                                                                        <div class="ab-ckeck-mark-box">
+                                                                            <input type="checkbox" name="checkbox"
+                                                                                id="abPayment7">
+                                                                            <div class="ab-custom-check"></div>
+                                                                        </div>
+                                                                        <div class="payment-methods">Another
+                                                                            merchant</div>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="ab-order-details-popup-input-group">
+                                                        <div class="ab-order-info-input-group">
+                                                            <label class="ab-order-input-info-title">Email</label>
+                                                            <input type="email" name="email" id="email" placeholder=""
+                                                                class="ab-input-info-item">
                                                         </div>
                                                         <button class="ab-button-style ab-buy-button">Buy</button>
                                                     </div>
@@ -615,6 +1784,9 @@
                                         <div class="ab-payment-details-content">
                                             <div class="ab-payment-details-wrapper">
                                                 <h2 class="ab-payment-title">Payment received</h2>
+                                                <button class="popups-close-btn"><img
+                                                        src="./assests/image/close-light-icon.svg"
+                                                        alt="close icons"></button>
                                                 <div class="ab-payment-details-info-box">
                                                     <h6 class="ab-payment-conf-title">Thanks for shopping with us</h6>
                                                     <p class="ab-payment-conf-desc">For all your order details, check
@@ -629,12 +1801,12 @@
                                                 <div class="ab-payment-details-notes">
                                                     <!-- promo content start -->
                                                     <div class="ab-promo-content-box">
-                                                        <h5 class="ab-promo-title"><span
+                                                        <h3 class="ab-promo-title"><span
                                                                 class="ab-color2-text">Your</span> One-Stop Destination
                                                             To
                                                             Buy <span class="ab-color2-text">Verified</span> Social
                                                             Media & Email <span class="ab-color2-text">Accounts</span>!
-                                                        </h5>
+                                                        </h3>
                                                         <div class="ab-promo-brand">
                                                             <img class="desktop-view"
                                                                 src="./assests/image/probo-brand-logo.svg"
@@ -659,6 +1831,9 @@
                                                 <h2 class="ab-payment-title"><img
                                                         src="./assests/image/warning-icons.svg" alt="warning icons"
                                                         class="ab-title-mark-icons"> Payment failed</h2>
+                                                <button class="popups-close-btn"><img
+                                                        src="./assests/image/close-light-icon.svg"
+                                                        alt="close icons"></button>
                                                 <div class="ab-payment-details-info-box">
                                                     <h6 class="ab-payment-conf-title">Transaction attempt has failed
                                                     </h6>
@@ -674,12 +1849,12 @@
                                                 <div class="ab-payment-details-notes">
                                                     <!-- promo content start -->
                                                     <div class="ab-promo-content-box">
-                                                        <h5 class="ab-promo-title"><span
+                                                        <h3 class="ab-promo-title"><span
                                                                 class="ab-color2-text">Your</span> One-Stop Destination
                                                             To
                                                             Buy <span class="ab-color2-text">Verified</span> Social
                                                             Media & Email <span class="ab-color2-text">Accounts</span>!
-                                                        </h5>
+                                                        </h3>
                                                         <div class="ab-promo-brand">
                                                             <img class="desktop-view"
                                                                 src="./assests/image/probo-brand-logo.svg"
@@ -1004,7 +2179,6 @@
                             <div class="ab-footer-nav">
                                 <ul class="ab-footer-nav-items">
                                     <li class="ab-nav-link-items"><a href="/">price</a></li>
-                                    <li class="ab-nav-link-items"><a href="/">news</a></li>
                                     <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
                                     <li class="ab-nav-link-items"><a href="/">about us</a></li>
                                     <li class="ab-nav-link-items"><a href="/">contacts</a></li>
@@ -1129,14 +2303,15 @@
             <div class="ab-reset-password-content">
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title">Reset password</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
                     <!-- NOTE: [no-access-warning,email-warning] those class 
                                     need to pass based on topic when showing error for requered items -->
-                    <div class="ab-input-group-content-box email-warning">
+                    <div class="ab-input-group-content-box">
                         <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Please check
                             your internet connection and try again.</span>
                         <span class="warning-text"><img src="./assests/image/warning-white.svg" alt=""> Email not
                             registered, you may register now.</span>
-                        <div class="ab-input-group alart">
+                        <div class="ab-input-group">
                             <input type="email" required name="email" class="ab-input-items"
                                 placeholder="user@gmail.com">
                             <span class="alart-text">Please enter a valid email address.</span>
@@ -1153,6 +2328,7 @@
             <div class="ab-reset-password-content">
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title">Reset password</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
                     <div class="ab-input-group-content-box">
                         <p class="ab-input-text">
                             Confirmation code have been sent to <a href="/">user@gmail.com</a>. Please check it
@@ -1170,6 +2346,7 @@
             <div class="ab-reset-password-content">
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title">Create new password</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
                     <!-- NOTE: [no-access-warning,email-warning] those class 
                                     need to pass based on topic when showing error for requered items -->
                     <div class="ab-input-group-content-box">
@@ -1204,6 +2381,7 @@
                 <div class="ab-reset-password-box">
                     <h6 class="ab-title"><img src="./assests/image/checkmark.svg" alt="mark icons"
                             class="check-mark-icons"> Successfully</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
                     <!-- NOTE: [password-reset-success] those class 
                                     need to pass based on topic when showing error for requered items -->
                     <div class="ab-input-group-content-box">
@@ -1222,7 +2400,7 @@
 
         <!-- ============signIn section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap sign-in-popups open-info">
+        <div class="ab-authentication-wrap sign-in-popups">
             <div class="ab-auth-main-content">
                 <div class="ab-auth-left-content">
                     <!-- NOTE: passing extra class('incorrect-password') for invalid/required 
@@ -1230,6 +2408,7 @@
                     <div class="ab-auth-info-content sign-in-content">
                         <h6 class="ab-title"><img src="./assests/image/useer-violet-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Sign in</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
                         <!-- NOTE: [email-warning,no-access-warning,account-lock-warning,pass-warning] those class 
                                     need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
@@ -1300,6 +2479,7 @@
                     <div class="ab-auth-info-content sign-in-content">
                         <h6 class="ab-title"><img src="./assests/image/useer-violet-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Sign in</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
                     </div>
                     <div class="ab-auth-info-content sign-up-content">
                         <h6 class="ab-title"><img src="./assests/image/users-union-icons.svg" alt="mark icons"
@@ -1379,14 +2559,15 @@
         <!-- ============signUp section styles==========[end] -->
         <!-- ============guests order section styles==========[start] -->
         <!-- NOTE: authentication popup are work by passing class 'open-info' -->
-        <div class="ab-authentication-wrap guest-order-popups">
+        <div class="ab-authentication-wrap guest-order-popups open-info">
             <div class="ab-auth-main-content">
                 <div class="ab-auth-left-content">
                     <!-- NOTE: passing extra class('incorrect-password') for invalid/required 
                         incorrect password steps for reset password  -->
-                    <div class="ab-auth-info-content sign-in-content incorrect-password">
+                    <div class="ab-auth-info-content sign-in-content">
                         <h6 class="ab-title"><img src="./assests/image/useer-violet-icons.svg" alt="mark icons"
                                 class="check-mark-icons"> Sign in</h6>
+                    <button class="ab-close-btn-auth-btn"><img src="./assests/image/close.svg" alt="close icons"></button>
 
                         <div class="ab-input-group-content-box">
 
