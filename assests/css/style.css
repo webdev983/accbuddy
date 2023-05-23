@@ -6217,10 +6217,10 @@ main.ab-main--content.order-details--page.payment-conformation-info
 .ab-check-requred.alart .alart-text {
   margin-bottom: 14px;
 }
-.ab-check-requred.alart p {
+.ab-check-requred.alart .text {
   margin-bottom: 0;
 }
-.ab-check-requred p {
+.ab-check-requred .text {
   font-family: var(--ab_primary-font);
   font-style: normal;
   font-weight: 400;
@@ -6229,7 +6229,7 @@ main.ab-main--content.order-details--page.payment-conformation-info
   color: var(--ab_violet);
   max-width: 248px;
 }
-.ab-check-requred.warning p {
+.ab-check-requred.warning .text {
   color: var(--ab_warning);
 }
 .ab-form-input-box {
