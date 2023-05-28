@@ -929,7 +929,8 @@ aside.ab-main--sidebar-content
     align-items: center;
     justify-content: space-between;
   }
-  .ab-main--content.article-page .ab-block-content-box.extra-text-block--view.color-bg-block {
+  .ab-main--content.article-page
+    .ab-block-content-box.extra-text-block--view.color-bg-block {
     margin-bottom: 65px;
   }
   .pagination-widgets {
@@ -1156,10 +1157,14 @@ aside.ab-main--sidebar-content
   .ab-article-card-title:first-child {
   margin-bottom: 15px;
 }
-.article-layout-wrapper .ab-article-card-items:first-child h6.ab-article-card-title {
+.article-layout-wrapper
+  .ab-article-card-items:first-child
+  h6.ab-article-card-title {
   margin-bottom: 39px;
 }
-.article-layout-wrapper .ab-article-card-items:nth-child(2) button.ab-button-style.article-button {
+.article-layout-wrapper
+  .ab-article-card-items:nth-child(2)
+  button.ab-button-style.article-button {
   margin-top: 52px !important;
 }
 .ab-article-content-wrapper .ab-article-card-items .ab-description {
@@ -1205,19 +1210,27 @@ aside.ab-main--sidebar-content
   margin-top: 79px;
 }
 
-.article-layout-wrapper .ab-article-card-items:first-child h6.ab-article-card-title {
-    margin-bottom: 39px;
+.article-layout-wrapper
+  .ab-article-card-items:first-child
+  h6.ab-article-card-title {
+  margin-bottom: 39px;
 }
 
-.article-layout-wrapper .ab-article-card-items:nth-child(2) button.ab-button-style.article-button {
-    margin-top: 52px !important;
+.article-layout-wrapper
+  .ab-article-card-items:nth-child(2)
+  button.ab-button-style.article-button {
+  margin-top: 52px !important;
 }
-.ab-article-content-wrapper > .ab-article-card-items:last-child button.ab-button-style.article-button {
-    margin-top: 43px;
+.ab-article-content-wrapper
+  > .ab-article-card-items:last-child
+  button.ab-button-style.article-button {
+  margin-top: 43px;
 }
 
-.ab-article-content-wrapper > .ab-article-card-items:last-child h6.ab-article-card-title {
-    margin-bottom: 28px;
+.ab-article-content-wrapper
+  > .ab-article-card-items:last-child
+  h6.ab-article-card-title {
+  margin-bottom: 28px;
 }
 @media screen and (max-width: 1420px) and (min-width: 1281px) {
   .ab-article-content-wrapper > .ab-article-card-items:nth-child(1) {
@@ -1266,6 +1279,16 @@ aside.ab-main--sidebar-content
   .ab-article-content-wrapper .ab-article-card-items .ab-description,
   .ab-article-content-wrapper .ab-article-card-items .ab-article-card-title {
     max-width: 100%;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .ab-article-content-wrapper {
+    column-gap: 30px;
+  }
+  .ab-article-content-wrapper > .article-layout-wrapper,
+  .ab-article-content-wrapper > .ab-article-card-items:nth-child(1) {
+    width: 47%;
+    flex: 0 0 47%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1440,11 +1463,13 @@ aside.ab-main--sidebar-content
     display: block;
   }
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .ab-article-details-section {
     padding-top: 0 !important;
   }
-  .ab-main-content-box.article-page--wrapper .ab-main--sidebar-content .ab-block-content-box.color-bg-block {
+  .ab-main-content-box.article-page--wrapper
+    .ab-main--sidebar-content
+    .ab-block-content-box.color-bg-block {
     margin-bottom: 48px;
   }
 }
@@ -1518,9 +1543,17 @@ aside.ab-main--sidebar-content
     padding-left: 4px;
     padding-right: 4px;
   }
-  .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content .ab-news-content-box {
+  .ab-main-content-wrapper
+    .ab-main-content-box
+    .ab-main--sidebar-content
+    .ab-news-content-box {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .ab-main-content-box.home-main-page.main-content-one
+    .ab-main--sidebar-content
+    .ab-news-content-box {
+    padding: 0;
   }
   .ab-main-content-wrapper
     .ab-main-content-box
@@ -1608,6 +1641,9 @@ aside.ab-main--sidebar-content
   .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content {
     max-width: 100%;
   }
+  .ab-main-content-box.term-service-main-wrapper .ab-main--sidebar-content {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 767px) {
   .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content {
@@ -1617,7 +1653,10 @@ aside.ab-main--sidebar-content
   .ab-main-content-wrapper {
     padding-top: 10px;
   }
-  .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content .ab-news-content-box {
+  .ab-main-content-wrapper
+    .ab-main-content-box
+    .ab-main--sidebar-content
+    .ab-news-content-box {
     padding-left: 38px;
     padding-right: 38px;
   }
@@ -1844,6 +1883,14 @@ aside.ab-main--sidebar-content
   justify-content: space-between;
   gap: 107px;
 }
+@media screen and (max-width: 1420px) and (min-width: 1400px) {
+  .ab-header-nav-box .ab-header-nav {
+    gap: 42px;
+  }
+  .ab-header-nav-box {
+    gap: 70px;
+  }
+}
 @media screen and (max-width: 1399px) and (min-width: 992px) {
   .ab-header-nav-box .ab-header-nav {
     gap: 42px;
@@ -1909,8 +1956,19 @@ aside.ab-main--sidebar-content
     display: none;
   }
   .ab-auth-button span {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .ab-header-auth-box {
+    gap: 15px;
+  }
+  .ab-header-auth-box .ab-auth-button img {
+    width: 15px;
+  }
+  .ab-header-section .ab-auth-button {
+    display: flex;
+    width: auto;
+    gap: 6px;
   }
 }
 
@@ -2001,13 +2059,16 @@ aside.ab-main--sidebar-content
 
 /* mobile slide here styles */
 .ab-mobile-slide-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: -200%;
+  right: -100%;
   width: calc(100% - 19px);
   background: var(--ab_light);
   z-index: 9999;
   transition: all 650ms ease-in-out 0s;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 .ab-mobile-slide-nav.open {
   right: 0;
@@ -2156,6 +2217,12 @@ aside.ab-main--sidebar-content
   }
   .ab-benefit-section-box {
     padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .ab-benefit-section-box .ab-benefit-top-wrapper {
+    gap: 35px;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -2336,6 +2403,18 @@ aside.ab-main--sidebar-content
   .text {
   max-width: 280px;
 }
+@media screen and (max-width: 1420px) and (min-width: 1281px) {
+  .ab-cta-section .ab-form-input-box .ab-cta-wrapper-left .ab-input-group {
+    width: 100%;
+  }
+  .ab-cta-section
+    .ab-form-input-box
+    .ab-cta-wrapper-right
+    .ab-cta-btn-box-wrap
+    .ab-button-group {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1280px) and (min-width: 992px) {
   .ab-cta-section
     .ab-form-input-box
@@ -2355,8 +2434,11 @@ aside.ab-main--sidebar-content
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 992px) {
+  .ab-cta-section {
+    padding: 54px 50px 64px 50px;
+  }
   .ab-cta-section .ab-form-input-box {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 /*********************************
@@ -2411,12 +2493,7 @@ aside.ab-main--sidebar-content
     padding-right: 4px;
   }
   .ab-faq-section .ab-faq-content-wrap {
-    grid-template-columns: unset;
-    grid-template-areas:
-      'faq-items1'
-      'faq-items3'
-      'faq-items2'
-      'faq-items4';
+    gap: 30px;
   }
   .ab-cta-section {
     padding: 50px 38px 55px 38px;
@@ -2429,23 +2506,6 @@ aside.ab-main--sidebar-content
   }
   .ab-main--content.faq-page .ab-promo-content-box {
     display: none;
-  }
-
-  .ab-faq-content-wrap .ab-faq-content-cards:nth-child(1) {
-    grid-area: faq-items1;
-    width: 296px;
-  }
-  .ab-faq-content-wrap .ab-faq-content-cards:nth-child(2) {
-    grid-area: faq-items2;
-    width: 296px;
-  }
-  .ab-faq-content-wrap .ab-faq-content-cards:nth-child(3) {
-    grid-area: faq-items3;
-    width: 296px;
-  }
-  .ab-faq-content-wrap .ab-faq-content-cards:nth-child(4) {
-    grid-area: faq-items4;
-    width: 296px;
   }
 }
 .ab-check-requred.right-side-requered-mobo {
@@ -2511,7 +2571,16 @@ aside.ab-main--sidebar-content
     margin-top: 10px;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .ab-faq-section .ab-faq-content-wrap {
+    gap: 60px;
+    flex-direction: column;
+    display: flex;
+  }
+  .ab-faq-content-wrap .ab-faq-content-cards {
+    width: 100% !important;
+  }
+}
 /*********************************
     term and service section style css 
 ********************************/
@@ -2675,8 +2744,8 @@ aside.ab-main--sidebar-content
   color: var(--ab_violet);
 }
 .ab-account-table thead tr th .ab-update-view-btns {
-	display: inline-flex;
-	gap: 5px;
+  display: inline-flex;
+  gap: 5px;
 }
 .ab-account-table tbody tr td {
   height: 30px;
@@ -2858,24 +2927,6 @@ aside.ab-main--sidebar-content
     right: 0;
   }
 }
-@media screen and (max-width: 1420px) and (min-width: 1281px) {
-  .ab-account-select-popups {
-    right: auto;
-    left: 125px;
-  }
-}
-@media screen and (max-width: 1280px) and (min-width: 1200px) {
-  .ab-account-select-popups {
-    right: auto;
-    left: 90px;
-  }
-}
-@media screen and (max-width: 1199px) and (min-width: 992px) {
-  .ab-account-select-popups {
-    right: auto;
-    left: 90px;
-  }
-}
 .popup-box-item {
   width: 100%;
   position: absolute;
@@ -2964,24 +3015,6 @@ aside.ab-main--sidebar-content
   }
 }
 /* =============>>> account details order popups */
-/* .ab-payment-details-content {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(204, 189, 227, 0.75);
-  z-index: 999;
-  padding-top: 121px;
-  padding-bottom: 60px;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  padding-left: 4px;
-  padding-right: 4px;
-} */
 .ab-order-details-left {
   position: relative;
 }
@@ -3012,7 +3045,7 @@ aside.ab-main--sidebar-content
   padding-top: 6px;
 }
 main.ab-main--content.payment-details--page .ab-order-details-wrapper {
-  padding: 81px 52px 85px 81px;
+  padding: 81px 52px 85px 52px;
 }
 .ab-payment-details-content .ab-payment-details-wrapper .ab-payment-title,
 .ab-order-details-content .ab-order-details-wrapper .ab-order-title {
@@ -3342,7 +3375,10 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   background-color: transparent;
   cursor: pointer;
 }
-.ab-account-table thead tr th .ab-update-view-btns button{background-color: transparent;cursor: pointer;}
+.ab-account-table thead tr th .ab-update-view-btns button {
+  background-color: transparent;
+  cursor: pointer;
+}
 @media screen and (max-width: 1420px) and (min-width: 1281px) {
   .ab-account-table tbody tr td:nth-child(1) {
     width: 330px;
@@ -3840,16 +3876,16 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   display: none;
 }
 .ab-main--content.earn-page-wrap .ab-cta-section {
-	margin-bottom: 101px;
+  margin-bottom: 101px;
 }
 .ab-main-content-box.earn-page .ab-cta-title {
-	max-width: 484px;
+  max-width: 484px;
 }
 .ab-main--content.earn-page-wrap .ab-benefit-items-cards .ab-benefit-title {
-	margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 .ab-main--content.earn-page-wrap .ab-benefit-items-cards:not(:last-child) {
-	margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 .ab-main--content.earn-page-wrap .ab-benefit-items-cards:nth-child(3) {
   margin-bottom: 106px;
@@ -3859,7 +3895,7 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   padding-bottom: 0;
 }
 .ab-main-content-box.earn-page .ab-benefit-section-box {
-	padding-top: 0;
+  padding-top: 0;
 }
 @media screen and (max-width: 991px) {
   .ab-main--content.earn-page-wrap-two .ab-promo-content-box {
@@ -4100,6 +4136,13 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
 .ab-main--content.order-details--page .ab-promo-content-box {
   margin-bottom: 81px;
 }
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+  .ab-main--content.order-details--page .ab-order-details-left {
+    grid-template-areas: 'area-one area-four' 'area-two area-four' 'area-three area-three';
+    grid-column-gap: 30px;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .ab-main-content-box.order-history-page-wrap .ab-order-history-main-item {
     font-size: 14px;
@@ -4107,6 +4150,12 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   .ab-main-content-box.order-history-page-wrap .ab-view-details-btn {
     font-size: 14px !important;
     white-space: nowrap;
+  }
+  .order-details-page-content {
+    padding: 55px 50px 55px 50px;
+  }
+  .ab-order-details-left > :nth-child(4) {
+    width: 100%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -4329,7 +4378,7 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   margin-bottom: 80px;
 }
 .ab-main-content-box.order-history-page-wrap .ab-main--sidebar-content {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .ab-main-content-box.order-history-page-wrap
@@ -4548,7 +4597,7 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   .ab-account-info-changed-states
   .ab-changed-state-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -4575,6 +4624,28 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   cursor: pointer;
   padding-right: 20px;
   padding-left: 5px;
+}
+.ab-account-details-list-item
+  .ab-account-details-name
+  .ab-account-info-changed-states
+  .ab-changed-state-wrapper
+  .ab-input-group.warning
+  button,
+.ab-account-details-list-item
+  .ab-account-details-name
+  .ab-account-info-changed-states
+  .ab-changed-state-wrapper
+  .ab-input-group.alart
+  button {
+  position: absolute;
+  bottom: 0;
+  top: 1px;
+  right: 1px;
+  background: #fff;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 5px;
+  height: calc(100% - 2px);
 }
 .ab-account-info-changed-states.changed-contact-number-states
   .ab-input-group
@@ -4663,7 +4734,7 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   gap: 30px;
 }
 .ab-main--content.account-settings-page .ab-promo-content-box {
-	margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 @media screen and (min-width: 992px) {
   .ab-changed-states-input-form .ab-form-input-box {
@@ -4679,6 +4750,52 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   padding-left: 4px;
   padding-right: 4px;
 }
+@media screen and (min-width: 992px) and (max-width: 1420px) {
+  .ab-main-content-box.account-settings-pages-main-wrap {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1351px) and (max-width: 1420px) {
+  .ab-changed-state-wrapper .ab-input-group {
+    flex: 0 0 49%;
+    width: 49%;
+  }
+  .ab-changed-state-wrapper .ab-button-group {
+    min-width: 49%;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1350px) {
+  .ab-changed-state-wrapper .ab-input-group {
+    flex: 0 0 48%;
+    width: 48%;
+  }
+  .ab-changed-state-wrapper .ab-button-group {
+    min-width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1280px) {
+  .ab-changed-state-wrapper .ab-input-group {
+    flex: 0 0 48%;
+    width: 48%;
+  }
+  .ab-changed-state-wrapper .ab-button-group {
+    min-width: 48%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states {
+    padding: 50px 48px;
+  }
+}
 @media screen and (max-width: 991px) {
   .ab-main-content-box.account-settings-pages-main-wrap
     .ab-main--sidebar-content
@@ -4693,30 +4810,48 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     .ab-account-info-changed-states {
     padding: 50px 48px;
   }
-  .ab-main-content-box.account-settings-pages-main-wrap .ab-main--sidebar-content {
+  .ab-main-content-box.account-settings-pages-main-wrap
+    .ab-main--sidebar-content {
     margin-bottom: 50px;
     padding-top: 50px;
   }
-  .ab-changed-state-wrapper{flex-wrap: wrap ;justify-content: flex-end !important;}
- 
-  .ab-changed-state-wrapper  .ab-button-group{margin-top: 0;}
-  .ab-changed-state-wrapper  .ab-button-group .ab-button-style.ab-footer-button{padding: 20px 15px;}
- .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group input{font-size: 16px;padding: 20px 15px;}
- .ab-account-info-changed-states .ab-changed-state-wrapper .ab-changed-states-text-cont,
- .ab-account-info-changed-states .ab-changed-state-wrapper .ab-button-group,
-  .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group{
-   flex: 0 0 48%;
-   min-width: 48%;
- width: 48%;
- }
- .ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper {
-	justify-content: flex-start !important;
-}
-.ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper .ab-changed-states-text-cont {
-	flex: 0 0 100%;
-	min-width: 100%;
-	width: 100%;
-}
+  .ab-changed-state-wrapper {
+    flex-wrap: wrap;
+    justify-content: flex-end !important;
+  }
+
+  .ab-changed-state-wrapper .ab-button-group {
+    margin-top: 0;
+  }
+  .ab-changed-state-wrapper .ab-button-group .ab-button-style.ab-footer-button {
+    padding: 20px 15px;
+  }
+  .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-input-group
+    input {
+    font-size: 16px;
+    padding: 20px 15px;
+  }
+  .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-changed-states-text-cont,
+  .ab-account-info-changed-states .ab-changed-state-wrapper .ab-button-group,
+  .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group {
+    flex: 0 0 48%;
+    min-width: 48%;
+    width: 48%;
+  }
+  .ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper {
+    justify-content: flex-start !important;
+  }
+  .ab-account-info-changed-states.successfull-states
+    .ab-changed-state-wrapper
+    .ab-changed-states-text-cont {
+    flex: 0 0 100%;
+    min-width: 100%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .ab-main--content.account-settings-page
@@ -4734,14 +4869,24 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   }
 }
 @media screen and (max-width: 767px) {
-  .ab-changed-state-wrapper  .ab-button-group .ab-button-style.ab-footer-button{padding: 20px 15px;}
-  .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group input{font-size: 16px;padding: 20px 15px;}
-  .ab-account-info-changed-states .ab-changed-state-wrapper .ab-changed-states-text-cont,
+  .ab-changed-state-wrapper .ab-button-group .ab-button-style.ab-footer-button {
+    padding: 20px 15px;
+  }
+  .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-input-group
+    input {
+    font-size: 16px;
+    padding: 20px 15px;
+  }
+  .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-changed-states-text-cont,
   .ab-account-info-changed-states .ab-changed-state-wrapper .ab-button-group,
-   .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group{
+  .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group {
     flex: 0 0 100%;
     min-width: 100%;
-  width: 100%;
+    width: 100%;
   }
   .ab-main--content.account-settings-page .settings-page-content .ab-title {
     margin-bottom: 80px;
@@ -4889,6 +5034,19 @@ main.ab-main--content.payment-details--page
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ab-payment-details-page-main-wrapper {
+    gap: 30px;
+  }
+  .ab-order-details-content.ab-order-details-popup .ab-order-info-details {
+    width: 100%;
+  }
+  .ab-order-details-content.ab-order-details-popup
+    .ab-order-details-order-info
+    .ab-order-details-left {
+    grid-column-gap: 30px;
+  }
 }
 @media screen and (min-width: 992px) {
   .ab-payment-details-page-main-wrapper .ab-order-details-popup-input-group {
@@ -5087,6 +5245,21 @@ main.ab-main--content.order-details--page.ab-checkout--page
   width: 79.64px;
   height: 79.64px;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ab-checkout-info-details-wrap {
+    padding: 67px 55px 69px 55px;
+  }
+  .ab-checkout-info-details-wrap .ab-checkout-btn-box {
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .ab-checkout-info-details-wrap
+    .ab-checkout-buy-item-content
+    .ab-chekout-buy-item-texts
+    .ab-text {
+    max-width: 350px;
+  }
+}
 @media screen and (max-width: 991px) {
   .ab-checkout-info-details-wrap
     .ab-checkout-buy-item-content
@@ -5187,6 +5360,12 @@ main.ab-main--content.order-details--page.payment-conformation-info
   .ab-promo-content-box {
   margin-bottom: 120px;
 }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ab-main--content.order-details--page.payment-conformation-info
+    .ab-payment-details-info-box {
+    padding: 55px 50px 55px 50px;
+  }
+}
 @media screen and (max-width: 991px) {
   .ab-main--content.order-details--page.payment-conformation-info
     .ab-payment-details-info-box {
@@ -5218,6 +5397,9 @@ main.ab-main--content.order-details--page.payment-conformation-info
   .ab-order-details-content .ab-order-details-wrapper .ab-order-title {
     margin-bottom: 43px;
   }
+  .ab-tablet-view-wrapper .ab-payment-title .ab-title-mark-icons {
+    width: 35px;
+  }
 }
 /*================================
      authentication style pages 
@@ -5246,6 +5428,40 @@ main.ab-main--content.order-details--page.payment-conformation-info
   align-items: flex-start;
   gap: 20px;
   padding: 74px 79px 70px 80px;
+}
+.ab-auth-details-content.authentication-signup-page-wrap
+  .ab-auth-content-wrap-box.authentication-signup-page {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1280px) and (min-width: 1200px) {
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-authentication-wrap-cont,
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-reset-password {
+    padding: 74px 50px 70px 50px;
+  }
+}
+.ab-auth-content-wrap-box.reset-confirmation-mail .ab-auth-input-reset-password,
+.ab-auth-content-wrap-box.reset-success-massage .ab-auth-input-reset-password {
+  align-items: center !important;
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-authentication-wrap-cont,
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-reset-password {
+    padding: 74px 79px 70px 80px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 }
 .ab-input-group-content-box.wrong-password
   .ab-auth-input-authentication-wrap-cont {
@@ -5372,18 +5588,23 @@ main.ab-main--content.order-details--page.payment-conformation-info
   background: var(--ab_violet);
 }
 .ab-main-content-box.ab-auth-main-cont .ab-promo-content-box {
-	margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .ab-main-content-box.ab-auth-main-cont .ab-promo-content-box {
   margin-bottom: 70px;
 }
 
-.ab-main-content-box.ab-auth-main-cont .ab-main--content.ab-auth-wrap-page .ab-auth-content-wrap-box.authentication-signin-page {
+.ab-main-content-box.ab-auth-main-cont
+  .ab-main--content.ab-auth-wrap-page
+  .ab-auth-content-wrap-box.authentication-signin-page {
   margin-bottom: 0;
 }
 
-.ab-main-content-box.ab-auth-main-cont .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex .ab-order-title {
+.ab-main-content-box.ab-auth-main-cont
+  .ab-main--content.ab-auth-wrap-page
+  .ab-auth-details-main-flex
+  .ab-order-title {
   margin-bottom: 0;
 }
 @media screen and (min-width: 992px) {
@@ -5391,70 +5612,27 @@ main.ab-main--content.order-details--page.payment-conformation-info
     display: none;
   }
 }
-@media screen and (max-width: 991px) {
-  .ab-auth-content-wrap-box.authentication-signin-page
-    .ab-auth-input-authentication-wrap-cont {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .ab-main-content-box.ab-auth-main-cont .ab-main--sidebar-content {
-    margin-bottom: 50px;
-  }
-  .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
-    margin-bottom: 53px;
-  }
-  .ab-main--content.ab-auth-wrap-page
-    .ab-auth-details-main-flex
-    .ab-order-title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
-    gap: 97px;
-  }
-  .ab-main--content.ab-auth-wrap-page
-    .ab-auth-details-content
-    .ab-auth-content-wrap-box
-    .ab-auth-input-authentication-wrap-cont,
-  .ab-main--content.ab-auth-wrap-page
-    .ab-auth-details-content
-    .ab-auth-content-wrap-box
-    .ab-auth-input-reset-password {
-    padding: 54px 48px 56px 48px;
-  }
-  .ab-main--content.ab-auth-wrap-page .ab-promo-content-box {
-    display: none;
-  }
-  .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
-    padding-left: 50px;
-  }
-  .ab-main--content.ab-auth-wrap-page {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-  .ab-auth-content-wrap-box.reset-password-one
-    .ab-auth-input-reset-password
-    .ab-input-group {
-    flex: 0 0 48%;
-    width: 48%;
-    min-width: auto;
-  }
-  .ab-auth-content-wrap-box.reset-confirmation-mail,
-  .ab-auth-content-wrap-box.reset-password-one {
-    max-width: 100%;
-  }
-
-  .ab-auth-content-wrap-box
-    .ab-input-group-content-box
-    .ab-auth-input-reset-password
-    .ab-button-style.ab-submite-btn {
-    padding: 20.55px 0 17.79px;
-  }
+@media screen and (max-width: 1280px) and (min-width: 1200px) {
   .ab-auth-content-wrap-box.authentication-signup-page
     .ab-auth-input-authentication-wrap-cont
-    > :nth-child(5) {
-    padding: 20.55px 0 17.79px;
+    > :nth-child(3),
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(2),
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(1) {
+    flex: 0 0 31%;
+    min-width: 31%;
+    width: 31%;
   }
+  .ab-auth-content-wrap-box.authentication-signup-page .ab-auth-input-authentication-wrap-cont > :nth-child(4) {
+    flex: 0 0 64%;
+    min-width: 64%;
+    width: 64%;
+  }
+}
+@media screen and (max-width: 1199px) {
   .ab-auth-content-wrap-box.authentication-signup-page
     .ab-auth-input-authentication-wrap-cont
     > :nth-child(5),
@@ -5510,6 +5688,94 @@ main.ab-main--content.order-details--page.payment-conformation-info
     flex: 0 0 48%;
     min-width: 48%;
   }
+  .ab-auth-content-wrap-box.authentication-signin-page
+    .ab-auth-input-authentication-wrap-cont {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .ab-auth-content-wrap-box.reset-password-one
+    .ab-auth-input-reset-password
+    .ab-input-group {
+    flex: 0 0 48%;
+    width: 48%;
+    min-width: auto;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(1)
+    input {
+    width: 48%;
+    flex: 0 0 48%;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-authentication-wrap-cont,
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-reset-password {
+    padding: 54px 48px 56px 48px;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(1) {
+    width: 99% !important;
+    flex: 0 0 99%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+    gap: 50px;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ab-main-content-box.ab-auth-main-cont .ab-main--sidebar-content {
+    margin-bottom: 50px;
+  }
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+    margin-bottom: 53px;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-main-flex
+    .ab-order-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+    gap: 97px;
+  }
+
+  .ab-main--content.ab-auth-wrap-page .ab-promo-content-box {
+    display: none;
+  }
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+    padding-left: 50px;
+  }
+  .ab-main--content.ab-auth-wrap-page {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .ab-auth-content-wrap-box.reset-confirmation-mail,
+  .ab-auth-content-wrap-box.reset-password-one {
+    max-width: 100%;
+  }
+
+  .ab-auth-content-wrap-box
+    .ab-input-group-content-box
+    .ab-auth-input-reset-password
+    .ab-button-style.ab-submite-btn {
+    padding: 20.55px 0 17.79px;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(5) {
+    padding: 20.55px 0 17.79px;
+  }
+
   .ab-main--content.ab-auth-wrap-page
     .ab-auth-details-content
     .ab-auth-content-wrap-box
@@ -5529,25 +5795,16 @@ main.ab-main--content.order-details--page.payment-conformation-info
     .ab-button-style.ab-reset-password-btn {
     padding: 18px 0;
   }
-  .ab-auth-content-wrap-box.authentication-signup-page
-    .ab-auth-input-authentication-wrap-cont
-    > :nth-child(1) {
-    width: 99%;
-    flex: 0 0 99%;
-  }
-  .ab-auth-content-wrap-box.authentication-signup-page
-    .ab-auth-input-authentication-wrap-cont
-    > :nth-child(1)
-    input {
-    width: 48%;
-    flex: 0 0 48%;
-  }
+
   .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
     padding-top: 88px;
     padding-bottom: 104px;
   }
 }
 @media screen and (max-width: 767px) {
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+    padding-left: 38px;
+  }
   .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
     padding-top: 57px;
     padding-bottom: 185px;
@@ -5726,6 +5983,7 @@ main.ab-main--content.order-details--page.payment-conformation-info
   }
   .ab--user-menu .user-menu-btn {
     margin-bottom: 42px;
+    width: 100%;
   }
   .ab--user-menu .ab--user-menu-item {
     border: 0;
@@ -5770,6 +6028,10 @@ main.ab-main--content.order-details--page.payment-conformation-info
   .ab-footer-wrapper .ab-footer-top {
     padding-left: 42px;
     padding-right: 51px;
+  }
+  .ab-footer-section {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
 @media screen and (max-width: 1399px) and (min-width: 992px) {
@@ -6110,13 +6372,22 @@ main.ab-main--content.order-details--page.payment-conformation-info
   width: 300px;
   display: block;
 }
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .ab-textarea-group textarea,
+  .ab-input-group .ab-input {
+    padding: 21px 15px;
+  }
+  .ab-button-style {
+    padding: 20px 0;
+  }
+}
 @media screen and (max-width: 1399px) and (min-width: 992px) {
   .ab-textarea-group,
   .ab-button-group {
     width: 260px;
   }
   .ab-input-group {
-    width: 270px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1280px) and (min-width: 992px) {
@@ -6141,6 +6412,12 @@ main.ab-main--content.order-details--page.payment-conformation-info
     width: 100% !important;
     display: block;
     max-width: 250px;
+  }
+  .ab-changed-state-wrapper .ab-input-group,
+  .ab-changed-state-wrapper .ab-textarea-group,
+  .ab-changed-state-wrapper .ab-button-group {
+    min-width: 48%;
+    width: 48% !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -6177,6 +6454,7 @@ main.ab-main--content.order-details--page.payment-conformation-info
   position: relative;
   cursor: pointer;
 }
+#checkedRequered5,
 #checkedRequered4,
 #checkedRequered3,
 #checkedRequered2,

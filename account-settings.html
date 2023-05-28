@@ -78,17 +78,17 @@
                         <div class="ab-form-input-box">
                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
                             <div class="ab-input-group">
-                                <input name="name" type="name" class="ab-input" required placeholder="Name">
+                                <input type="text" class="ab-input" required placeholder="Name">
                                 <span class="warn-text">Please enter your name</span>
                             </div>
                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
                             <div class="ab-input-group">
-                                <input name="email" type="email" class="ab-input" placeholder="Email">
+                                <input name="email" type="email" required class="ab-input" placeholder="Email">
                                 <span class="warn-text">Please enter a valid email address</span>
                             </div>
                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
                             <div class="ab-textarea-group">
-                                <textarea name="text" id="text" placeholder="Message"></textarea>
+                                <textarea name="text" required placeholder="Message"></textarea>
                                 <span class="warn-text">Please enter a message between 10 and 1000
                                     characters</span>
                             </div>
@@ -96,9 +96,9 @@
                             <div class="ab-check-requred">
                                 <label for="checkedRequered1">
                                     <input type="checkbox" id="checkedRequered1" class="check-mark">
-                                    <div class="ab-check-mark-box"></div>
-                                    <p class="text">I have read and agree to the Privacy Policy and
-                                        Terms of Service</p>
+                                    <span class="ab-check-mark-box"></span>
+                                    <span class="text">I have read and agree to the Privacy Policy and
+                                        Terms of Service</span>
                                 </label>
                             </div>
                             <div class="ab-button-group">
@@ -148,11 +148,11 @@
                                             <form action="/post" class="ab-changed-states-input-form">
                                                 <div class="ab-form-input-box">
                                                     <div class="ab-changed-state-wrapper">
-                                                        <div class="ab-input-group">
+                                                        <div class="ab-input-group warning">
                                                             <input name="email" type="email" class="ab-input" required placeholder="New email">
                                                             <span class="warn-text">Please enter a valid email address</span>
                                                         </div>
-                                                        <div class="ab-input-group">
+                                                        <div class="ab-input-group warning">
                                                             <button class="view-password"><img src="./assests/image/eye.svg" alt="eye icons"></button>
                                                             <input name="Password" type="email" class="ab-input" placeholder="Password">
                                                         </div>
@@ -265,10 +265,10 @@
                                                 <div class="ab-form-input-box">
                                                     <div class="ab-changed-state-wrapper">
                                                         <div class="ab-input-group">
-                                                            <input name="name" type="name" class="ab-input" required placeholder="First name">
+                                                            <input type="text" class="ab-input" required placeholder="First name">
                                                         </div>
                                                         <div class="ab-input-group">
-                                                            <input name="name" type="name" class="ab-input" required placeholder="Second name">
+                                                            <input type="text" class="ab-input" required placeholder="Second name">
                                                         </div>
                                                         <div class="ab-button-group">
                                                             <button class="ab-button-style ab-footer-button">Change</button>
@@ -295,13 +295,13 @@
                                             <form action="/post" class="ab-changed-states-input-form">
                                                 <div class="ab-form-input-box">
                                                     <div class="ab-changed-state-wrapper">
-                                                        <div class="ab-input-group">
-                                                            <input name="phone" type="phone" class="ab-input" required placeholder="+31 654 745-46-11">
+                                                        <div class="ab-input-group warning">
+                                                            <input  type="tel" class="ab-input" required placeholder="+31 654 745-46-11">
                                                             <span class="warn-text">Please enter a valid email address</span>
                                                         </div>
                                                         <div class="ab-input-group">
                                                             <button class="get-code">Get code</button>
-                                                            <input name="code" type="code" class="ab-input" placeholder="Confrim code">
+                                                            <input type="text" class="ab-input" required placeholder="Confrim code">
                                                         </div>
                                                         <div class="ab-button-group">
                                                             <button class="ab-button-style ab-footer-button">Save</button>
@@ -417,7 +417,7 @@
                                             <div class="ab-form-input-box">
                                                 <!-- passing extra class('warning') for invalid/required inputs warning  -->
                                                 <div class="ab-input-group">
-                                                    <input name="name" type="name" class="ab-input" required
+                                                    <input type="text" class="ab-input" required
                                                         placeholder="Name">
                                                     <span class="warn-text">Please enter your name</span>
                                                 </div>
@@ -429,7 +429,7 @@
                                                 </div>
                                                 <!-- passing extra class('warning') for invalid/required inputs warning  -->
                                                 <div class="ab-textarea-group">
-                                                    <textarea name="text" id="text" placeholder="Message"></textarea>
+                                                    <textarea name="text" placeholder="Message"></textarea>
                                                     <span class="warn-text">Please enter a message between 10 and 1000
                                                         characters</span>
                                                 </div>
@@ -437,9 +437,9 @@
                                                 <div class="ab-check-requred">
                                                     <label for="checkedRequered">
                                                         <input type="checkbox" id="checkedRequered" class="check-mark">
-                                                        <div class="ab-check-mark-box"></div>
-                                                        <p class="text">I have read and agree to the Privacy Policy and
-                                                            Terms of Service</p>
+                                                        <span class="ab-check-mark-box"></span>
+                                                        <span class="text">I have read and agree to the Privacy Policy and
+                                                            Terms of Service</span>
                                                     </label>
                                                 </div>
                                                 <div class="ab-button-group">
