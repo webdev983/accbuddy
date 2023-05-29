@@ -308,19 +308,31 @@ tr:nth-child(odd) {
 .mobo-logo {
   display: none;
 }
-@media screen and (max-width: 991px) {
+
+  @media screen and (max-width: 991px) {
   .mobo-logo {
     display: block;
-    padding: 15px 0 14px 38px;
+    padding: 0 ;
   }
-  .ab-header-brand .mobo-logo {
-    padding: 29px 0 26px 38px;
+  .ab-header-brand{
+    padding: 30px 0 26px 38px;
+    display: block;
   }
   .desk-logo {
     display: none;
   }
 }
-
+@media screen and (max-width: 991px) and (min-width:768px) {
+  .mobo-logo {
+   width: 148px;
+   height: 25px;
+   padding-left: 0 !important;
+  }
+  .ab-header-brand{
+    padding: 0;
+    padding-left: 50px;
+  }
+}
 /* pagination widgets styles */
 
 .pagination-widgets {
