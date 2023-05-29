@@ -324,6 +324,7 @@ tr:nth-child(odd) {
     background-color: rgb(250, 156, 41, 0.1);
   }
 }
+
 /****************************
       common css style 
 ********************************/
@@ -441,6 +442,7 @@ aside.ab-main--sidebar-content
     display: none;
   }
 }
+
 /*===========================================
     authentication styles start 
   ======================================*/
@@ -1100,6 +1102,7 @@ aside.ab-main--sidebar-content
     padding-right: 38px;
   }
 }
+
 /* =========>>>promo content styles here */
 .ab-promo-content-box {
   padding: 23px 38px 25px 42px;
@@ -1183,9 +1186,9 @@ aside.ab-main--sidebar-content
     grid-template-areas: 'faq-items1 faq-items3' 'faq-items2 faq-items4' !important;
     gap: 38px;
   }
-  /* .ab-faq-content-cards .ab-content-items-box > :nth-child(even){flex: 0 0 48%;}
-  .ab-faq-content-cards .ab-content-items-box > :nth-child(odd){flex: 0 0 48%;} */
+
 }
+
 /* =========>>>articles content styles here */
 
 .ab-article-content-box {
@@ -1363,6 +1366,7 @@ aside.ab-main--sidebar-content
     display: none;
   }
 }
+
 /****************** 
  article page style
 ======================  */
@@ -1524,6 +1528,30 @@ aside.ab-main--sidebar-content
     margin-bottom: 48px;
   }
 }
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .ab-article-content-box .ab-article-title {
+    margin-bottom: 45px;
+  }
+  .ab-article-details-section {
+    padding-top: 38px;
+  }
+  .ab-article-details-section .ab-article-details-image {
+    height: 318px;
+    margin-bottom: 33px;
+  }
+  .ab-article-content-box {
+    padding: 16px 50px 17px 50px !important;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .ab-block-content-box.color-bg-block.ab-block-4 {
+    margin-bottom: 0;
+  }
+  .ab-article-content-box {
+    padding-top: 37px !important;
+  }
+}
 /*===============================
    [page layout style here]
   ===============================*/
@@ -1571,6 +1599,7 @@ aside.ab-main--sidebar-content
 .ab-main--sidebar-content {
   grid-area: aside-two;
 }
+
 @media screen and (min-width: 992px) and (max-width: 1420px) {
   .ab-main-content-wrapper .ab-main-content-box {
     padding-left: 43px;
@@ -1774,10 +1803,6 @@ aside.ab-main--sidebar-content
   visibility: hidden;
   transition: all 350ms ease-in 0s;
 }
-/* .ab-header-auth-box:hover .ab-logged-user-menu{
-  opacity: 1;
-  visibility: visible;
-} */
 
 .ab-logged-user-menu:before {
   content: '';
@@ -1893,10 +1918,7 @@ aside.ab-main--sidebar-content
   text-align: center;
   color: var(--ab_violet);
 }
-/* header.ab-header-section {
-  overflow: hidden;
-  position: relative;
-} */
+
 @media screen and (max-width: 1420px) and (min-width: 992px) {
   .ab-header-wrapper {
     padding-left: 42px;
@@ -2060,10 +2082,7 @@ aside.ab-main--sidebar-content
   border: 0;
   outline: 0;
 }
-/* .ab-header-auth-box .ab-auth-button img {
-  width: 100%;
-  height: 100%;
-} */
+
 @media screen and (max-width: 991px) {
   .ab-header-auth-box {
     position: absolute;
@@ -2192,139 +2211,7 @@ aside.ab-main--sidebar-content
     padding-bottom: 47px;
   }
 }
-/*********************************
-    benefit section style css 
-********************************/
-.ab-benefit-section-box {
-  position: relative;
-  padding: 58px 0 104px;
-}
-.ab-benefit-section-box .ab-benefit-top-wrapper {
-  padding-bottom: 57px;
-  border-bottom: 1px solid var(--ab_violet);
-  display: flex;
-  align-items: center;
-  gap: 72px;
-  padding-right: 54px;
-}
-.ab-benefit-section-box .ab-benefit-main-content {
-  padding: 65px 40px 45px 42px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 95px;
-}
-.ab-benefit-items-cards {
-  position: relative;
-  padding-left: 40px;
-  width: 45%;
-}
-.ab-benefit-items-cards::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50px;
-  background-color: var(--ab_orange);
-  left: 0;
-  top: 5px;
-}
-.ab-benefit-items-cards:not(:last-child) {
-  margin-bottom: 20px;
-}
-.ab-benefit-items-cards .ab-benefit-title {
-  position: relative;
-  margin-bottom: 20px;
-}
 
-.ab-benefit-items-cards .ab-benefit-description {
-  font-family: var(--ab_primary-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-}
-@media screen and (min-width: 992px) and (max-width: 1280px) {
-  .ab-benefit-section-box .ab-benefit-main-content {
-    padding: 65px 0px 45px 0px;
-    column-gap: 30px;
-  }
-  .ab-benefit-items-cards {
-    width: 44%;
-    flex: 0 0 44%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .ab-benefit-section-box .ab-benefit-top-wrapper {
-    padding-right: 30px;
-    padding-left: 38px;
-    flex-direction: column-reverse;
-    gap: 36px;
-  }
-  .ab-benefit-items-cards {
-    width: 100%;
-  }
-  .ab-benefit-section-box {
-    padding-bottom: 0;
-  }
-}
-@media screen and (max-width: 1199px) and (min-width: 992px) {
-  .ab-benefit-section-box .ab-benefit-top-wrapper {
-    gap: 35px;
-    flex-direction: column-reverse;
-  }
-}
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  .ab-benefit-section-box {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .ab-main--content.earn-page-wrap-two {
-    padding-left: 4px;
-    padding-right: 4px;
-  }
-  .ab-article-content-box .ab-article-title {
-    margin-bottom: 45px;
-  }
-  .ab-article-details-section {
-    padding-top: 38px;
-  }
-  .ab-benefit-section-box .ab-benefit-main-content {
-    padding: 45px 7px;
-  }
-  .ab-article-details-section .ab-article-details-image {
-    height: 318px;
-    margin-bottom: 33px;
-  }
-  .ab-article-content-box {
-    padding: 16px 50px 17px 50px !important;
-  }
-  .ab-benefit-section-box .ab-benefit-top-wrapper {
-    gap: 54px;
-  }
-  .ab-benefit-section-box .ab-benefit-top-wrapper {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .ab-benefit-section-box {
-    padding-top: 23px;
-  }
-  .ab-benefit-section-box .ab-benefit-top-wrapper {
-    gap: 45px;
-    border-bottom: 0;
-    padding-bottom: 0;
-  }
-  .ab-block-content-box.color-bg-block.ab-block-4 {
-    margin-bottom: 0;
-  }
-  .ab-article-content-box {
-    padding-top: 37px !important;
-  }
-}
 /*********************************
     newsletter section style css 
 ********************************/
@@ -3985,6 +3872,10 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
       'area-two'
       'area-three';
   }
+    .ab-main--content.earn-page-wrap-two {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
   .ab-main--content.earn-page-wrap
     .ab-benefit-main-content
     .ab-benefit-items-cards:nth-child(even),
