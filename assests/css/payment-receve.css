@@ -1,0 +1,79 @@
+@import url('./partials/header.css');
+
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*=====================================
+        payment receved page style 
+==========================================*/
+.ab-main--content.order-details--page.payment-conformation-info
+  .ab-payment-details-wrapper {
+  max-width: 100%;
+  border: 0;
+  padding: 0;
+}
+
+.ab-main--content.order-details--page.payment-conformation-info
+  .ab-payment-details-info-box {
+  padding: 89px 78px 91px 81px;
+  position: relative;
+  margin-bottom: 70px;
+  border-bottom: 0;
+  background-color: rgb(204, 189, 227, 0.2);
+}
+main.ab-main--content.order-details--page.payment-conformation-info
+  .ab-payment-details-info-box
+  p.ab-payment-conf-desc {
+  max-width: 528px;
+}
+.ab-payment-details-info-box .ab-payment-conf-desc {
+  margin-bottom: 97px;
+}
+main.ab-main--content.order-details--page.payment-conformation-info
+  .ab-promo-content-box {
+  margin-bottom: 120px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ab-main--content.order-details--page.payment-conformation-info
+    .ab-payment-details-info-box {
+    padding: 55px 50px 55px 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ab-main--content.order-details--page.payment-conformation-info
+    .ab-payment-details-info-box {
+    padding: 52px 48px 58px 48px;
+  }
+  .ab-main--content.order-details--page.payment-conformation-info
+    .ab-payment-details-wrapper {
+    max-width: 100%;
+    border: 0;
+    padding: 0 !important;
+  }
+  .ab-main-content-box.order-detail-wrapper-box.payment-conformation-info-wrap
+    .ab-main--sidebar-content {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ab-main--content.order-details--page.payment-conformation-info
+    .ab-payment-details-info-box {
+    padding: 0px 42px 0px 42px;
+    background-color: transparent;
+  }
+  .ab-main--content.order-details--page.payment-conformation-info
+    .ab-payment-details-info-box
+    .ab-payment-conf-desc {
+    margin-bottom: 35px;
+  }
+
+  .ab-payment-details-content .ab-payment-details-wrapper .ab-payment-title,
+  .ab-order-details-content .ab-order-details-wrapper .ab-order-title {
+    margin-bottom: 43px;
+    padding-left: 38px;
+  }
+  .ab-tablet-view-wrapper .ab-payment-title .ab-title-mark-icons {
+    width: 35px;
+  }
+}

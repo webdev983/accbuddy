@@ -1,0 +1,104 @@
+/* =======>>>cookie policy content */
+.ab-cookie-policy-content-wrap {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: var(--ab_violet);
+    padding: 78px 0 70px;
+    z-index: 999;
+  }
+  .ab-cookie-policy-content-wrap.active {
+    animation: cookie-up 1s linear 5s forwards;
+  }
+  @keyframes cookie-up {
+    100% {
+      bottom: 0;
+    }
+  }
+  .ab-cookie-policy-content-wrap .ab-container {
+    display: flex;
+    gap: 51px;
+    align-items: flex-end;
+  }
+  
+  .ab-cookie-policy-content-wrap .ab-cookie-text-content .ab-cookie-title {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--ab_white);
+    margin-bottom: 28px;
+  }
+  .ab-cookie-policy-content-wrap .ab-cookie-text-content .ab-cookie-desc {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--ab_white);
+    margin-bottom: 0;
+    max-width: 668px;
+    width: 100%;
+  }
+  .ab-cookie-policy-content-wrap .ab-cookie-button-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .ab-cookie-policy-content-wrap
+    .ab-cookie-button-content
+    .ab-user-action-button {
+    width: 220px;
+    height: 74px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--ab_white);
+    background: var(--ab_orange);
+    cursor: pointer;
+  }
+  @media screen and (max-width: 1420px) {
+    .ab-cookie-policy-content-wrap {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+  @media screen and (max-width: 1420px) and (min-width: 992px) {
+    .ab-cookie-policy-content-wrap
+      .ab-cookie-button-content
+      .ab-user-action-button {
+      width: 135px;
+      height: 55px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-cookie-policy-content-wrap .ab-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    .ab-cookie-policy-content-wrap .ab-cookie-button-content {
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+    .ab-cookie-policy-content-wrap .ab-cookie-button-content button {
+      width: 100% !important;
+      height: 58px !important;
+    }
+    .ab-cookie-policy-content-wrap {
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-cookie-policy-content-wrap .ab-cookie-button-content {
+      flex-direction: column;
+    }
+  }

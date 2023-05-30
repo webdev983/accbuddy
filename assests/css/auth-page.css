@@ -1,0 +1,613 @@
+@import url('./partials/header.css');
+@import url('./partials/auth.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*================================
+     authentication style pages 
+====================================*/
+.ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+    margin-bottom: 90px;
+  }
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+    margin-bottom: 90px;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box {
+    background: var(--ab_light);
+    margin-bottom: 118px;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-authentication-wrap-cont,
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-reset-password {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 74px 79px 70px 80px;
+  }
+  .ab-auth-details-content.authentication-signup-page-wrap
+    .ab-auth-content-wrap-box.authentication-signup-page {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 1280px) and (min-width: 1200px) {
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-authentication-wrap-cont,
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password {
+      padding: 74px 50px 70px 50px;
+    }
+  }
+  .ab-auth-content-wrap-box.reset-confirmation-mail .ab-auth-input-reset-password,
+  .ab-auth-content-wrap-box.reset-success-massage .ab-auth-input-reset-password {
+    align-items: center !important;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-authentication-wrap-cont,
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password {
+      padding: 74px 79px 70px 80px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+  .ab-input-group-content-box.wrong-password
+    .ab-auth-input-authentication-wrap-cont {
+    padding-bottom: 40px !important;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-reset-password
+    .ab-input-group {
+    margin-bottom: 0;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content
+    .ab-auth-content-wrap-box
+    .ab-auth-input-reset-password
+    .ab-button-style.ab-submite-btn {
+    background: var(--ab_orange);
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  .ab-auth-content-wrap-box.reset-success-massage,
+  .ab-auth-content-wrap-box.reset-confirmation-mail,
+  .ab-auth-content-wrap-box.reset-password-one {
+    max-width: 779px;
+  }
+  .ab-auth-content-wrap-box.reset-success-massage
+    .ab-auth-input-reset-password
+    .ab-button-style.ab-submite-btn,
+  .ab-auth-content-wrap-box.reset-success-massage
+    .ab-auth-input-reset-password
+    .ab-input-group-content-box {
+    flex: 0 0 48%;
+    min-width: 48%;
+  }
+  
+  /* authetication signin, signup styles pages */
+  
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    padding-top: 113px;
+    padding-bottom: 139px;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-content.authentication-guest-page-wrap
+    .ab-order-title
+    a {
+    color: var(--ab_orange);
+  }
+  .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex .ab-order-title {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .ab-auth-content-wrap-box
+    .ab-input-group-content-box
+    .ab-auth-input-authentication-wrap-cont
+    .ab-input-group {
+    margin-bottom: 0;
+  }
+  
+  .ab-auth-input-authentication-wrap-cont .ab-input-group .password-view {
+    top: 22px;
+  }
+  .ab-auth-content-wrap-box.authentication-signin-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(3) {
+    padding: 20.55px 0 17.79px;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(5) {
+    flex: 0 0 31.5%;
+    min-width: 31.5%;
+    width: 31.5%;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(4) {
+    flex: 0 0 66%;
+    min-width: 66%;
+    width: 66%;
+  }
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(3),
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(2),
+  .ab-auth-content-wrap-box.authentication-signup-page
+    .ab-auth-input-authentication-wrap-cont
+    > :nth-child(1) {
+    flex: 0 0 31.5%;
+    min-width: 31.5%;
+    width: 31.5%;
+  }
+  .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-main-flex
+    .ab-order-title
+    > a {
+    text-decoration: underline;
+  }
+  .ab-auth-details-content.authentication-guest-page-wrap
+    .ab-auth-content-wrap-box.authentication-signin-page.authentication-guest-page {
+    background: rgb(250, 156, 41, 0.2);
+  }
+  .ab-auth-input-authentication-wrap-cont .ab-button-style.ab-submite-btn {
+    background: var(--ab_orange);
+  }
+  .ab-input-group-content-box .ab-button-style.ab-reset-password-btn {
+    display: none;
+  }
+  .ab-input-group-content-box.wrong-password
+    .ab-button-style.ab-reset-password-btn {
+    display: block;
+    width: 100%;
+    background: var(--ab_violet);
+  }
+  .ab-main-content-box.ab-auth-main-cont .ab-promo-content-box {
+    margin-bottom: 70px;
+  }
+  
+  .ab-main-content-box.ab-auth-main-cont .ab-promo-content-box {
+    margin-bottom: 70px;
+  }
+  
+  .ab-main-content-box.ab-auth-main-cont
+    .ab-main--content.ab-auth-wrap-page
+    .ab-auth-content-wrap-box.authentication-signin-page {
+    margin-bottom: 0;
+  }
+  
+  .ab-main-content-box.ab-auth-main-cont
+    .ab-main--content.ab-auth-wrap-page
+    .ab-auth-details-main-flex
+    .ab-order-title {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 992px) {
+    .ab-main-content-box.ab-auth-main-cont .ab-block-content-box.color-bg-block {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1280px) and (min-width: 1200px) {
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(3),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(2),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1) {
+      flex: 0 0 31%;
+      min-width: 31%;
+      width: 31%;
+    }
+    .ab-auth-content-wrap-box.authentication-signup-page .ab-auth-input-authentication-wrap-cont > :nth-child(4) {
+      flex: 0 0 64%;
+      min-width: 64%;
+      width: 64%;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(5),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont,
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(4),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(3),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(2),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(2),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(3),
+    .ab-auth-content-wrap-box.reset-password-two
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box,
+    .ab-auth-content-wrap-box.reset-confirmation-mail
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn,
+    .ab-auth-content-wrap-box.reset-confirmation-mail
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box,
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn,
+    .ab-auth-content-wrap-box.confirmation-reset-password
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-input-group,
+    .ab-auth-content-wrap-box.reset-success-massage
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn,
+    .ab-auth-content-wrap-box.reset-success-massage
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box {
+      flex: 0 0 48%;
+      min-width: 48%;
+    }
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .ab-auth-content-wrap-box.reset-password-one
+      .ab-auth-input-reset-password
+      .ab-input-group {
+      flex: 0 0 48%;
+      width: 48%;
+      min-width: auto;
+    }
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1)
+      input {
+      width: 48%;
+      flex: 0 0 48%;
+    }
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-authentication-wrap-cont,
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password {
+      padding: 54px 48px 56px 48px;
+    }
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1) {
+      width: 99% !important;
+      flex: 0 0 99%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+      gap: 50px;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-main-content-box.ab-auth-main-cont .ab-main--sidebar-content {
+      margin-bottom: 50px;
+    }
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+      margin-bottom: 53px;
+    }
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-main-flex
+      .ab-order-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+      gap: 97px;
+    }
+  
+    .ab-main--content.ab-auth-wrap-page .ab-promo-content-box {
+      display: none;
+    }
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+      padding-left: 50px;
+    }
+    .ab-main--content.ab-auth-wrap-page {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  
+    .ab-auth-content-wrap-box.reset-confirmation-mail,
+    .ab-auth-content-wrap-box.reset-password-one {
+      max-width: 100%;
+    }
+  
+    .ab-auth-content-wrap-box
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn {
+      padding: 20.55px 0 17.79px;
+    }
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(5) {
+      padding: 20.55px 0 17.79px;
+    }
+  
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  
+    .ab-auth-content-wrap-box.confirmation-reset-password
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-input-group
+      .password-view {
+      top: 22px;
+    }
+    .ab-input-group-content-box.wrong-password
+      .ab-button-style.ab-reset-password-btn {
+      padding: 18px 0;
+    }
+  
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+      padding-top: 88px;
+      padding-bottom: 104px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {
+      padding-left: 38px;
+    }
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+      padding-top: 57px;
+      padding-bottom: 185px;
+    }
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(2),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(3) {
+      min-width: 100%;
+      flex: 0 0 100%;
+      width: 100%;
+    }
+    .ab-main--content.ab-auth-wrap-page .ab-auth-details-main-flex {
+      gap: 47px;
+      flex-direction: column;
+    }
+    .ab-auth-details-main-flex :not(:last-child) .ab-order-title {
+      margin-bottom: 0 !important;
+    }
+    .ab-auth-details-main-flex .ab-order-title {
+      padding-left: 0 !important;
+    }
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password {
+      flex-direction: column;
+    }
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(5),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont,
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(4),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(3),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(2),
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(2),
+    .ab-auth-content-wrap-box.authentication-signin-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(3),
+    .ab-auth-content-wrap-box.reset-password-two
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box,
+    .ab-auth-content-wrap-box.reset-password-one
+      .ab-auth-input-reset-password
+      .ab-input-group,
+    .ab-auth-content-wrap-box.reset-password-two
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box,
+    .ab-auth-content-wrap-box.reset-confirmation-mail
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn,
+    .ab-auth-content-wrap-box.reset-confirmation-mail
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box,
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn,
+    .ab-auth-content-wrap-box.confirmation-reset-password
+      .ab-input-group-content-box
+      .ab-auth-input-reset-password
+      .ab-input-group,
+    .ab-auth-content-wrap-box.reset-success-massage
+      .ab-auth-input-reset-password
+      .ab-button-style.ab-submite-btn,
+    .ab-auth-content-wrap-box.reset-success-massage
+      .ab-auth-input-reset-password
+      .ab-input-group-content-box {
+      flex: 0 0 100%;
+      min-width: 100%;
+      width: 100%;
+    }
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box {
+      padding: 48px 38px;
+    }
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-authentication-wrap-cont,
+    .ab-main--content.ab-auth-wrap-page
+      .ab-auth-details-content
+      .ab-auth-content-wrap-box
+      .ab-auth-input-reset-password {
+      padding: 0;
+    }
+    .ab-input-group-content-box.wrong-password
+      .ab-auth-input-authentication-wrap-cont {
+      padding-bottom: 20px !important;
+    }
+    .ab-logged-user-menu::before,
+    .ab-logged-user-menu {
+      display: none;
+    }
+    .ab-mobile-slide-nav .ab-logged-user-menu {
+      display: block;
+      background: transparent;
+    }
+    .ab-logged-user-menu {
+      position: relative;
+      padding: 0;
+      width: 100%;
+      right: 0;
+      top: 0;
+      margin-bottom: 40px;
+      opacity: 1;
+      visibility: visible;
+    }
+    .ab-logged-user-menu .ab-logged-user-menu-item {
+      display: flex;
+      padding: 0;
+      border: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+    }
+    .ab-logged-user-menu .ab-logged-user-menu-item .ab-logged-user-menu-list a {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 11px;
+    }
+  
+    .ab-logged-user-menu .logged-out-btn {
+      text-align: center;
+      padding-top: 30px;
+      color: #fff;
+      padding: 19px 12px;
+      background: var(--ab_violet);
+      margin-top: 35px;
+    }
+  
+    .ab--user-menu::before,
+    .ab--user-menu {
+      display: none;
+    }
+    .ab-mobile-slide-nav .ab--user-menu {
+      display: block;
+      background-color: transparent;
+    }
+    .ab--user-menu {
+      position: relative;
+      right: 0;
+      top: 0;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 35px;
+      opacity: 1;
+      visibility: visible;
+    }
+    .ab--user-menu .user-menu-btn {
+      margin-bottom: 42px;
+      width: 100%;
+    }
+    .ab--user-menu .ab--user-menu-item {
+      border: 0;
+      padding-top: 0;
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  
+    .ab--user-menu .ab--user-menu-item .ab--user-menu-list a {
+      display: flex;
+      flex-direction: row;
+    }
+    .ab--user-menu:before {
+      display: none;
+    }
+    .ab-auth-content-wrap-box.authentication-signup-page
+      .ab-auth-input-authentication-wrap-cont
+      > :nth-child(1)
+      input {
+      width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+  
