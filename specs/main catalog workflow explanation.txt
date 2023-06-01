@@ -24,7 +24,7 @@ to cancel selection of attr1 or attr2 click "all accounts"  in attr1 menu.
 search menu: searchs by  product name ( provider in figma)
 use dynamic search, for example user enter letter m, then only items with m left in catalog, if he enters ma, then only items with ma left, etc
 for example if user enters mail.ru, we show him 3 items mailru, mail.ru mix and  mail.ru biz ( as on figma design)
-
+while attr1 or attr2 activated, the search menu will choose between activated items
 
 
 attr1 and attr2 we include in database with items. So each item has value attr1 and attr2. 
