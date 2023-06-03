@@ -11,6 +11,9 @@
     background: rgb(204, 189, 227, 0.2);
     padding: 44px 80px 82px 83px;
   }
+  .ab-account-types-list-overview.ab-all-accounts-types {
+    margin-top: 22px;
+  }
   .ab-account-search-widgets {
     padding: 40px 80px 43px 80px;
     position: relative;
