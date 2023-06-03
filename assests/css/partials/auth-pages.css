@@ -1,9 +1,4 @@
-@import url('./partials/header.css');
-@import url('./partials/auth.css');
-@import url('./partials/block-content.css');
-@import url('./partials/promo.css');
-@import url('./partials/footer.css');
-/*================================
+  /*================================
      authentication style pages 
 ====================================*/
 .ab-main--content.ab-auth-wrap-page .ab-auth-details-content .ab-order-title {

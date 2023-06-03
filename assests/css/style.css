@@ -3,7 +3,6 @@
 **********************************/
 @import url('./partials/auth.css');
 @import url('./partials/cookies.css');
-@import url('./partials/pagination.css');
 
 * {
   margin: 0;
@@ -450,7 +449,22 @@ aside.ab-main--sidebar-content
 }
 .ab-main-content-box.home-main-page.main-content-one {
   display: grid;
-  grid-template-areas: 'aside-one aside-two' 'aside-three aside-two';
+  grid-template-areas:  'aside-one aside-two';
+}
+.ab-main--content {
+  grid-area: aside-one;
+}
+.ab-main--sidebar-content {
+  grid-area: aside-two;
+}
+@media screen and (min-width:992px){
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content {
+    padding-top: 350px;
+  }
+}
+.ab-main-content-box.home-main-page.main-content-two {
+  display: grid;
+  grid-template-areas: 'aside-three aside-two' 'aside-one aside-two';
 }
 .ab-main--content {
   grid-area: aside-one;
@@ -461,17 +475,6 @@ aside.ab-main--sidebar-content
 .ab-benefit-section-box {
   grid-area: aside-three;
 }
-.ab-main-content-box.home-main-page.main-content-two {
-  display: grid;
-  grid-template-areas: 'aside-one aside-two';
-}
-.ab-main--content {
-  grid-area: aside-one;
-}
-.ab-main--sidebar-content {
-  grid-area: aside-two;
-}
-
 @media screen and (min-width: 992px) and (max-width: 1420px) {
   .ab-main-content-wrapper .ab-main-content-box {
     padding-left: 43px;
@@ -524,7 +527,7 @@ aside.ab-main--sidebar-content
 
   .ab-main-content-box.home-main-page.main-content-two
     .ab-main--sidebar-content
-    > :nth-child(2n + 1) {
+    > :nth-child(2){
     flex: 0 0 100%;
     padding: 37px 64px 31px 48px;
     display: flex;
@@ -532,9 +535,9 @@ aside.ab-main--sidebar-content
     justify-content: space-between;
   }
   .ab-main-content-box.home-main-page.main-content-two
-    .ab-main--sidebar-content
-    > :nth-child(2n + 1)
-    .block-box-brand {
+  .ab-main--sidebar-content
+  > :nth-child(2) 
+  .block-box-brand{
     position: relative;
     border: 0;
     bottom: 0;
@@ -542,23 +545,21 @@ aside.ab-main--sidebar-content
     width: 121px;
   }
   .ab-main-content-box.home-main-page.main-content-two
-    .ab-main--sidebar-content
-    > :nth-child(2n + 1)
-    .block-box-brand
-    img {
+  .ab-main--sidebar-content
+  > :nth-child(2) 
+  .block-box-brand img {
     width: 100%;
   }
+
   .ab-main-content-box.home-main-page.main-content-two
-    .ab-main--sidebar-content
-    > :nth-child(2n + 1)
-    .block-text-title {
+  .ab-main--sidebar-content
+  > :nth-child(2) 
+  .block-text-title{
     flex: 0 0 61%;
   }
   .ab-main-content-box.home-main-page.main-content-two
     .ab-main--sidebar-content
-    > :nth-child(2n + 1)
-    .block-text-title
-    br {
+    > :nth-child(2n + 1){
     display: none;
   }
   .ab-main-content-box.home-main-page.main-content-two
@@ -1188,8 +1189,9 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .ab-account-types-list-overview {
     padding: 42px 48px 86px 48px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
+  .ab-account-types-list-overview.ab-all-accounts-types{margin-bottom: 80px;}
   .ab-account-search-widgets .input-search-icons {
     right: 76px;
     top: 54px;
