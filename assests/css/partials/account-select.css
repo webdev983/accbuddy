@@ -9,8 +9,9 @@
   .ab-account-types-list-overview {
     position: relative;
     background: rgb(204, 189, 227, 0.2);
-    padding: 44px 80px 82px 83px;
+    padding: 44px 80px 34px 83px;
   }
+  .ab-account-types-list-overview.ab-all-accounts-types{padding-bottom: 82px;padding-top: 40px;}
   .ab-account-types-list-overview.ab-all-accounts-types {
     margin-top: 22px;
   }
@@ -247,6 +248,8 @@
     .ab-account-section .ab-title {
       margin-bottom: 40px;
     }
+  .ab-account-types-list-overview.ab-all-accounts-types{padding-top: 0px;}
+
   }
   /* select account popups */
   
