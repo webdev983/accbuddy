@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="html5 multiple web template">
+        <title>html5 multivendor project</title>
+
+        <!-- link style start here -->
+        <link rel="stylesheet" href="./assests/css/home.css" media="all">
+        <link rel="stylesheet" href="./assests/css/style.css" media="all">
+    </head>
+
+    <body>
+        @include _header.html
+
+        <!-- ============main content wrapper==========[start] -->
+        <div class="ab-main-content-wrapper">
+            <div class="ab-container">
+                <div class="ab-main-content-box home-main-page main-content-one">
+
+                    <!-- main content start here -->
+                    <main class="ab-main--content">
+						@include _catalog.html
+                    </main>
+                    <!-- sidebar content start here -->
+                    <aside class="ab-main--sidebar-content">
+						@include _promo-payment-methods.html
+						@include _promo-onestop-aside.html
+						@include _news1.html
+                    </aside>
+                </div>
+
+                <div class="ab-main-content-box home-main-page main-content-two">
+					@include _benefits.html
+                    <!-- sidebar content start here -->
+                    <aside class="ab-main--sidebar-content">
+                        <!-- text block content start -->
+						@include _promo-payment-methods.html
+						@include _promo-aside-onestop.html
+						@include _news2.html
+                    </aside>
+
+                    <!-- main content start here -->
+                    <div class="ab-main--content">
+                        <!-- promo content start -->
+						@include _promo-main-onestop.html
+						@include _articles-links
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============main content wrapper==========[end] -->
+		@include _footer.html
+		@include _cookie-consent
+    </body>
+</html>
