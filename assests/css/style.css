@@ -1027,6 +1027,12 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   background-color: transparent;
   cursor: pointer;
 }
+.ab-marchant-details-page .ab-order-details-popup-input-group {
+	display: none !important;
+}
+.ab-marchant-details-page .ab-order-details-popup-input-group.select-merchant {
+	display: flex !important;
+}
 @media screen and (max-width: 1420px) and (min-width: 1281px) {
   .ab-account-table tbody tr td:nth-child(1) {
     width: 330px;
