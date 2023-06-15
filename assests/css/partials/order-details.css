@@ -93,6 +93,7 @@
 	align-items: flex-start;
 	padding-top: 23px;
 	gap: 60px;
+  justify-content: space-between;
 }
 .ab-order-payment-method {
 	position: relative;
