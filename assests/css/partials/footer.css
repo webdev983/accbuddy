@@ -310,10 +310,20 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    height: 60px;
     line-height: 18px;
     color: var(--ab_violet);
   }
-  
+  @media screen and (max-width:991px) {
+    .ab-input-group .ab-input {
+      height: 51px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    .ab-input-group .ab-input {
+      height: 44px;
+    }
+  }
   .ab-check-requred {
     width: 254px;
   }
@@ -564,16 +574,21 @@
       grid-area: formInputFive;
       margin-top: 0;
     }
+    .ab-footer-input-form .ab-textarea-group textarea{
+      height: 141px;
+    }
     .ab-footer-input-form .ab-textarea-group textarea,
     .ab-footer-input-form .ab-input-group .ab-input {
       padding: 22px 15px;
-      height: 100%;
     }
   }
   @media screen and (max-width: 991px) {
     .ab-footer-main-wrap {
       padding: 0 4px;
       position: relative;
+    }
+    .ab-footer-input-form .ab-textarea-group textarea{
+      height: 114px;
     }
   }
   @media screen and (min-width: 767px) and (max-width: 991px) {

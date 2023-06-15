@@ -116,18 +116,21 @@ input::placeholder {
 .success-text,
 .alart-text,
 .warn-text {
-  display: block;
   font-family: var(--ab_primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: var(--ab_warning);
-  margin-top: 5px;
+  margin-top: 3px;
   display: none;
 }
 .ab-textarea-group .warn-text {
   margin-bottom: 20px;
+}
+.ab-textarea-group.warning,
+.ab-input-group.warning {
+	padding-bottom: 15px;
 }
 .success-text,
 .alart .alart-text,
@@ -135,7 +138,8 @@ input::placeholder {
   display: flex !important;
   align-items: center;
   gap: 10px;
-  margin-top: 2px;
+  margin-top: 3px;
+  position: absolute;
 }
 .success-text {
   color: var(--ab_violet);
@@ -623,6 +627,20 @@ aside.ab-main--sidebar-content
   color: #ffffff;
   width: 100%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ab-orange-btn{background-color: var(--ab_orange);}
+.ab-violet-btn{background-color: var(--ab_violet);}
+
+.ab-orange-button-disable{
+  cursor: not-allowed;
+  background-color:  #F6CE8E;
+}
+.ab-violet-button-disable{
+  cursor: not-allowed;
+  background-color:  #A990D3;
 }
 @media screen and (max-width: 991px) {
   .ab-button-style {
@@ -980,6 +998,7 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   height: 60px;
   border: 1px solid var(--ab_violet);
   width: 100%;
+  padding-left: 15px;
 }
 .ab-order-details-content.ab-order-details-popup
   .ab-order-payment-method
