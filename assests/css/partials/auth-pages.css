@@ -177,6 +177,7 @@
   }
   .ab-input-group-content-box .ab-button-style.ab-reset-password-btn {
     display: none;
+    background: var(--ab_violet);
   }
   .ab-input-group-content-box.wrong-password
     .ab-button-style.ab-reset-password-btn {
