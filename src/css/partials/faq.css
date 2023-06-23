@@ -1,0 +1,100 @@
+/*********************************
+    FAQ section style css 
+********************************/
+
+.ab-faq-section {
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .ab-faq-section .ab-faq-title {
+    margin-bottom: 67px;
+  }
+  .ab-faq-section .ab-faq-content-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 70px;
+  }
+  
+  .ab-faq-section .ab-faq-content-wrap .ab-faq-content-cards .faq-content-title {
+    margin-bottom: 48px;
+    color: var(--ab_orange);
+  }
+  
+  .ab-content-items-box .ab-faq-content-items .faq-items-title {
+    margin-bottom: 30px;
+  }
+  .ab-content-items-box .ab-faq-content-items .ab-faq-items-desc {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .ab-content-items-box .ab-faq-content-items:not(:last-child) {
+    margin-bottom: 45px;
+  }
+  @media screen and (max-width: 1280px) and (min-width: 992px) {
+    .ab-faq-section .ab-faq-content-wrap {
+      column-gap: 30px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-faq-section {
+      padding-left: 39px;
+      padding-right: 38px;
+    }
+    .ab-main-content-box.faq-page-wrapper .ab-main--sidebar-content {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    .ab-faq-section .ab-faq-content-wrap {
+      gap: 30px;
+    }
+  
+    .ab-main--content.faq-page .ab-promo-content-box {
+      display: none;
+    }
+  }
+  .ab-check-requred.right-side-requered-mobo {
+    display: none;
+  }
+  @media screen and (max-width: 991px) {
+  
+    .ab-faq-section .ab-faq-title {
+      margin-bottom: 45px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .ab-main--content.faq-page .ab-form-input-box {
+      display: grid;
+      grid-template-areas: unset;
+      grid-template-columns: 300px 1fr;
+    }
+    .ab-check-requred.right-side-requered-mobo {
+      display: block;
+    }
+    .ab-main--content.faq-page .ab-button-group {
+      margin-top: 0;
+    }
+  
+  }
+  @media screen and (max-width: 767px) {
+    .ab-faq-section .ab-faq-content-wrap {
+      gap: 60px;
+      flex-direction: column;
+      display: flex;
+    }
+    .ab-faq-content-wrap .ab-faq-content-cards {
+      width: 100% !important;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .ab-faq-section .ab-faq-content-wrap {
+      grid-template-columns: unset;
+      grid-template-areas: 'faq-items1 faq-items3' 'faq-items2 faq-items4' !important;
+      gap: 38px;
+    }
+  
+  }

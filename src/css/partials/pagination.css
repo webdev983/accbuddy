@@ -1,0 +1,37 @@
+/* pagination widgets styles */
+
+.pagination-widgets {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 77px;
+  }
+  
+  .pagination-widgets .pagination-btn {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 34px;
+    text-decoration-line: underline;
+    color: var(--ab_violet);
+    background: transparent;
+    cursor: pointer;
+  }
+  .pagination-widgets .pagination-items {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .pagination-widgets .pagination-items .pagination-item-number {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--ab_light);
+  }
+  .pagination-widgets .pagination-items .pagination-item-number.current {
+    color: var(--ab_violet);
+  }

@@ -1,0 +1,235 @@
+@import url('./partials/header.css');
+@import url('./partials/pagination.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*****************************************
+    Order history page style css 
+*****************************************/
+.order-history-page-content .ab-title {
+    margin-bottom: 98px;
+  }
+  .order-history-page-content .ab-order-historty-info--box {
+    margin-bottom: 100px;
+  }
+  
+  .ab-order-history-title-item {
+    padding-bottom: 5px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--ab_violet);
+    border-bottom: 1px solid #ccbde3;
+  }
+  .ab-order-history-title-list .ab-order-history-title-item:nth-child(1),
+  .ab-order-history-main-list .ab-order-history-main-item:nth-child(1) {
+    padding-left: 25px;
+  }
+  .ab-order-history-title-list .ab-order-history-title-item:last-child,
+  .ab-order-history-main-list .ab-order-history-main-item:last-child {
+    padding-right: 25px;
+  }
+  .ab-order-history-main-list .ab-order-history-main-item {
+    height: 39px;
+  }
+  .ab-order-history-main-item {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--ab_violet);
+  }
+  
+  .ab-order-history-main-item:last-child {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    height: 100%;
+  }
+  .ab-order-history-main-item:last-child .ab-view-details-btn {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #fa9c29;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .ab-order-historty-info-smallSc-items {
+    display: none;
+  }
+  .order-history-page-content .not-found-order-history-item {
+    text-align: center;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+  }
+  
+  .order-history-page-content
+    .not-found-order-history-item
+    .ab-not-found-order-title {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--ab_violet);
+  }
+  .ab-main-content-box.order-history-page-wrap
+    .order-history-page-content
+    .ab-tablet-view-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .ab-main-content-box.order-history-page-wrap
+    .order-history-page-content
+    .ab-tablet-view-wrapper
+    .account-info-items {
+    display: none;
+  }
+  .ab-main-content-box.order-history-page-wrap .ab-promo-content-box {
+    margin-bottom: 80px;
+  }
+  .ab-main-content-box.order-history-page-wrap .ab-main--sidebar-content {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .ab-main-content-box.order-history-page-wrap .ab-order-history-main-item {
+      font-size: 14px;
+    }
+    .ab-main-content-box.order-history-page-wrap .ab-view-details-btn {
+      font-size: 14px !important;
+      white-space: nowrap;
+    }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .ab-main-content-box.order-history-page-wrap
+      .order-history-page-content
+      .ab-tablet-view-wrapper
+      .account-info-items {
+      display: block;
+    }
+    .ab-main-content-box.order-history-page-wrap
+      .order-history-page-content
+      .ab-tablet-view-wrapper {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-order-historty-info-pc-items {
+      display: none;
+    }
+    .ab-order-historty-info-smallSc-items {
+      display: block;
+    }
+    .ab-main-content-box.order-history-page-wrap .ab-promo-content-box {
+      display: none;
+    }
+    .order-history-page-content .ab-order-historty-info--box {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  
+    .ab-main-content-box.order-history-page-wrap .ab-promo-content-box {
+      display: none;
+    }
+  
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 45px 50px;
+      row-gap: 29px;
+    }
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li {
+      flex: 0 0 32%;
+    }
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li:last-child {
+      flex: 0 0 65%;
+    }
+  
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li:last-child
+      .ab-order-history-main-item {
+      display: flex;
+      align-items: center;
+    }
+  
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li:last-child
+      .ab-order-history-main-item
+      span {
+      flex: 0 0 45%;
+    }
+    .order-history-page-content .not-found-order-history-item {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-main-content-box.order-history-page-wrap
+      .order-history-page-content
+      .ab-tablet-view-wrapper {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+    .ab-order-history-main-item:last-child .ab-view-details-btn {
+      position: relative;
+      top: -34px;
+    }
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item {
+      padding: 35px 38px;
+    }
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li {
+      flex: 0 0 48%;
+    }
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li:last-child {
+      flex: 0 0 65%;
+    }
+    .ab-order-historty-info-smallSc-items
+      .ab-order-historty-info-details-items
+      .ab-order-history-mobo-info-item
+      li:last-child
+      .ab-order-history-main-item {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .order-history-page-content .not-found-order-history-item {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+  
