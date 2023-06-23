@@ -1,0 +1,121 @@
+@import url('./partials/header.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/******************************************
+    account page style css 
+*********************************************/
+.ab-main--content.account-page .ab-title {
+    margin-bottom: 100px;
+  }
+  .ab-main--content.account-page {
+    padding-bottom: 80px;
+  }
+  .ab-main--content.account-page .account-info-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  .ab-main--content.account-page .account-details-link-card {
+    padding: 29px 48px 29px 28px;
+    background: var(--ab_light);
+    height: 194px;
+  }
+  .ab-main--content.account-page .account-details-link-card .ab-account-titlcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  .ab-main--content.account-page
+    .account-details-link-card
+    .ab-account-titlcont
+    .account-info-icons {
+    width: 55px;
+    height: 55px;
+  }
+  .ab-main--content.account-page
+    .account-details-link-card:nth-child(2)
+    .ab-account-titlcont
+    .account-info-icons {
+    width: 43.11px;
+    height: 51.45px;
+  }
+  .ab-main--content.account-page .account-details-link-card .total-number-order {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--ab_violet);
+  }
+  .ab-account-sub-link-tablet-view .account-info-items {
+    display: none;
+  }
+  .ab-main-content-box.account-pages
+    .ab-main--sidebar-content
+    .ab-block-content-box.color-bg-block {
+    display: none;
+  }
+  @media screen and (min-width: 992px) {
+    .ab-main--content.account-page .account-info-box {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 138px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-main--content.account-page .ab-promo-content-box {
+      display: none;
+    }
+    .ab-main-content-box.account-pages
+      .ab-main--sidebar-content
+      .ab-block-content-box.color-bg-block {
+      display: block;
+    }
+    .ab-main--content.account-page .ab-title {
+      margin-bottom: 61px;
+    }
+    .ab-main--content.account-page {
+      padding-bottom: 0;
+    }
+    .ab-main-content-box.account-pages .ab-main--sidebar-content {
+      margin-bottom: 50px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .ab-main--content.account-page .account-info-box {
+      margin-bottom: 105px;
+    }
+    .ab-main--content.account-page .ab-account-sub-link-tablet-view {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+  
+    .ab-account-sub-link-tablet-view {
+      display: flex;
+      align-items: flex-start;
+      gap: 65px;
+    }
+    .ab-account-sub-link-tablet-view .ab-account-tablet-view-wrapper {
+      flex: 0 0 60%;
+    }
+    .ab-account-sub-link-tablet-view .account-info-items {
+      width: 180px;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-main--content.account-page .account-info-box {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+    .ab-main--content.account-page .ab-title {
+      padding-left: 42px;
+    }
+    .ab-main-content-box.account-pages {
+      padding-top: 23px;
+    }
+  }

@@ -1,0 +1,231 @@
+@import url('./partials/header.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*===================================
+     payment details page style  
+  ====================================*/
+.ab-main-content-box.payment-detail-wrapper-box
+  .ab-main--content.payment-details--page
+  .ab-order-details-wrapper {
+  max-width: 100%;
+  border: 0;
+  background: rgb(204, 189, 227, 0.2);
+  margin-bottom: 90px;
+}
+.ab-payment-details-page-main-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 23px;
+  gap: 60px;
+}
+
+.ab-payment-details-page-main-wrapper .ab-order-info-input-group input {
+  padding: 23px 15px;
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-notes
+  .ab-note-title {
+  color: var(--ab_violet);
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-notes
+  .ab-note-desc {
+  color: #000;
+}
+.ab-main-content-box.payment-detail-wrapper-box .ab-order-details-notes {
+  padding: 0;
+  background: transparent;
+}
+.ab-payment-details-page-main-wrapper
+  .ab-order-details-popup-input-group
+  .ab-button-style.ab-buy-button {
+  background: var(--ab_gray);
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-order-info
+  .ab-order-details-left {
+  display: grid;
+  grid-template-areas:
+    'area-one area-three'
+    'area-two area-three';
+  grid-column-gap: 60px;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 54px;
+  grid-row-gap: 0px !important;
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-order-info
+  .ab-order-details-left
+  > :nth-child(1) {
+  grid-area: area-one;
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-order-info
+  .ab-order-details-left
+  > :nth-child(2) {
+  grid-area: area-two;
+  margin-bottom: 0;
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-order-info
+  .ab-order-details-left
+  > :nth-child(3) {
+  grid-area: area-three;
+  margin-bottom: 0;
+}
+.ab-order-details-content.ab-order-details-popup .ab-order-details-order-info {
+  display: block !important;
+}
+.ab-order-details-content.ab-order-details-popup .ab-order-info-details {
+  width: 300px;
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-order-details-order-info
+  .ab-order-details-left
+  .ab-order-title-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1199px) {
+  main.ab-main--content.payment-details--page p.ab-order-info-desc {
+    top: -45px;
+    position: relative;
+  }
+}
+main.ab-main--content.payment-details--page
+  .ab-order-title-box
+  img.ab-order-account-icons {
+  width: 55px;
+  height: 55px;
+}
+.ab-order-details-content.ab-order-details-popup .ab-tablet-view-wrapper {
+  margin-bottom: 70px;
+}
+.ab-order-details-content.ab-order-details-popup
+  .ab-tablet-view-wrapper
+  .account-info-items {
+  display: none;
+}
+.ab-order-details-content.ab-order-details-popup .ab-tablet-view-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ab-payment-details-page-main-wrapper {
+    gap: 30px;
+  }
+  .ab-order-details-content.ab-order-details-popup .ab-order-info-details {
+    width: 100%;
+  }
+  .ab-order-details-content.ab-order-details-popup
+    .ab-order-details-order-info
+    .ab-order-details-left {
+    grid-column-gap: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ab-payment-details-page-main-wrapper .ab-order-details-popup-input-group {
+    width: 300px;
+    flex: 0 0 300px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ab-payment-details-page-main-wrapper {
+    display: block;
+  }
+  .ab-order-details-content.ab-order-details-popup
+    .ab-tablet-view-wrapper
+    .account-info-items {
+    display: none;
+  }
+  .ab-main-content-box.payment-detail-wrapper-box .ab-promo-content-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .ab-order-details-content.ab-order-details-popup
+    .ab-tablet-view-wrapper
+    .account-info-items {
+    display: block;
+  }
+  .ab-order-details-content.ab-order-details-popup .ab-tablet-view-wrapper {
+    margin-bottom: 0px;
+  }
+  .ab-order-details-content.ab-order-details-popup
+    .ab-order-details-order-info
+    .ab-order-details-left {
+    grid-column-gap: 38px;
+  }
+  main.ab-main--content.payment-details--page p.ab-order-info-desc {
+    top: 0;
+  }
+  .ab-main-content-box.payment-detail-wrapper-box .ab-main--sidebar-content {
+    margin-bottom: 50px;
+  }
+  main.ab-main--content.payment-details--page
+    .ab-order-title-box
+    img.ab-order-account-icons {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main.ab-main--content.payment-details--page p.ab-order-info-desc {
+    top: 0;
+    margin-top: 32px;
+  }
+  .ab-order-details-content.ab-order-details-popup.open-info
+    .ab-order-details-popup-input-group
+    .ab-order-info-input-group
+    .ab-order-input-info-title {
+    margin-bottom: 8px;
+  }
+  .ab-order-payment-method {
+    margin-bottom: 35px;
+  }
+  main.ab-main--content.payment-details--page .ab-order-details-wrapper {
+    padding: 36px 38px 36px 38px;
+  }
+  .ab-main-content-box.payment-detail-wrapper-box .ab-main--sidebar-content {
+    margin-bottom: 84px;
+  }
+  .ab-main-content-box.payment-detail-wrapper-box
+    .ab-main--content.payment-details--page
+    .ab-order-details-wrapper {
+    margin-bottom: 52px;
+  }
+  .ab-order-details-content.ab-order-details-popup .ab-tablet-view-wrapper {
+    margin-bottom: 39px;
+  }
+  .ab-order-details-content.ab-order-details-popup
+    .ab-order-details-order-info
+    .ab-order-details-left {
+    display: grid;
+    grid-template-areas:
+      'area-one'
+      'area-three'
+      'area-two';
+    grid-column-gap: 0;
+    grid-row-gap: 30px;
+    width: 100%;
+  }
+  .ab-order-details-info-box
+    .ab-order-details-left
+    .ab-order-title-box
+    .ab-order-account-icons {
+    margin-right: 0;
+  }
+  .ab-main--content.payment-details--page .ab-promo-content-box {
+    display: none;
+  }
+  .ab-order-details-content.ab-order-details-popup .ab-tablet-view-wrapper {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}

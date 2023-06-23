@@ -1,0 +1,433 @@
+
+@import url('./partials/header.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/************************************
+    account settings page style css 
+***********************************/
+.ab-main--content.account-settings-page .settings-page-content .ab-title {
+    margin-bottom: 90px;
+  }
+  
+  .ab-main--content.account-settings-page
+    .settings-page-content
+    .ab-account-details-info
+    .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-main-wrp {
+    max-width: 455px;
+  }
+  .ab-main--content.account-settings-page
+    .settings-page-content
+    .ab-account-details-info
+    .ab-account-details-list-item
+    .ab-account-details-name {
+    margin-bottom: 113px;
+  }
+  .ab-main--content.account-settings-page
+    .settings-page-content
+    .ab-account-details-info
+    .ab-account-details-list-item
+    .ab-account-info-main-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ab-main--content.account-settings-page
+    .settings-page-content
+    .ab-account-details-info
+    .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-button-style.ab-changed-btn {
+    max-width: 140px;
+  }
+  
+  .ab-main--content.account-settings-page
+    .settings-page-content
+    .ab-account-details-info
+    .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-content
+    .ab-account-data-title {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--ab_violet);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .ab-main--content.account-settings-page
+    .settings-page-content
+    .ab-account-details-info
+    .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-content
+    .ab-account-data-info {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--ab_violet);
+  }
+  /* changed states */
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states {
+    padding: 67px 76px 69px 77px;
+    background: var(--ab_light);
+    width: 100%;
+    margin-top: 20px;
+  }
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-input-group {
+    position: relative;
+  }
+  
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-input-group
+    button {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-input-group.warning
+    button,
+  .ab-account-details-list-item
+    .ab-account-details-name
+    .ab-account-info-changed-states
+    .ab-changed-state-wrapper
+    .ab-input-group.alart
+    button {
+    position: absolute;
+    bottom: 0;
+    top: 1px;
+    right: 1px;
+    background: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 5px;
+    height: calc(100% - 2px);
+  }
+  .ab-account-info-changed-states.changed-contact-number-states
+    .ab-input-group
+    .get-code {
+    width: 50%;
+    padding-right: 0 !important;
+    background: var(--ab_orange) !important;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_white);
+  }
+  
+  .ab-account-info-changed-states.changed-contact-number-states
+    .ab-input-group
+    .get-code {
+    width: 50%;
+    padding-right: 0 !important;
+    background: var(--ab_orange) !important;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_white);
+  }
+  
+  .ab-account-info-changed-states.successfull-states
+    .ab-changed-states-text-cont
+    span {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_violet);
+    margin-bottom: 18px;
+    display: block;
+  }
+  .ab-account-info-changed-states.successfull-states
+    .ab-changed-states-text-cont
+    .ab-change-states-text {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_violet);
+  }
+  .ab-account-info-changed-states.changed-password-states
+    .ab-changed-state-wrapper {
+    justify-content: flex-end !important;
+  }
+  .ab-account-info-changed-states.changed-password-states
+    .ab-changed-state-wrapper {
+    justify-content: flex-end !important;
+  }
+  .ab-account-info-changed-states .ab-form-input-box {
+    display: block;
+  }
+  .ab-account-info-changed-states.confirmetion-states
+    .ab-changed-states-text-cont {
+    max-width: 457px;
+  }
+  .ab-account-info-changed-states.confirmetion-states
+    .ab-changed-states-text-cont
+    .ab-change-states-text {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_violet);
+  }
+  .ab-main--content.account-settings-page
+    .ab-tablet-view-info-box
+    .account-info-items {
+    display: none;
+  }
+  .ab-main--content.account-settings-page .ab-tablet-view-info-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .ab-main--content.account-settings-page .ab-promo-content-box {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 992px) {
+    .ab-changed-states-input-form .ab-form-input-box {
+      grid-row-gap: 0;
+    }
+  }
+  .ab-main-content-box.account-settings-pages-main-wrap
+    .ab-main--sidebar-content
+    .ab-block-content-box.color-bg-block {
+    display: none;
+  }
+  .ab-main-content-box.account-settings-pages-main-wrap {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1420px) {
+    .ab-main-content-box.account-settings-pages-main-wrap {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    .ab-account-details-list-item
+      .ab-account-details-name
+      .ab-account-info-changed-states
+      .ab-changed-state-wrapper {
+      justify-content: flex-end;
+    }
+    .ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper {
+      justify-content: flex-start !important;
+    }
+    .ab-account-info-changed-states.confirmetion-states .ab-changed-states-text-cont {
+      max-width: 48%;
+    }
+  }
+  @media screen and (min-width: 1351px) and (max-width: 1420px) {
+    .ab-changed-state-wrapper .ab-input-group {
+      flex: 0 0 49%;
+      width: 49%;
+    }
+    .ab-changed-state-wrapper .ab-button-group {
+      min-width: 49%;
+    }
+  }
+  @media screen and (min-width: 1281px) and (max-width: 1350px) {
+    .ab-changed-state-wrapper .ab-input-group {
+      flex: 0 0 48%;
+      width: 48%;
+    }
+    .ab-changed-state-wrapper .ab-button-group {
+      min-width: 48%;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1280px) {
+    .ab-changed-state-wrapper .ab-input-group {
+      flex: 0 0 48%;
+      width: 48%;
+    }
+    .ab-changed-state-wrapper .ab-button-group {
+      min-width: 48%;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .ab-account-details-list-item
+      .ab-account-details-name
+      .ab-account-info-changed-states {
+      padding: 50px 48px;
+    }
+    .ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper {
+      justify-content: flex-start !important;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-main-content-box.account-settings-pages-main-wrap
+      .ab-main--sidebar-content
+      .ab-block-content-box.color-bg-block {
+      display: block;
+    }
+    .ab-main-content-box.account-settings-pages-main-wrap .ab-promo-content-box {
+      display: none;
+    }
+    .ab-account-details-list-item
+      .ab-account-details-name
+      .ab-account-info-changed-states {
+      padding: 50px 48px;
+    }
+    .ab-main-content-box.account-settings-pages-main-wrap
+      .ab-main--sidebar-content {
+      margin-bottom: 50px;
+      padding-top: 50px;
+    }
+    .ab-changed-state-wrapper {
+      flex-wrap: wrap;
+      justify-content: flex-end !important;
+    }
+  
+    .ab-changed-state-wrapper .ab-button-group {
+      margin-top: 0;
+    }
+  
+    .ab-account-info-changed-states
+      .ab-changed-state-wrapper
+      .ab-input-group
+      input {
+      font-size: 16px;
+      padding: 20px 15px;
+    }
+    .ab-account-info-changed-states
+      .ab-changed-state-wrapper
+      .ab-changed-states-text-cont,
+    .ab-account-info-changed-states .ab-changed-state-wrapper .ab-button-group,
+    .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group {
+      flex: 0 0 48%;
+      min-width: 48%;
+      width: 48%;
+    }
+    .ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper {
+      justify-content: flex-start !important;
+    }
+    .ab-account-info-changed-states.successfull-states
+      .ab-changed-state-wrapper
+      .ab-changed-states-text-cont {
+      flex: 0 0 100%;
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .ab-main--content.account-settings-page
+      .ab-tablet-view-info-box
+      .account-info-items {
+      display: block;
+    }
+    .ab-main--content.account-settings-page
+      .ab-account-details-info
+      .ab-account-details-list-item
+      .ab-account-info-main-wrp,
+    .ab-main--content.account-settings-page .ab-tablet-view-info-box {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .ab-account-info-changed-states.successfull-states .ab-changed-state-wrapper {
+      justify-content: flex-start !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-account-info-changed-states
+      .ab-changed-state-wrapper
+      .ab-input-group
+      input {
+      font-size: 16px;
+      padding: 20px 15px;
+    }
+    .ab-account-info-changed-states
+      .ab-changed-state-wrapper
+      .ab-changed-states-text-cont,
+    .ab-account-info-changed-states .ab-changed-state-wrapper .ab-button-group,
+    .ab-account-info-changed-states .ab-changed-state-wrapper .ab-input-group {
+      flex: 0 0 100%;
+      min-width: 100%;
+      width: 100%;
+    }
+    .ab-main--content.account-settings-page .settings-page-content .ab-title {
+      margin-bottom: 80px;
+    }
+    .ab-main--content.account-settings-page
+      .ab-account-details-info
+      .ab-account-details-list-item
+      .ab-account-info-main-wrp,
+    .ab-main--content.account-settings-page .ab-tablet-view-info-box {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+    .ab-main--content.account-settings-page
+      .settings-page-content
+      .ab-account-details-info
+      .ab-account-details-list-item
+      .ab-account-details-name {
+      margin-bottom: 39px;
+    }
+    .ab-account-details-list-item
+      .ab-account-details-name
+      .ab-account-info-changed-states {
+      padding: 48px 38px;
+    }
+    .ab-main--content.account-settings-page
+      .settings-page-content
+      .ab-account-details-info
+      .ab-account-details-list-item
+      .ab-account-info-main-wrp {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 19px;
+    }
+
+  }

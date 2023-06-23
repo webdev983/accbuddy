@@ -1,0 +1,69 @@
+@import url('./partials/header.css');
+@import url('./partials/newsletter.css');
+@import url('./partials/article.css');
+@import url('./partials/article-details.css');
+@import url('./partials/block-content.css');
+@import url('./partials/news.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*************************** 
+ article details page style
+======================  */
+.ab-main--content.article-details-page .ab-article-details-section {
+    padding-top: 0;
+    padding-bottom: 112px;
+  }
+  /*=========>>> article details items styles */
+  .ab-article-details-section {
+    position: relative;
+    padding-top: 78px;
+  }
+  
+  .ab-article-details-section .ab-article-desc:not(:last-child) {
+    margin-bottom: 46px;
+  }
+  .ab-main--content.article-details-page .ab-promo-content-box {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
+    .ab-main--content.article-details-page .ab-article-content-box {
+      padding-bottom: 46px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+
+    .ab-main--content.article-details-page {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    .ab-main--content.article-details-page .ab-promo-content-box {
+      display: none;
+    }
+    .ab-article-content-wrapper .ab-article-card-items .ab-article-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    .ab-main-content-box.article-details-page--wrappe .ab-article-content-box {
+      padding-top: 49px !important;
+    }
+    .ab-main-content-box.article-details-page--wrapper .ab-main--sidebar-content {
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .ab-article-content-wrapper {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-article-details-section {
+      padding-top: 0 !important;
+    }
+    .ab-main-content-box.article-page--wrapper
+      .ab-main--sidebar-content
+      .ab-block-content-box.color-bg-block {
+      margin-bottom: 48px;
+    }
+  }

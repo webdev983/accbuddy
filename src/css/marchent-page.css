@@ -1,0 +1,28 @@
+@import url('./partials/header.css');
+@import url('./partials/order-details.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*============================================
+           merchant page style 
+======================================*/
+.ab-main--content.ab-marchant-details-page
+  .ab-button-style.ab-buy-button.ab-paypal-buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f6c305;
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .ab-main--content.ab-marchant-details-page
+    .ab-button-style.ab-buy-button.ab-paypal-buy-button {
+    max-width: 276px !important;
+    min-width: 276px;
+    width: 100%;
+  }
+}
