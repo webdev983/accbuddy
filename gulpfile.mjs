@@ -86,10 +86,11 @@ async function func1() {
 
 /* Second Function that insert the input template into the body template*/
 async function func2() {
+  const baseOutputPath = "build/";
   try {
     const data = await fs.readFile("productData.json", { encoding: "utf-8" });
-    const productData = JSON.parse(data);
 
+    const productData = JSON.parse(data);
     let template1 = "",
       template2 = "";
 
@@ -99,8 +100,11 @@ async function func2() {
         encoding: "utf-8",
       });
 
-      text1.replace(IProductResponse.pAttr1, product[IProductResponse.pAttr1]);
-      template1 = template1.concat(text1);
+      const newText1 = text1.replace(
+        IProductResponse.pAttr1,
+        product[IProductResponse.pAttr1]
+      );
+      template1 = template1.concat(newText1);
 
       // for the Account types tabs file
       const text2 = await fs.readFile(basePath + relPath2Files.cAndALInput, {
@@ -108,31 +112,32 @@ async function func2() {
       });
 
       // for the category base account files body and all account files file
-      text2
-        .replace("|productName|", IProductResponse.pName)
-        .replace("|productQty|", IProductResponse.pQty)
-        .replace("|productImageUrl|", IProductResponse.pName)
-        .replace("|productImageText|", IProductResponse.pName);
-      template2 = template2.concat(text2);
+      const newText2 = text2
+        .replace(/\|productName\|/g, product[IProductResponse.pName])
+        .replace("|productPrice|", product[IProductResponse.pPrice])
+        .replace(/\|productQty\|/g, product[IProductResponse.pQty])
+        .replace("|productDescription|", product[IProductResponse.pQty])
+        .replace("|productImageUrl|", product[IProductResponse.pName])
+        .replace("|productImageText|", product[IProductResponse.pName]);
+      template2 = template2.concat(newText2);
     }
-
     // for the Account types tabs file
     gulp
       .src(basePath + relPath2Files.aTTSBody)
       .pipe(replace("|productAttr1|", template1))
-      .pipe(gulp.dest(""));
+      .pipe(gulp.dest(baseOutputPath));
 
     // for the Account types tabs file
     gulp
       .src(basePath + relPath2Files.cBABody)
       .pipe(replace("|product|", template2))
-      .pipe(gulp.dest(""));
+      .pipe(gulp.dest(baseOutputPath));
 
     // for the Account types tabs file
     gulp
       .src(basePath + relPath2Files.allALBody)
       .pipe(replace("|product|", template2))
-      .pipe(gulp.dest(""));
+      .pipe(gulp.dest(baseOutputPath));
   } catch (error) {
     console.error("Oops", error);
   }
