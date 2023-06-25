@@ -12,8 +12,8 @@
   },
   "author": "webdev",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-include": "^2.4.1"
+    "gulp-file-include": "^2.3.0"
   }
 }
