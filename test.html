@@ -11,22 +11,40 @@
     // JavaScript code goes here
     document.addEventListener('DOMContentLoaded', function() {
     // Page is fully loaded
-    let products = [];
-    let timestamp = 0
+    let productsDescription = [];
+    let productsQty = [];
+    let productsDescriptionTimestamp = 0
+    let productCatalogUpdateTimestamp = 0
     const backendUrl = `https://api.accbuddy.com/public`
-    let data = localStorage.getItem('products');
-    if(data){
-        data = JSON.parse(data);
-        timestamp = data.timestamp;
-        products = data.products
+    let productsDescriptionStorage = localStorage.getItem('productsDescription');
+    let productsQtyStorage = localStorage.getItem('productsQty');
+    let productUpdateTimestampStorage = localStorage.getItem('productUpdateTimestamp');
+    let productCatalogUpdateTimestampStorage = localStorage.getItem('productCatalogUpdateTimestamp');
+    if(productsQtyStorage){
+        productsQty = JSON.parse(productsQtyStorage);
+        
     }
-    const payload = {
+    if(productsDescriptionStorage){
+        productsDescription = JSON.parse(productsDescriptionStorage);
+    
+    }
+    if(productUpdateTimestampStorage){
+        
+        productsDescriptionTimestamp = JSON.parse(productUpdateTimestampStorage);
+        
+    }
+    if(productCatalogUpdateTimestampStorage){
+        
+        productCatalogUpdateTimestamp = JSON.parse(productCatalogUpdateTimestampStorage);
+        
+    }
+    let payload = {
         fetchProductsDescription:{
-            timestamp
+            timestamp:productsDescriptionTimestamp
         }
     
     }
-    const response = fetch(backendUrl, {
+    fetch(backendUrl, {
         method: 'POST',
         body: JSON.stringify(payload)
     })
@@ -34,14 +52,37 @@
         .then(data=> data.result)
         .then(responseProducts=>{
             console.log(JSON.stringify(responseProducts))
-            products = [...products,...responseProducts]
-            console.log(JSON.stringify(products))
-            const timestamps = responseProducts.map(product=>product.productUpdateTimestamp)
+            productsDescription = [...productsDescription,...responseProducts]
+            console.log(JSON.stringify(productsDescription))
+            const timestamps = productsDescription.map(product=>product.productUpdateTimestamp)
             console.log(timestamps)
-            timestamp = Math.max(...timestamps)
+            const timestamp = Math.max(...timestamps)
             console.log(timestamp)
-            localStorage.setItem('products',JSON.stringify({timestamp,products}))
+            localStorage.setItem('productUpdateTimestamp',JSON.stringify(timestamp))
+            localStorage.setItem('productsDescription',JSON.stringify(productsDescription))
         })
+    payload = {
+        fetchProductsPriceQty:{
+            timestamp:productCatalogUpdateTimestamp
+        }
+    
+    }
+    fetch(backendUrl, {
+        method: 'POST',
+        body: JSON.stringify(payload)
+    })
+        .then(response => response.json())
+        .then(data=> data.result)
+        .then(responseProducts=>{
+            
+            productsQty = [...productsQty,...responseProducts]
+            const timestamps = productsQty.map(product=>product.productCatalogUpdateTimestamp)
+            const timestamp = Math.max(...timestamps)
+            console.log(JSON.stringify(productsQty))
+            localStorage.setItem('productsQty',JSON.stringify(productsQty))
+            localStorage.setItem('productCatalogUpdateTimestamp',JSON.stringify(timestamp))
+        })
+    
     // Add event listener for mousemove
     document.addEventListener('mousemove', function() {
         // Mouse moved, do something
