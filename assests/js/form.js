@@ -15,7 +15,7 @@ class Input {
 
     handleInput() {
         if (false === this.isValid) {
-            if (this.element.id = "signup-password") {
+            if (this.element.id === "signup-password") {
                 const span = this.error.querySelector('span')
                 let text = "Please enter a valid password."
                 if (this.element.value.length > 0) {
@@ -77,4 +77,8 @@ const signupForm = {
     password: new Input({ id: 'signup-password', validation: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[a-zA-Z\d@$!%*#?&]{8,}$/ }),
     confirmPassword: new ConfirmInput({ id: 'signup-confirm-password', elemId: 'signup-password' }),
     checkbox: new CheckboxInput({ id: 'checkedRequered4' })
+}
+
+function handleSubmit() {
+
 }
