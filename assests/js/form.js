@@ -14,8 +14,6 @@ class Input {
         this.name = name
 
         this.element.addEventListener('focus', () => this.cleanError())
-        this.element.addEventListener('input', () => this.handleInput())
-        this.element.addEventListener('click', () => this.handleInput())
         this.element.addEventListener('blur', () => this.handleInput())
     }
 
