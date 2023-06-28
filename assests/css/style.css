@@ -51,6 +51,7 @@
 
 :root {
   --ab_orange: #fa9c29;
+  --ab_orange-inactive: #F6CE8E;
   --ab_violet: #59219e;
   --ab_light: #ccbde3;
   --ab_white: #ffffff;
@@ -70,6 +71,7 @@ body {
   overflow: hidden;
   overflow-y: scroll;
 }
+
 a,
 button {
   text-decoration: none;
@@ -77,6 +79,7 @@ button {
   border: 0;
   color: var(--ab_violet);
 }
+
 textarea,
 input,
 input:focus {
@@ -84,6 +87,7 @@ input:focus {
   border: 0;
   box-shadow: none;
 }
+
 textarea::placeholder,
 input::placeholder {
   color: var(--ab_violet);
@@ -101,6 +105,7 @@ input::placeholder {
   color: var(--ab_warning) !important;
   opacity: 1;
 }
+
 .ab-textarea-group.alart textarea,
 .ab-input-group.alart input,
 .ab-textarea-group.alart textarea::placeholder,
@@ -113,6 +118,7 @@ input::placeholder {
   color: #ff0000 !important;
   opacity: 1;
 }
+
 .success-text,
 .alart-text,
 .warn-text {
@@ -125,13 +131,16 @@ input::placeholder {
   margin-top: 3px;
   display: none;
 }
+
 .ab-textarea-group .warn-text {
   margin-bottom: 20px;
 }
+
 .ab-textarea-group.warning,
 .ab-input-group.warning {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
+
 .success-text,
 .alart .alart-text,
 .warning .warn-text {
@@ -141,15 +150,19 @@ input::placeholder {
   margin-top: 3px;
   position: absolute;
 }
+
 .success-text {
   color: var(--ab_violet);
 }
+
 .alart .ab-check-mark-box {
   border-color: var(--ab_warning) !important;
 }
+
 .alart label .text {
   color: var(--ab_warning) !important;
 }
+
 .success-text,
 .warning-text {
   display: flex;
@@ -161,54 +174,32 @@ input::placeholder {
   color: var(--ab_white);
   display: none;
 }
+
 .success-text {
   background: var(--ab_violet);
 }
+
 .ab-auth-info-content.guest-order-content .ab-input-group.alart .alart-text {
   color: var(--ab_white);
 }
-.ab-authentication-wrap.reset-successfully
-  .password-reset-success
-  .success-text {
+
+.ab-authentication-wrap.reset-successfully .password-reset-success .success-text {
   display: flex;
 }
-.ab-authentication-wrap.create-new-password
-  .no-access-warning
-  .warning-text:nth-child(1),
-.ab-authentication-wrap.reset-password1
-  .no-access-warning
-  .warning-text:nth-child(1),
-.ab-authentication-wrap.reset-password1
-  .email-warning
-  .warning-text:nth-child(2),
-.ab-auth-info-content.guest-order-content
-  .no-access-warning
-  .warning-text:nth-child(1),
-.ab-auth-info-content.guest-order-content
-  .not-found-order
-  .warning-text:nth-child(2),
+
+.ab-authentication-wrap.create-new-password .no-access-warning .warning-text:nth-child(1),
+.ab-authentication-wrap.reset-password1 .no-access-warning .warning-text:nth-child(1),
+.ab-authentication-wrap.reset-password1 .email-warning .warning-text:nth-child(2),
+.ab-auth-info-content.guest-order-content .no-access-warning .warning-text:nth-child(1),
+.ab-auth-info-content.guest-order-content .not-found-order .warning-text:nth-child(2),
 .ab-auth-info-content.sign-up-content .pass-warning .warning-text:nth-child(1),
-.ab-auth-info-content.sign-up-content
-  .no-access-warning
-  .warning-text:nth-child(2),
-.ab-auth-info-content.sign-up-content
-  .already-in-warning
-  .warning-text:nth-child(3),
-.ab-auth-info-content.sign-up-content
-  .password-not-match
-  .warning-text:nth-child(4),
-.ab-authentication-wrap.sign-in-popups
-  .email-warning
-  .warning-text:nth-child(4),
-.ab-authentication-wrap.sign-in-popups
-  .no-access-warning
-  .warning-text:nth-child(3),
-.ab-authentication-wrap.sign-in-popups
-  .account-lock-warning
-  .warning-text:nth-child(2),
-.ab-authentication-wrap.sign-in-popups
-  .pass-warning
-  .warning-text:nth-child(1) {
+.ab-auth-info-content.sign-up-content .no-access-warning .warning-text:nth-child(2),
+.ab-auth-info-content.sign-up-content .already-in-warning .warning-text:nth-child(3),
+.ab-auth-info-content.sign-up-content .password-not-match .warning-text:nth-child(4),
+.ab-authentication-wrap.sign-in-popups .email-warning .warning-text:nth-child(4),
+.ab-authentication-wrap.sign-in-popups .no-access-warning .warning-text:nth-child(3),
+.ab-authentication-wrap.sign-in-popups .account-lock-warning .warning-text:nth-child(2),
+.ab-authentication-wrap.sign-in-popups .pass-warning .warning-text:nth-child(1) {
   display: flex;
 }
 
@@ -223,6 +214,7 @@ li {
   list-style: none;
   outline: 0;
 }
+
 h1,
 h2,
 h3,
@@ -238,23 +230,27 @@ h1 {
   font-weight: 800;
   line-height: 45px;
 }
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 26px;
     line-height: 32px;
   }
 }
+
 h2 {
   font-size: 36px;
   font-weight: 800;
   line-height: 45px;
 }
+
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 26px;
     line-height: 32px;
   }
 }
+
 h3 {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -263,12 +259,14 @@ h3 {
   line-height: 35px;
   color: var(--ab_violet);
 }
+
 @media screen and (max-width: 767px) {
   h3 {
     font-size: 26px;
     line-height: 32px;
   }
 }
+
 h4 {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -277,12 +275,14 @@ h4 {
   line-height: 32px;
   color: var(--ab_violet);
 }
+
 @media screen and (max-width: 767px) {
   h4 {
     font-size: 20px;
     line-height: 25px;
   }
 }
+
 h5 {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -291,6 +291,7 @@ h5 {
   line-height: 28px;
   color: var(--ab_violet);
 }
+
 h6 {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -299,15 +300,18 @@ h6 {
   line-height: 25px;
   color: var(--ab_violet);
 }
+
 @media screen and (max-width: 767px) {
   h6 {
     font-size: 18px;
     line-height: 22px;
   }
 }
+
 p {
   font-size: 16px;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -320,13 +324,16 @@ th {
   text-align: left;
   padding: 8px;
 }
+
 .ab-order-history-mobo-info-item:nth-child(even),
 .ab-order-history-main-list tr:nth-child(even) {
   background-color: rgb(204, 189, 227, 0.2);
 }
+
 tr:nth-child(odd) {
   background-color: var(--ab_white);
 }
+
 @media screen and (max-width: 991px) {
   tr:nth-child(odd) {
     background-color: rgb(250, 156, 41, 0.1);
@@ -342,6 +349,7 @@ tr:nth-child(odd) {
   margin-right: auto;
   width: 100%;
 }
+
 .ab-white-text {
   color: var(--ab_white);
 }
@@ -349,6 +357,7 @@ tr:nth-child(odd) {
 .ab-color-text {
   color: var(--ab_orange);
 }
+
 .ab-color2-text {
   color: var(--ab_violet);
 }
@@ -362,38 +371,41 @@ tr:nth-child(odd) {
     display: block;
     padding: 0;
   }
+
   .ab-header-brand {
     padding: 30px 0 26px 38px;
     display: block;
   }
+
   .desk-logo {
     display: none;
   }
 }
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .mobo-logo {
     width: 148px;
     height: 25px;
     padding-left: 0 !important;
   }
+
   .ab-header-brand {
     padding: 0;
     padding-left: 50px;
   }
 }
-.ab-main-content-box.order-detail-wrapper-box
-  .ab-main--sidebar-content
-  .ab-block-content-box.color-bg-block,
-.ab-main-content-box.order-detail-wrapper-box
-  .ab-main--content.order-details--page
-  .account-info-items {
+
+.ab-main-content-box.order-detail-wrapper-box .ab-main--sidebar-content .ab-block-content-box.color-bg-block,
+.ab-main-content-box.order-detail-wrapper-box .ab-main--content.order-details--page .account-info-items {
   display: none;
 }
+
 @media screen and (max-width:991px) and (min-width:768px) {
   .ab-main-content-box.order-detail-wrapper-box .ab-main--content.order-details--page .account-info-items {
     display: block;
   }
 }
+
 /* account info pages link style */
 .account-info-items {
   margin-bottom: 39px;
@@ -404,7 +416,8 @@ tr:nth-child(odd) {
   list-style: disc;
   color: var(--ab_orange);
 }
-.account-info-items .account-info-link > a {
+
+.account-info-items .account-info-link>a {
   font-family: var(--ab_primary-font);
   font-style: normal;
   font-weight: 800;
@@ -412,15 +425,15 @@ tr:nth-child(odd) {
   line-height: 34px;
   color: var(--ab_orange);
 }
+
 .ab-main--sidebar-content ul.account-info-items {
   margin-bottom: 50px;
 }
 
-aside.ab-main--sidebar-content
-  ul.account-info-items
-  li.account-info-link:not(:last-child) {
+aside.ab-main--sidebar-content ul.account-info-items li.account-info-link:not(:last-child) {
   margin-bottom: 10px;
 }
+
 @media screen and (max-width: 991px) {
   .ab-main--sidebar-content .account-info-items {
     display: none;
@@ -433,6 +446,7 @@ aside.ab-main--sidebar-content
 .ab-main-content-wrapper {
   padding-top: 44px;
 }
+
 .ab-main-content-wrapper .ab-main-content-box {
   display: flex;
   align-items: flex-start;
@@ -451,40 +465,50 @@ aside.ab-main--sidebar-content
   width: 100%;
   position: relative;
 }
+
 .ab-main-content-box.home-main-page.main-content-one {
   display: grid;
-  grid-template-areas:  'aside-one aside-two';
+  grid-template-areas: 'aside-one aside-two';
 }
+
 .ab-main--content {
   grid-area: aside-one;
 }
+
 .ab-main--sidebar-content {
   grid-area: aside-two;
 }
-@media screen and (min-width:992px){
+
+@media screen and (min-width:992px) {
   .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content {
     padding-top: 350px;
   }
 }
+
 .ab-main-content-box.home-main-page.main-content-two {
   display: grid;
   grid-template-areas: 'aside-three aside-two' 'aside-one aside-two';
 }
+
 .ab-main--content {
   grid-area: aside-one;
 }
+
 .ab-main--sidebar-content {
   grid-area: aside-two;
 }
+
 .ab-benefit-section-box {
   grid-area: aside-three;
 }
+
 @media screen and (min-width: 992px) and (max-width: 1420px) {
   .ab-main-content-wrapper .ab-main-content-box {
     padding-left: 43px;
     padding-right: 42px;
   }
 }
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content {
     display: flex;
@@ -494,85 +518,72 @@ aside.ab-main--sidebar-content
     flex-wrap: wrap;
     row-gap: 40px;
   }
+
   .ab-main-content-box.not-found-page .ab-main--sidebar-content {
     padding-left: 4px;
     padding-right: 4px;
   }
+
   .ab-main-content-box.article-page--wrapper .ab-main--sidebar-content {
     padding-left: 4px;
     padding-right: 4px;
   }
-  .ab-main-content-wrapper
-    .ab-main-content-box
-    .ab-main--sidebar-content
-    .ab-news-content-box {
+
+  .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content .ab-news-content-box {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .ab-main-content-box.home-main-page.main-content-one
-    .ab-main--sidebar-content
-    .ab-news-content-box {
+
+  .ab-main-content-box.home-main-page.main-content-one .ab-main--sidebar-content .ab-news-content-box {
     padding: 0;
   }
-  .ab-main-content-wrapper
-    .ab-main-content-box
-    .ab-main--sidebar-content
-    > .ab-block-content-box:nth-child(1) {
-    flex: 0 0 49%;
-    margin-bottom: 0;
-  }
-  .ab-main-content-wrapper
-    .ab-main-content-box
-    .ab-main--sidebar-content
-    > .ab-block-content-box:nth-child(2) {
+
+  .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content>.ab-block-content-box:nth-child(1) {
     flex: 0 0 49%;
     margin-bottom: 0;
   }
 
-  .ab-main-content-box.home-main-page.main-content-two
-    .ab-main--sidebar-content
-    > :nth-child(2){
+  .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content>.ab-block-content-box:nth-child(2) {
+    flex: 0 0 49%;
+    margin-bottom: 0;
+  }
+
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content> :nth-child(2) {
     flex: 0 0 100%;
     padding: 37px 64px 31px 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .ab-main-content-box.home-main-page.main-content-two
-  .ab-main--sidebar-content
-  > :nth-child(2) 
-  .block-box-brand{
+
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content> :nth-child(2) .block-box-brand {
     position: relative;
     border: 0;
     bottom: 0;
     right: 0;
     width: 121px;
   }
-  .ab-main-content-box.home-main-page.main-content-two
-  .ab-main--sidebar-content
-  > :nth-child(2) 
-  .block-box-brand img {
+
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content> :nth-child(2) .block-box-brand img {
     width: 100%;
   }
 
-  .ab-main-content-box.home-main-page.main-content-two
-  .ab-main--sidebar-content
-  > :nth-child(2) 
-  .block-text-title{
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content> :nth-child(2) .block-text-title {
     flex: 0 0 61%;
   }
-  .ab-main-content-box.home-main-page.main-content-two
-    .ab-main--sidebar-content
-    > :nth-child(2n + 1){
+
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content> :nth-child(2n + 1) {
     display: none;
   }
-  .ab-main-content-box.home-main-page.main-content-two
-    .ab-main--sidebar-content {
+
+  .ab-main-content-box.home-main-page.main-content-two .ab-main--sidebar-content {
     padding-left: 4px;
     padding-right: 4px;
   }
 }
+
 @media screen and (max-width: 991px) {
+
   .ab-main-content-box.home-main-page.main-content-one,
   .ab-main-content-box.home-main-page.main-content-two {
     display: block;
@@ -581,33 +592,37 @@ aside.ab-main--sidebar-content
   .ab-main-content-wrapper .ab-main-content-box {
     display: block;
   }
+
   .ab-main--content.term-service-page {
     padding-left: 43px;
     padding-right: 42px;
   }
+
   .ab-main--content.faq-page {
     padding-left: 4px;
     padding-right: 4px;
   }
+
   .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content {
     max-width: 100%;
   }
+
   .ab-main-content-box.term-service-main-wrapper .ab-main--sidebar-content {
     margin-bottom: 50px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content {
     padding-left: 4px;
     padding-right: 4px;
   }
+
   .ab-main-content-wrapper {
     padding-top: 10px;
   }
-  .ab-main-content-wrapper
-    .ab-main-content-box
-    .ab-main--sidebar-content
-    .ab-news-content-box {
+
+  .ab-main-content-wrapper .ab-main-content-box .ab-main--sidebar-content .ab-news-content-box {
     padding-left: 38px;
     padding-right: 38px;
   }
@@ -631,17 +646,29 @@ aside.ab-main--sidebar-content
   justify-content: center;
   align-items: center;
 }
-.ab-orange-btn{background-color: var(--ab_orange);}
-.ab-violet-btn{background-color: var(--ab_violet);}
 
-.ab-orange-button-disable{
-  cursor: not-allowed;
-  background-color:  #F6CE8E;
+.ab-button-style:disabled {
+  background-color: var(--ab_orange-inactive) !important;
 }
-.ab-violet-button-disable{
-  cursor: not-allowed;
-  background-color:  #A990D3;
+
+.ab-orange-btn {
+  background-color: var(--ab_orange);
 }
+
+.ab-violet-btn {
+  background-color: var(--ab_violet);
+}
+
+.ab-orange-button-disable {
+  cursor: not-allowed;
+  background-color: #F6CE8E;
+}
+
+.ab-violet-button-disable {
+  cursor: not-allowed;
+  background-color: #A990D3;
+}
+
 @media screen and (max-width: 991px) {
   .ab-button-style {
     padding: 10px 0;
@@ -653,10 +680,9 @@ aside.ab-main--sidebar-content
   align-items: flex-start;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
-  .ab-main-content-box.order-detail-wrapper-box
-    .ab-main--content.order-details--page
-    .account-info-items {
+  .ab-main-content-box.order-detail-wrapper-box .ab-main--content.order-details--page .account-info-items {
     display: block;
   }
 }
@@ -665,6 +691,7 @@ aside.ab-main--sidebar-content
 .ab-order-details-left {
   position: relative;
 }
+
 .ab-payment-details-content .ab-payment-details-wrapper .popups-close-btn {
   background: transparent;
   position: absolute;
@@ -680,6 +707,7 @@ aside.ab-main--sidebar-content
   opacity: 1;
   pointer-events: painted;
 }
+
 .ab-payment-details-content .ab-payment-details-wrapper,
 .ab-order-details-content.ab-order-details-popup .ab-order-details-wrapper {
   position: relative;
@@ -688,12 +716,15 @@ aside.ab-main--sidebar-content
   background: var(--ab_white);
   border: 1px solid var(--ab_light);
 }
+
 .ab-main-content-box.payment-detail-wrapper-box {
   padding-top: 6px;
 }
+
 main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   padding: 81px 52px 85px 52px;
 }
+
 .ab-payment-details-content .ab-payment-details-wrapper .ab-payment-title,
 .ab-order-details-content .ab-order-details-wrapper .ab-order-title {
   margin-bottom: 80px;
@@ -701,31 +732,28 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   align-items: center;
   gap: 10px;
 }
-.ab-payment-details-content.failed-info
-  .ab-payment-details-wrapper
-  .ab-payment-title {
+
+.ab-payment-details-content.failed-info .ab-payment-details-wrapper .ab-payment-title {
   color: var(--ab_warning);
 }
+
 .ab-order-details-content .ab-order-details-wrapper .ab-order-details-info-box {
   padding-bottom: 41.86px;
   border-bottom: 1px solid var(--ab_light);
 }
+
 .ab-order-details-content .ab-order-details-wrapper .ab-order-details-notes {
   margin-top: 37.27px;
   padding: 28.44px 53.63px 52px 34.24px;
   background: var(--ab_violet);
 }
-.ab-order-details-content
-  .ab-order-details-wrapper
-  .ab-order-details-notes
-  .ab-note-title {
+
+.ab-order-details-content .ab-order-details-wrapper .ab-order-details-notes .ab-note-title {
   margin-bottom: 8.73px;
   color: var(--ab_white);
 }
-.ab-order-details-content
-  .ab-order-details-wrapper
-  .ab-order-details-notes
-  .ab-note-desc {
+
+.ab-order-details-content .ab-order-details-wrapper .ab-order-details-notes .ab-note-desc {
   font-family: var(--ab_primary-font);
   font-style: normal;
   font-weight: 400;
@@ -742,6 +770,7 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   height: 60px;
   margin-bottom: 24px;
 }
+
 .ab-order-details-info-box .ab-order-details-left .ab-order-info-desc {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -761,6 +790,7 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   line-height: 18px;
   color: var(--ab_violet);
 }
+
 .ab-order-details-left .ab-order-info-input-group input {
   height: 58px;
   width: 100%;
@@ -779,23 +809,25 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   max-width: 300px;
   width: 100%;
 }
+
 .ab-order-details-info-box .ab-order-details-order-info .ab-order-info-details {
   margin-bottom: 40px;
   padding: 23px 23.18px 40px 21px;
   background: var(--ab_light);
 }
+
 .ab-order-details-order-info .ab-order-info-details .ab-order-info-item {
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: space-between;
 }
-.ab-order-details-order-info
-  .ab-order-info-details
-  .ab-order-info-item:first-child {
+
+.ab-order-details-order-info .ab-order-info-details .ab-order-info-item:first-child {
   margin-bottom: 28px;
 }
-.ab-order-info-details .ab-order-info-item > p {
+
+.ab-order-info-details .ab-order-info-item>p {
   font-family: var(--ab_primary-font);
   font-style: normal;
   font-weight: 400;
@@ -816,6 +848,7 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   color: var(--ab_violet);
   padding: 15px 17px;
 }
+
 .ab-order-info-details .ab-order-info-item .ab-order-price {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -825,28 +858,23 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   text-align: right;
   color: var(--ab_violet);
 }
-.ab-order-details-order-info
-  .ab-order-info-details
-  .ab-order-info-item:not(:last-child :first-child) {
+
+.ab-order-details-order-info .ab-order-info-details .ab-order-info-item:not(:last-child :first-child) {
   margin-bottom: -0.18px;
 }
-.ab-order-details-order-info
-  .ab-order-info-details
-  .ab-order-info-item:nth-child(3) {
+
+.ab-order-details-order-info .ab-order-info-details .ab-order-info-item:nth-child(3) {
   margin-bottom: 0 !important;
   padding-bottom: 31px;
   border-bottom: 1px solid var(--ab_white);
 }
-.ab-order-details-order-info
-  .ab-order-info-details
-  .ab-order-info-item:last-child {
+
+.ab-order-details-order-info .ab-order-info-details .ab-order-info-item:last-child {
   padding-top: 33px;
   margin-bottom: 0 !important;
 }
-.ab-order-details-order-info
-  .ab-order-info-details
-  .ab-order-info-item:last-child
-  .ab-order-price {
+
+.ab-order-details-order-info .ab-order-info-details .ab-order-info-item:last-child .ab-order-price {
   font-family: var(--ab_primary-font);
   font-style: normal;
   font-weight: 400;
@@ -860,13 +888,16 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   padding-bottom: 76px;
   border-bottom: 1px solid var(--ab_light);
 }
+
 .ab-payment-details-notes {
   position: relative;
   padding-top: 65px;
 }
+
 .ab-payment-details-info-box .ab-payment-conf-title {
   margin-bottom: 30px;
 }
+
 .ab-payment-details-info-box .ab-payment-conf-desc {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -876,6 +907,7 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   color: #000000;
   margin-bottom: 85px;
 }
+
 .ab-payment-details-info-box .ab-payment-conf-desc a {
   color: var(--ab_violet);
 }
@@ -886,6 +918,7 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   gap: 30px;
   justify-content: space-between;
 }
+
 .ab-payment-details-info-box .ab-payment-order-box .ab-payment-order-id {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -894,21 +927,23 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   line-height: 30px;
   color: var(--ab_violet);
 }
-.ab-payment-details-info-box
-  .ab-payment-order-box
-  .ab-button-style.ab-view-details-btn {
+
+.ab-payment-details-info-box .ab-payment-order-box .ab-button-style.ab-view-details-btn {
   max-width: 300px;
 }
+
 .ab-order-info-input-group {
   position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
 }
+
 .ab-order-payment-method {
   position: relative;
   margin-bottom: 0px;
 }
+
 .ab-order-payment-method .ab-title {
   margin-bottom: 30px;
   font-family: var(--ab_primary-font);
@@ -918,18 +953,22 @@ main.ab-main--content.payment-details--page .ab-order-details-wrapper {
   line-height: 20px;
   color: var(--ab_violet);
 }
+
 main.ab-main--content.payment-details--page .ab-promo-content-box {
   margin-bottom: 59px;
 }
+
 .ab-payment-items .ab-check-box-select .ab-checkbox-content {
   display: flex;
   align-items: center;
   column-gap: 12px;
   row-gap: 24px;
 }
+
 .ab-payment-items:not(:last-child) .ab-check-box-select .ab-checkbox-content {
   margin-bottom: 24px;
 }
+
 .ab-payment-items .ab-check-box-select .ab-checkbox-content .payment-methods {
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -938,9 +977,11 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   line-height: 18px;
   color: var(--ab_violet);
 }
+
 .ab-ckeck-mark-box input {
   display: none;
 }
+
 .ab-ckeck-mark-box .ab-custom-check {
   width: 13.57px;
   height: 13.57px;
@@ -948,13 +989,11 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   border: 2px solid #ccbde3;
 }
 
-.ab-ckeck-mark-box input:checked ~ .ab-custom-check {
+.ab-ckeck-mark-box input:checked~.ab-custom-check {
   border: 4px solid var(--ab_violet);
 }
 
-.ab-order-details-content.ab-order-details-popup
-  .ab-order-details-info-box
-  .ab-order-details-order-info {
+.ab-order-details-content.ab-order-details-popup .ab-order-details-info-box .ab-order-details-order-info {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -962,26 +1001,21 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   border-bottom: 1px solid var(--ab_light);
 }
 
-.ab-order-details-content.ab-order-details-popup.open-info
-  .ab-order-details-popup-input-group
-  .ab-order-info-input-group {
+.ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group .ab-order-info-input-group {
   position: relative;
 }
-.ab-order-details-content.ab-order-details-popup.open-info
-  .ab-order-details-popup-input-group {
+
+.ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group {
   display: flex;
   align-items: flex-end;
   gap: 20px;
 }
-.ab-order-details-content.ab-order-details-popup.open-info
-  .ab-order-details-popup-input-group
-  .ab-button-style.ab-buy-button {
+
+.ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group .ab-button-style.ab-buy-button {
   max-width: 300px;
 }
-.ab-order-details-content.ab-order-details-popup.open-info
-  .ab-order-details-popup-input-group
-  .ab-order-info-input-group
-  .ab-order-input-info-title {
+
+.ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group .ab-order-info-input-group .ab-order-input-info-title {
   display: block;
   font-family: var(--ab_primary-font);
   font-style: normal;
@@ -991,48 +1025,46 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   color: var(--ab_violet);
   margin-bottom: 30px;
 }
-.ab-order-details-content.ab-order-details-popup.open-info
-  .ab-order-details-popup-input-group
-  .ab-order-info-input-group
-  > input {
+
+.ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group .ab-order-info-input-group>input {
   height: 60px;
   border: 1px solid var(--ab_violet);
   width: 100%;
   padding-left: 15px;
 }
-.ab-order-details-content.ab-order-details-popup
-  .ab-order-payment-method
-  .ab-payment-method-lits {
+
+.ab-order-details-content.ab-order-details-popup .ab-order-payment-method .ab-payment-method-lits {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
 }
-.ab-order-details-content.ab-order-details-popup
-  .ab-payment-items:not(:last-child)
-  .ab-check-box-select
-  .ab-checkbox-content {
+
+.ab-order-details-content.ab-order-details-popup .ab-payment-items:not(:last-child) .ab-check-box-select .ab-checkbox-content {
   margin-bottom: 0;
 }
-.ab-order-details-content.ab-order-details-popup
-  .ab-order-details-wrapper
-  .popups-close-btn {
+
+.ab-order-details-content.ab-order-details-popup .ab-order-details-wrapper .popups-close-btn {
   position: absolute;
   top: 33px;
   right: 23px;
   background-color: transparent;
   cursor: pointer;
 }
+
 .ab-account-table thead tr th .ab-update-view-btns button {
   background-color: transparent;
   cursor: pointer;
 }
+
 .ab-marchant-details-page .ab-order-details-popup-input-group {
-	display: none !important;
+  display: none !important;
 }
+
 .ab-marchant-details-page .ab-order-details-popup-input-group.select-merchant {
-	display: flex !important;
+  display: flex !important;
 }
+
 @media screen and (max-width: 1420px) and (min-width: 1281px) {
   .ab-account-table tbody tr td:nth-child(1) {
     width: 330px;
@@ -1045,25 +1077,34 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     height: 24px;
     font-size: 12px;
   }
+
   .ab-benefit-items-cards {
     width: 44%;
   }
 }
+
 @media screen and (max-width: 1280px) and (min-width: 992px) {
   .ab-account-types-list-overview {
     position: relative;
     background: rgb(204, 189, 227, 0.2);
     padding: 44px 38px 34px 42px;
   }
-  .ab-account-types-list-overview.ab-all-accounts-types{padding-bottom: 82px;padding-top: 40px;}
+
+  .ab-account-types-list-overview.ab-all-accounts-types {
+    padding-bottom: 82px;
+    padding-top: 40px;
+  }
+
   .ab-account-table tbody tr td:nth-child(3),
   .ab-account-table thead tr th:nth-child(3) {
     padding-right: 20px;
     display: flex;
   }
+
   .ab-account-table tbody tr td:nth-child(1) {
     width: 45%;
   }
+
   .ab-account-table tbody tr td:nth-child(3) button {
     width: 80px;
     pointer-events: none;
@@ -1071,35 +1112,44 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     overflow: hidden;
     font-size: 10px;
   }
+
   .ab-account-table tbody tr td:nth-child(3) span {
     width: 46px;
     display: inline-block;
   }
+
   .ab-account-search-widgets {
     padding: 40px 38px 43px 38px;
   }
+
   .ab-account-search-widgets .input-search-icons {
     right: 60px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
   .ab-payment-details-content,
   .ab-order-details-content.ab-order-details-popup {
     padding-left: 54px;
     padding-right: 54px;
   }
+
   .ab-payment-details-content .ab-payment-details-wrapper,
   .ab-order-details-content.ab-order-details-popup .ab-order-details-wrapper {
     padding: 48px !important;
   }
 }
+
 @media screen and (max-width: 767px) {
+
   .ab-payment-details-content,
   .ab-order-details-content.ab-order-details-popup {
     padding-left: 4px;
     padding-right: 4px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .ab-account-table tbody tr td {
     font-size: 14px;
@@ -1111,31 +1161,38 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     padding-right: 4px;
   }
 
-  .ab-account-search-widgets .input-search-icons > img {
+  .ab-account-search-widgets .input-search-icons>img {
     width: 100%;
     height: 100%;
   }
+
   .ab-account-types-list-overview {
     padding: 0px 0px 40px 0px;
   }
+
   .ab-account-types-list-overview .ab-account-category-tabs {
     padding-left: 38px;
     padding-right: 38px;
   }
+
   .ab-account-table tbody tr td {
     cursor: pointer;
   }
+
   .ab-account-table tbody tr td:nth-child(3) button {
     display: none;
   }
+
   .ab-account-table tbody tr td:nth-child(1) {
     width: 45%;
     min-width: 170px;
   }
+
   .ab-account-table tbody tr td:nth-child(2) {
     width: 30%;
     min-width: 113px;
   }
+
   .ab-account-table tbody tr td:nth-child(3),
   .ab-account-table thead tr th:nth-child(3) {
     padding-right: 38px;
@@ -1143,14 +1200,15 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     min-width: 100%;
     max-width: 81px;
   }
-  .ab-account-types-list-overview
-    .ab-account-category-tabs
-    .account-category-btn.active {
+
+  .ab-account-types-list-overview .ab-account-category-tabs .account-category-btn.active {
     min-width: 144px;
   }
+
   .ab-account-types-list-overview .ab-account-category-tabs {
     gap: 7.52px;
   }
+
   .ab-main-content-box.home-main-page .ab-account-section .ab-title {
     padding-left: 42px;
     padding-right: 18px;
@@ -1160,73 +1218,85 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   .ab-order-details-content .ab-order-details-wrapper {
     padding: 30px 38px;
   }
-  .ab-order-details-content
-    .ab-order-details-wrapper
-    .ab-order-details-info-box {
+
+  .ab-order-details-content .ab-order-details-wrapper .ab-order-details-info-box {
     display: block;
   }
+
   .ab-order-info-input-group {
     position: relative;
   }
+
   .ab-order-details-left {
     margin-bottom: 18px;
   }
+
   .ab-order-payment-method .ab-title {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   .ab-order-details-content .ab-order-details-wrapper .ab-order-details-notes {
     margin-top: 37.27px;
     padding: 28.44px 38px 52px 32px;
     background: var(--ab_violet);
   }
-  .ab-order-details-info-box
-    .ab-order-details-left
-    .ab-order-title-box
-    .ab-order-account-icons {
+
+  .ab-order-details-info-box .ab-order-details-left .ab-order-title-box .ab-order-account-icons {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
   .ab-order-details-info-box .ab-order-details-left .ab-order-title-box {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .ab-payment-details-info-box .ab-payment-order-box {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .ab-account-table tbody tr:nth-child(6) td button.ab-available-button {
     display: none;
   }
-  .ab-order-details-content.ab-order-details-popup.open-info
-    .ab-order-details-popup-input-group
-    .ab-button-style.ab-buy-button {
+
+  .ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group .ab-button-style.ab-buy-button {
     padding: 20px 0;
     max-width: 180px;
   }
-  .ab-order-details-content.ab-order-details-popup
-    .ab-order-details-info-box
-    .ab-order-details-order-info {
+
+  .ab-order-details-content.ab-order-details-popup .ab-order-details-info-box .ab-order-details-order-info {
     grid-template-columns: 1fr 276px;
     gap: 38px;
   }
 }
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .ab-account-types-list-overview {
     padding: 42px 48px 34px 48px;
     margin-bottom: 0px;
   }
-  .ab-account-types-list-overview.ab-all-accounts-types{padding-bottom: 82px;padding-top: 40px;}
 
-  .ab-account-types-list-overview.ab-all-accounts-types{margin-bottom: 80px;}
+  .ab-account-types-list-overview.ab-all-accounts-types {
+    padding-bottom: 82px;
+    padding-top: 40px;
+  }
+
+  .ab-account-types-list-overview.ab-all-accounts-types {
+    margin-bottom: 80px;
+  }
+
   .ab-account-search-widgets .input-search-icons {
     right: 76px;
     top: 54px;
   }
+
   .ab-account-search-widgets {
     padding: 33px 48px 35px;
   }
+
   .ab-main-content-box.home-main-page .ab-account-content-wrapper {
     padding-left: 54px;
     padding-right: 54px;
@@ -1236,20 +1306,24 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .ab-payment-details-content .ab-promo-content-box {
     display: flex;
     flex-direction: revert;
   }
 }
+
 @media screen and (max-width: 767px) {
   .ab-account-table thead tr th .ab-update-view-btns {
     display: flex;
   }
+
   .ab-account-search-widgets #search {
     padding: 11px 7.55px 11px 15px;
     font-size: 14px;
     line-height: 18px;
   }
+
   .ab-account-search-widgets .input-search-icons {
     right: 46.5px;
     top: 25.55px;
@@ -1258,6 +1332,7 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     z-index: 9;
     background: var(--ab_white);
   }
+
   .ab-account-search-widgets {
     padding: 15.19px 38px 16.15px;
   }
@@ -1271,30 +1346,68 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
   .ab-order-details-content.ab-order-details-popup .ab-order-details-wrapper {
     padding: 38px;
   }
-  .ab-order-details-content.ab-order-details-popup
-    .ab-order-details-info-box
-    .ab-order-details-order-info {
+
+  .ab-order-details-content.ab-order-details-popup .ab-order-details-info-box .ab-order-details-order-info {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .ab-order-details-content.ab-order-details-popup.open-info
-    .ab-order-details-popup-input-group {
+
+  .ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group {
     gap: 20px;
     flex-direction: column;
   }
-  .ab-order-details-content.ab-order-details-popup.open-info
-    .ab-order-details-popup-input-group
-    .ab-button-style.ab-buy-button {
+
+  .ab-order-details-content.ab-order-details-popup.open-info .ab-order-details-popup-input-group .ab-button-style.ab-buy-button {
     max-width: 100%;
   }
+
   .ab-payment-details-content,
   .ab-order-details-content.ab-order-details-popup {
     padding-top: 33px;
   }
+
   .ab-order-details-content.ab-order-details-popup .ab-order-details-left {
     margin-bottom: 0;
   }
+
   .ab-order-details-content.ab-order-details-popup .ab-order-info-desc {
     margin-bottom: 0;
   }
 }
+
+
+/* FORM UI RESPONSE HANDLE CSS */
+
+.plank {
+  height: 61.34px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 17.38px;
+  gap: 10.22px;
+  margin-bottom: 5px;
+}
+
+.plank-red {
+  background-color: var(--ab_warning);
+  color: var(--ab_white);
+}
+
+.plank-green {
+  background-color: green;
+  color: var(--ab_white);
+}
+
+.hidden {
+  display: none;
+}
+
+/* .plank-dismiss {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+} */

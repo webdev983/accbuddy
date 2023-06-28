@@ -125,11 +125,18 @@
                     <div class="ab-auth-details-content authentication-signup-page-wrap">
                         <h2 class="ab-order-title"><img src="./assests/image/users-union-icons.svg"
                                 alt="auth user icons" class="auth-icons"> Sign up</h2>
-                        <form id="signup-form" action="?">
 
-                            <div class="ab-auth-content-wrap-box authentication-signup-page">
-                                <!-- NOTE: [no-access-warning,email-warning] those class 
-                                    need to pass based on topic when showing error for requered items -->
+                        <div class="ab-auth-content-wrap-box authentication-signup-page">
+                            <!-- NOTE: [no-access-warning,email-warning] those class 
+                                        need to pass based on topic when showing error for requered items -->
+                            <div id="plank-id" class="plank plank-red hidden">
+                                <img src="./assests/image/warning-white.svg" width="30.11" height="30.11"
+                                    alt="icons warning" class="warning-icon"
+                                    style="background-color: var(--ab_warning);">
+                                <p class="plank">Error</p>
+                                <button id="plank-close" class="plank-red plank-dismiss" type="button">&times;</button>
+                            </div>
+                            <form id="signup-form" action="?">
                                 <div class="ab-input-group-content-box ">
                                     <span class="warning-text "><img src="./assests/image/warning-white.svg" alt="">
                                         Please check
@@ -194,8 +201,8 @@
                                             up</button>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div class="ab-auth-details-main-flex">
                         <div class="ab-auth-details-content authentication-signin-page-wrap">
