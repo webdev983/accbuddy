@@ -1,96 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+    <title>Your Web Page</title>
+    <script>
+        const backendUrl = `https://api.accbuddy.com/public`
+        let productCatalogUpdateTimestamp = 0
+        let productsQty = []
 
-    <head>
-        
-    </head>
-
-    <body>
-        
-  <script>
-    // JavaScript code goes here
-    document.addEventListener('DOMContentLoaded', function() {
-    // Page is fully loaded
-    let productsDescription = [];
-    let productsQty = [];
-    let productsDescriptionTimestamp = 0
-    let productCatalogUpdateTimestamp = 0
-    const backendUrl = `https://api.accbuddy.com/public`
-    let productsDescriptionStorage = localStorage.getItem('productsDescription');
-    let productsQtyStorage = localStorage.getItem('productsQty');
-    let productUpdateTimestampStorage = localStorage.getItem('productUpdateTimestamp');
-    let productCatalogUpdateTimestampStorage = localStorage.getItem('productCatalogUpdateTimestamp');
-    if(productsQtyStorage){
-        productsQty = JSON.parse(productsQtyStorage);
-        
-    }
-    if(productsDescriptionStorage){
-        productsDescription = JSON.parse(productsDescriptionStorage);
-    
-    }
-    if(productUpdateTimestampStorage){
-        
-        productsDescriptionTimestamp = JSON.parse(productUpdateTimestampStorage);
-        
-    }
-    if(productCatalogUpdateTimestampStorage){
-        
-        productCatalogUpdateTimestamp = JSON.parse(productCatalogUpdateTimestampStorage);
-        
-    }
-    let payload = {
-        fetchProductsDescription:{
-            timestamp:productsDescriptionTimestamp
+        async function loadCatalogData() {
+            loadFromLocalStorage();
+            await fetchProductsPriceQty();
+            insertDataToPage();
+            updateLocalStorage();
         }
-    
-    }
-    fetch(backendUrl, {
-        method: 'POST',
-        body: JSON.stringify(payload)
-    })
-        .then(response => response.json())
-        .then(data=> data.result)
-        .then(responseProducts=>{
-            console.log(JSON.stringify(responseProducts))
-            productsDescription = [...productsDescription,...responseProducts]
-            console.log(JSON.stringify(productsDescription))
-            const timestamps = productsDescription.map(product=>product.productUpdateTimestamp)
-            console.log(timestamps)
-            const timestamp = Math.max(...timestamps)
-            console.log(timestamp)
-            localStorage.setItem('productUpdateTimestamp',JSON.stringify(timestamp))
-            localStorage.setItem('productsDescription',JSON.stringify(productsDescription))
-        })
-    payload = {
-        fetchProductsPriceQty:{
-            timestamp:productCatalogUpdateTimestamp
-        }
-    
-    }
-    fetch(backendUrl, {
-        method: 'POST',
-        body: JSON.stringify(payload)
-    })
-        .then(response => response.json())
-        .then(data=> data.result)
-        .then(responseProducts=>{
-            
-            productsQty = [...productsQty,...responseProducts]
-            const timestamps = productsQty.map(product=>product.productCatalogUpdateTimestamp)
-            const timestamp = Math.max(...timestamps)
-            console.log(JSON.stringify(productsQty))
-            localStorage.setItem('productsQty',JSON.stringify(productsQty))
-            localStorage.setItem('productCatalogUpdateTimestamp',JSON.stringify(timestamp))
-        })
-    
-    // Add event listener for mousemove
-    document.addEventListener('mousemove', function() {
-        // Mouse moved, do something
-        console.log('Mouse moved');
-        // Call your desired function or perform any actions you want
-    });
-    });
-  </script>
-    </body>
 
+        function loadFromLocalStorage() {
+            console.log('loading from local storage');
+            let expiry = loadItemFromLocalStorage('productsQtyExpiry');
+            if (!expiry) {
+                expiry = (new Date()).getTime() / 1000 + 60 * 60 * 24 * 30;
+                localStorage.setItem('productsQtyExpiry', JSON.stringify(expiry));
+            } else if ((new Date()).getTime() / 1000 < expiry) {
+                productsQty = loadItemFromLocalStorage('productsQty') || [];
+                productCatalogUpdateTimestamp = loadItemFromLocalStorage('productCatalogUpdateTimestamp') || 0;
+            }
+        }
+
+        function loadItemFromLocalStorage(item) {
+            let storageItem = localStorage.getItem(item);
+            if (storageItem) {
+                return JSON.parse(storageItem);
+            }
+            return undefined;
+        }
+
+        async function fetchProductsPriceQty() {
+            console.log('fetching from backend');
+            const payload = {
+                fetchProductsPriceQty: {
+                    timestamp: productCatalogUpdateTimestamp
+                }
+            };
+            const response = await fetch(backendUrl, {
+                method: 'POST',
+                body: JSON.stringify(payload)
+            });
+            const data = await response.json();
+            const responseProducts = data.result;
+
+            productsQty = [...responseProducts, ...productsQty];
+            const uniqueIds = [];
+            productsQty = productsQty.filter(element => {
+                const isDuplicate = uniqueIds.includes(element.PK);
+                if (!isDuplicate) {
+                    uniqueIds.push(element.PK);
+                    return true;
+                }
+                return false;
+            });
+        }
+
+        function updateLocalStorage() {
+            console.log('updating local storage');
+            const timestamps = productsQty.map(product => product.productCatalogUpdateTimestamp);
+            const timestamp = Math.max(...timestamps);
+            localStorage.setItem('productsQty', JSON.stringify(productsQty));
+            localStorage.setItem('productCatalogUpdateTimestamp', JSON.stringify(timestamp));
+        }
+
+        function insertDataToPage() {
+            // Modify this function to populate HTML elements with the data as desired
+        }
+
+        // Call the loadCatalogData function to initiate the data loading process
+        loadCatalogData();
+    </script>
+</head>
+<body>
+    <!-- The content of your web page -->
+</body>
 </html>
