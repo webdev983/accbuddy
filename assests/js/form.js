@@ -1,80 +1,80 @@
-const signUpForm = {
-    email: "",
-    password: "",
-    confirmPassword: "",
-    checkbox: false,
-}
+class Input {
+    constructor({ id = "", doc = document, validation = "" }) {
+        this.element = doc.querySelector(`#${id}`)
+        this.parent = this.element.parentElement
+        this.error = this.parent.querySelector('.alart-text')
+        this.validation = validation
 
-function showError(input, isValid) {
-    const formControl = input.parentElement;
-    console.log('isValid', isValid)
-    const errorSpan = formControl.querySelector('.alart-text');
-    if (isValid) {
-        errorSpan.style.display = 'none';
-        formControl.classList.remove('warning');
-    } else {
-        formControl.classList.add('warning');
-        errorSpan.style.display = 'flex';
+        this.element.addEventListener('focus', () => this.cleanError())
+        this.element.addEventListener('blur', () => this.handleInput())
+    }
+
+    get isValid() {
+        return this.validation.test(this.element.value)
+    }
+
+    handleInput() {
+        if (false === this.isValid) {
+            if (this.element.id = "signup-password") {
+                const span = this.error.querySelector('span')
+                let text = "Please enter a valid password."
+                if (this.element.value.length > 0) {
+                    text = "Password must be at least 8 characters in length and contain uppercase, lowercase letters, and special characters."
+                }
+                if (span) {
+                    span.innerText = text
+                }
+            }
+
+            this.parent.classList.add('warning')
+            this.error.style.display = 'flex'
+        } else {
+            this.cleanError()
+        }
+    }
+
+
+    cleanError() {
+        this.parent.classList.remove('warning')
+        this.error.style.display = 'none'
     }
 }
 
-function checkEmail(email) {
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email)
-}
-
-function handleEmailValue(inputElem) {
-    let isValid;
-    signUpForm['email'] = inputElem.value
-
-    isValid = checkEmail(signUpForm['email'])
-    showError(inputElem, isValid)
-}
-
-function checkPassword(password) {
-    // Regular expression patterns for password validation
-    var lengthPattern = /.{8,}/;                        // Minimum 8 characters
-    var uppercasePattern = /[A-Z]/;                     // Uppercase letter
-    var lowercasePattern = /[a-z]/;                     // Lowercase letter
-    var specialCharacterPattern = /[!@#$%^&*()\-_=+{}[\]\\|;:'",.<>/?]/; // Special character
-    // Test the password against the patterns
-    return (
-        lengthPattern.test(password) &&
-        uppercasePattern.test(password) &&
-        lowercasePattern.test(password) &&
-        specialCharacterPattern.test(password)
-    );
-}
-
-function handlePasswordValue(inputElem, message = "Please enter a valid password.") {
-    let isValid;
-    signUpForm['password'] = inputElem.value
-
-    isValid = checkPassword(signUpForm['password'])
-    showError(inputElem, isValid)
-}
-
-function handleConfirmPasswordValue(inputElem) {
-    let isValid;
-    signUpForm['confirmPassword'] = inputElem.value
-
-    const {password, confirmPassword} = signUpForm
-    isValid = password === confirmPassword
-    console.log('pass`', password, isValid, confirmPassword)
-    showError(inputElem, isValid)
-}
-
-function handleCheckbox(inputElem) {
-    const formControl = inputElem.parentElement.parentElement;
-    const isValid = inputElem.checked
-
-    console.log('isValid', isValid)
-    const errorSpan = formControl.querySelector('.alart-text');
-    if (isValid) {
-        errorSpan.style.display = 'none';
-        formControl.classList.remove('warning');
-    } else {
-        formControl.classList.add('warning');
-        errorSpan.style.display = 'flex';
+class ConfirmInput extends Input {
+    constructor({ id = "", doc = document, elemId = "signup-password" }) {
+        super({ id })
+        this.elem2 = doc.querySelector(`#${elemId}`)
+        this.element.addEventListener('focus', () => this.cleanError())
     }
+
+    get isValid() {
+        return this.element.value === this.elem2.value
+    }
+}
+
+class CheckboxInput extends Input {
+    constructor({ id = "", }) {
+        super({ id })
+        this.parent = this.parent.parentElement
+        this.error = this.parent.querySelector('.alart-text')
+        this.element.addEventListener('input', () => {
+            if (this.isValid) {
+                this.cleanError()
+            } else {
+                this.handleInput()
+            }
+        })
+        this.element.addEventListener('blur', () => this.handleInput())
+    }
+
+    get isValid() {
+        return this.element.checked
+    }
+}
+
+const signupForm = {
+    email: new Input({ id: 'signup-email', validation: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ }),
+    password: new Input({ id: 'signup-password', validation: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[a-zA-Z\d@$!%*#?&]{8,}$/ }),
+    confirmPassword: new ConfirmInput({ id: 'signup-confirm-password', elemId: 'signup-password' }),
+    checkbox: new CheckboxInput({ id: 'checkedRequered4' })
 }

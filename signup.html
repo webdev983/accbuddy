@@ -125,71 +125,77 @@
                     <div class="ab-auth-details-content authentication-signup-page-wrap">
                         <h2 class="ab-order-title"><img src="./assests/image/users-union-icons.svg"
                                 alt="auth user icons" class="auth-icons"> Sign up</h2>
-                        <div class="ab-auth-content-wrap-box authentication-signup-page">
-                            <!-- NOTE: [no-access-warning,email-warning] those class 
+                        <form id="signup-form" action="?">
+
+                            <div class="ab-auth-content-wrap-box authentication-signup-page">
+                                <!-- NOTE: [no-access-warning,email-warning] those class 
                                     need to pass based on topic when showing error for requered items -->
-                            <div class="ab-input-group-content-box">
-                                <span class="warning-text"><img src="./assests/image/warning-white.svg" alt="">
-                                    Please check
-                                    your internet connection and try again.</span>
-                                <span class="warning-text"><img src="./assests/image/warning-white.svg" alt="">
-                                    Email not
-                                    registered, you may register now.</span>
-                                <div class="ab-auth-input-authentication-wrap-cont">
-                                    <div class="ab-input-group">
-                                        <input type="email" required oninput="handleEmailValue(this)" name="email"
-                                            class="ab-input-items" placeholder="user@gmail.com">
-                                        <span class="alart-text"
-                                            style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
-                                                src="./assests/image/warning-small-icons.svg" width="27"
-                                                height="27">Please enter a valid email address.</span>
+                                <div class="ab-input-group-content-box ">
+                                    <span class="warning-text "><img src="./assests/image/warning-white.svg" alt="">
+                                        Please check
+                                        your internet connection and try again.</span>
+                                    <span class="warning-text "><img src="./assests/image/warning-white.svg" alt="">
+                                        Email not
+                                        registered, you may register now.</span>
+                                    <div class="ab-auth-input-authentication-wrap-cont">
+                                        <div class="ab-input-group">
+                                            <input id="signup-email" type="email" name="email" class="ab-input-items"
+                                                placeholder="user@gmail.com">
+                                            <span class="alart-text"
+                                                style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
+                                                    src="./assests/image/warning-small-icons.svg" width="27"
+                                                    height="27">Please enter a valid email address.</span>
+                                        </div>
+
+                                        <div class="ab-input-group">
+                                            <label class="password-view"><img src="./assests/image/eye.svg"
+                                                    alt="eye icons"></label>
+                                            <input id="signup-password" type="password" required class="ab-input-items"
+                                                placeholder="Password">
+                                            <span class="alart-text"
+                                                style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
+                                                    src="./assests/image/warning-small-icons.svg" width="27"
+                                                    height="27"><span>Password must be at least 8 characters in length
+                                                    and
+                                                    contain
+                                                    uppercase, lowercase letters, and special characters.</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="ab-input-group">
+                                            <label class="password-view"><img src="./assests/image/eye.svg"
+                                                    alt="eye icons"></label>
+                                            <input id="signup-confirm-password" type="password" required
+                                                class="ab-input-items" placeholder="Confirm Password">
+                                            <span class="alart-text"
+                                                style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
+                                                    src="./assests/image/warning-small-icons.svg" width="27"
+                                                    height="27">Password don't match
+                                            </span>
+                                        </div>
+
+                                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                                        <div class="ab-check-requred">
+                                            <label for="checkedRequered4">
+                                                <input type="checkbox" id="checkedRequered4" class="check-mark">
+                                                <span class="ab-check-mark-box"></span>
+                                                <span class="text">I have read and agree to the Privacy Policy and Terms
+                                                    of
+                                                    Service</span>
+                                            </label>
+                                            <span class="alart-text"
+                                                style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
+                                                    src="./assests/image/warning-small-icons.svg" width="27"
+                                                    height="27">In
+                                                order to register, you should accept the terms and conditions.
+                                            </span>
+                                        </div>
+                                        <button id="signup-submit" class="ab-button-style ab-submite-btn">Sign
+                                            up</button>
                                     </div>
-                                    <div class="ab-input-group">
-                                        <label class="password-view"><img src="./assests/image/eye.svg"
-                                                alt="eye icons"></label>
-                                        <input type="password" required oninput="handlePasswordValue(this)"
-                                            class="ab-input-items" placeholder="Password">
-                                        <span class="alart-text"
-                                            style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
-                                                src="./assests/image/warning-small-icons.svg" width="27"
-                                                height="27">Password must be at least 8 characters in length
-                                            and
-                                            contain
-                                            uppercase, lowercase letters, and special characters.
-                                        </span>
-                                    </div>
-                                    <div class="ab-input-group">
-                                        <label class="password-view"><img src="./assests/image/eye.svg"
-                                                alt="eye icons"></label>
-                                        <input type="password" required onfocus="handleConfirmPasswordValue(this)"
-                                            oninput="handleConfirmPasswordValue(this)" class="ab-input-items"
-                                            placeholder="Confirm Password">
-                                        <span class="alart-text"
-                                            style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
-                                                src="./assests/image/warning-small-icons.svg" width="27"
-                                                height="27">Password don't match
-                                        </span>
-                                    </div>
-                                    <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                                    <div class="ab-check-requred">
-                                        <label for="checkedRequered4">
-                                            <input type="checkbox" id="checkedRequered4" oninput="handleCheckbox(this)"
-                                                class="check-mark">
-                                            <span class="ab-check-mark-box"></span>
-                                            <span class="text">I have read and agree to the Privacy Policy and Terms of
-                                                Service</span>
-                                        </label>
-                                        <span class="alart-text"
-                                            style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
-                                                src="./assests/image/warning-small-icons.svg" width="27" height="27">In
-                                            order to register, you should accept the terms and conditions.
-                                        </span>
-                                    </div>
-                                    <button class="ab-button-style ab-submite-btn">Sign up</button>
                                 </div>
                             </div>
-                        </div>
-
+                        </form>
                     </div>
                     <div class="ab-auth-details-main-flex">
                         <div class="ab-auth-details-content authentication-signin-page-wrap">
