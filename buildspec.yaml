@@ -1,0 +1,13 @@
+phases:
+  pre_build:
+    commands:
+      - echo "Entering pre_build phase"
+  build:
+    commands:
+      - echo "Entering build phase"
+  post_build:
+    commands:
+      - echo "Entering post_build phase"
+artifacts:
+  files:
+    - docs/**
