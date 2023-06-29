@@ -11,4 +11,5 @@ phases:
       - echo "Entering post_build phase"
 artifacts:
   files:
-    - docs/**
+    - '**/*'
+  base-directory: 'docs'
