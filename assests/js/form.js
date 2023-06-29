@@ -6,6 +6,8 @@ class Input {
         checkbox: false,
     }
 
+    static HAS_SUBMITTED = false
+
     constructor({ id = "", doc = document, name = undefined, validation = "" }) {
         this.element = doc.querySelector(`#${id}`)
         this.parent = this.element.parentElement
@@ -15,6 +17,11 @@ class Input {
 
         this.element.addEventListener('focus', () => this.cleanError())
         this.element.addEventListener('blur', () => this.handleInput())
+        this.element.addEventListener('input', () => {
+            if (Input.HAS_SUBMITTED) {
+                this.handleInput()
+            }
+        })
     }
 
     get isValid() {
@@ -41,7 +48,6 @@ class Input {
 
     handleInput() {
         this.validInput = this.isValid
-        // console.log('Input.ALL_VALID', Input.CAN_SUBMIT)
         if (Input.ALL_VALID) {
             SUBMIT_BUTTON.disabled = false
         } else {
@@ -83,7 +89,17 @@ class ConfirmInput extends Input {
     }
 
     get isValid() {
-        return this.element.value.length > 0 && this.element.value === this.elem2.value
+        return this.element.value === this.elem2.value
+    }
+
+    handleInput() {
+        const isElem2Valid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[a-zA-Z\d@$!%*#?&]{8,}$/.test(this.elem2.value)
+
+        if (this.element.value.length &&  isElem2Valid) {
+            super.handleInput()
+        } else {
+            Input.CAN_SUBMIT.confirmPassword = false
+        }
     }
 }
 
@@ -121,12 +137,14 @@ function toggleSubmitBtnDisable(submitBtn, boolVal) {
     }
 }
 
+
 async function handleSubmit(e) {
     e.preventDefault()
 
     if (!Input.CAN_SUBMIT) {
         return
     }
+    Input.HAS_SUBMITTED = true
 
     const asyncSubmit = async () => {
         const result = { message: "", errorMessage: null, status: null }
@@ -140,8 +158,8 @@ async function handleSubmit(e) {
                 "signup": {
                     "token": "",
                     "user": {
-                        "username": "test2wd@mailinator.com",
-                        "password": "Portal1!"
+                        "username": signupForm.email.element.value,
+                        "password": signupForm.password.element.value
                     }
                 }
             })
@@ -155,6 +173,7 @@ async function handleSubmit(e) {
         } else if (res.ok) {
             const MESSAGE = json.result
             result.message = MESSAGE
+            SIGNUP_FORM.reset()
         }
         console.log('normalized result', result)
         return result
@@ -166,23 +185,30 @@ async function handleSubmit(e) {
     const result = await asyncSubmit()
     SUBMIT_BUTTON.innerHTML = "send"
 
-    const plank = document.querySelector("#plank-id")
-    const plankMessageElem = plank.querySelector(".plank")
-    const plankClose = plank.querySelector("#plank-close")
-    plankClose.addEventListener('click', () => {
-        plank.classList.add("hidden")
-    })
+    let plankSuccess = document.querySelector('#plank-success-id')
+    let plankError = document.querySelector('#plank-error-id')
 
     if (result.errorMessage !== null) {
-        plank.classList.remove("hidden")
-        plank.classList.remove("plank-green")
-        plankMessageElem.innerHTML = result.errorMessage
-        SUBMIT_BUTTON.disabled = true
+        plankError.classList.remove("hidden")
+        plankSuccess.classList.add("hidden")
 
+        const plankClose = plankError.querySelector("#plank-close")
+        plankClose.addEventListener('click', () => {
+            plankError.classList.add("hidden")
+        })
+
+        SUBMIT_BUTTON.disabled = true
     } else {
-        plank.classList.remove("hidden")
-        plank.classList.add("plank-green")
-        plankMessageElem.innerHTML = result.message
+        plankSuccess.classList.remove("hidden")
+        plankError.classList.add("hidden")
+
+        const plankClose = plankSuccess.querySelector("#plank-close")
+        plankClose.addEventListener('click', () => {
+            plankSuccess.classList.add("hidden")
+        })
+
         SUBMIT_BUTTON.disabled = false
     }
+
+
 }

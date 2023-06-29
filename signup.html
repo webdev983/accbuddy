@@ -129,12 +129,17 @@
                         <div class="ab-auth-content-wrap-box authentication-signup-page">
                             <!-- NOTE: [no-access-warning,email-warning] those class 
                                         need to pass based on topic when showing error for requered items -->
-                            <div id="plank-id" class="plank plank-red hidden">
-                                <img src="./assests/image/warning-white.svg" width="30.11" height="30.11"
-                                    alt="icons warning" class="warning-icon"
-                                    style="background-color: var(--ab_warning);">
-                                <p class="plank">Error</p>
-                                <button id="plank-close" class="plank-red plank-dismiss" type="button">&times;</button>
+                            <div id="plank-error-id" class="plank plank-red hidden">
+                                <img src="/assests/image/warning-white.svg" width="30.11" height="30.11"
+                                    alt="icons warning" class="warning-icon">
+                                <p class="plank">Email already registered, please sign in.</p>
+                                <button id="plank-close" class="plank-red plank-dismiss" style="font-size:24px;" type="button">&times;</button>
+                            </div>
+                            <div id="plank-success-id" class="plank plank-green hidden">
+                                <img src="/assests/image/checkmark-white.svg" width="30.11" height="30.11"
+                                    alt="icons success">
+                                <p class="plank">Account created. Welcome, buddy!</p>
+                                <button id="plank-close" class="plank-green plank-dismiss" style="font-size:24px;" type="button">&times;</button>
                             </div>
                             <form id="signup-form" action="?">
                                 <div class="ab-input-group-content-box ">
