@@ -11,6 +11,8 @@
     <!-- link style start here -->
     <link rel="stylesheet" href="./assests/css/home.css" media="all">
     <link rel="stylesheet" href="./assests/css/style.css" media="all">
+    <script async src="./assests/js/contactUSformRecapcha.js"></script>
+    <script async src="./assests/js/contactUsform.js"></script>    
     <script>
         const backendUrl = `https://api.accbuddy.com/public`
         let productCatalogUpdateTimestamp = 0
@@ -3660,52 +3662,62 @@
                                     </h2>
                                 </div>
                                 <div class="ab-footer-content-right">
-                                    <form action="/post" class="ab-footer-input-form">
+                                    <div id="footer-error-plank" class="footer-plank plank-red hidden">
+                                        <img src="./assests/image/white-warning-icons.svg" width="30.11" height="30.11"
+                                            alt="icons warning" class="warning-icon"
+                                            style="background-color: var(--ab_warning);">
+                                        <p class="plank">Error</p>
+                                        <button class="plank-red plank-dismiss" type="button" onclick="closeErrorPlank()">&times;</button>
+                                    </div>
+                                    <form action="?" id="footer-form" class="ab-footer-input-form">
                                         <div class="ab-form-input-box">
+                                            <!-- start of form response UI -->
+                                            <!-- insert response UI via javascript while hiding input fields -->
+                                            <!-- end of form response -->
                                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                                            <div class="ab-input-group warning">
-                                                <input name="name" type="text" class="ab-input" required
+                                            <div class="ab-input-group">
+                                                <!-- warn-text class should always have ab-input-group class parent for invalid warning  -->
+                                                <input onfocus="cleanInput(event)" onblur="isValidName()" id="name"
+                                                    name="name" type="text" class="ab-input" required
                                                     placeholder="Name">
                                                 <span class="warn-text">Please enter your name</span>
                                             </div>
                                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                                            <div class="ab-input-group warning">
-                                                <input name="email" type="email" class="ab-input" placeholder="Email">
+                                            <div class="ab-input-group ">
+                                                <!-- warn-text class should always have ab-input-group class parent for invalid warning  -->
+                                                <input onfocus="cleanInput(event)" onblur="isValidEmail()" id="email"
+                                                    name="email" type="email" class="ab-input" placeholder="Email">
                                                 <span class="warn-text">Please enter a valid email address</span>
                                             </div>
                                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                                            <div class="ab-textarea-group warning">
-                                                <textarea name="text" placeholder="Message"></textarea>
+                                            <div class="ab-textarea-group">
+                                                <!-- warn-text class should always have ab-input-group class parent for invalid warning  -->
+                                                <textarea style="resize: none;" onfocus="cleanInput(event)" onblur="isValidText()" id="text"
+                                                    name="text" placeholder="Message"></textarea>
                                                 <span class="warn-text">Please enter a message between 10 and 1000
                                                     characters</span>
                                             </div>
                                             <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                                            <div class="ab-check-requred warning">
-                                                <label for="checkedRequered">
-                                                    <input type="checkbox" id="checkedRequered" class="check-mark">
+                                            <div class="ab-check-requred">
+                                                <!--  -->
+                                                <label id="label-checkbox" for="checkedRequered">
+                                                    <input tabindex="0" onchange="isValidCheckbox(this.checked)"
+                                                        type="checkbox" id="checkedRequered" class="check-mark">
                                                     <span class="ab-check-mark-box"></span>
-                                                    <span class="text">I have read and agree to the Privacy Policy
+                                                    <span id="checkbox-text" class="text">I have read and agree to the
+                                                        Privacy Policy
                                                         and
                                                         Terms of Service</span>
                                                 </label>
                                             </div>
                                             <div class="ab-button-group">
-                                                <!-- for desabled button you shout need to add a class 'ab-orange-button-disable' -->
-                                                <button class="ab-button-style ab-footer-button">Send</button>
+                                                <div id="recaptcha" class="g-recaptcha"
+                                                    data-sitekey="6LcShYkmAAAAAA_FN5w0Oewh_-7XzIocjZlX6apw"
+                                                    data-callback="onSubmit" data-size="invisible"></div>
+                                                <button id="submit"
+                                                    class=" ab-button-style ab-footer-button ">Send</button>
                                             </div>
                                         </div>
-                                        <!-- success massage popups -->
-                                        by passing extra class 'success-open' when user submited the input action
-                                        <div class="ab-success-msg-wrapper success-open">
-                                            <div class="ab-success-msg-cont-box">
-                                                <h6><img src="./assests/image/checkmark.svg" width="32" height="24"
-                                                        alt="mark icons"> Thank you</h6>
-                                                <p class="p-text">your message has been sent</p>
-                                            </div>
-                                            <button class="close-button"><img src="./assests/image/close-violet.svg"
-                                                    alt="close icons"></button>
-                                        </div>
-                                        <!-- [END] -->
                                     </form>
                                 </div>
                             </div>
@@ -3733,7 +3745,7 @@
             </div>
         </div>
 
-
+        <!-- js code start here -->
     </footer>
     <!-- ============footer section styles==========[end] -->
 
@@ -3758,7 +3770,7 @@
         </div>
     </div>
     <!-- ============cokie policy section styles==========[end] -->
-    <!-- js code start here -->
+    <script>loadScriptOnce(); onload()</script>
 </body>
 
 </html>
