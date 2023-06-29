@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "taking only index.html"
+
+artifacts:
+  files:
+    - docs/index.html
