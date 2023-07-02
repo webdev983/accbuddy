@@ -43,7 +43,6 @@ out
 .idea/
 
 dist
-docs
 yarn.lock
 package-lock.json
 
