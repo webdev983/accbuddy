@@ -192,9 +192,7 @@
   .ab-account-table tbody tr:hover td {
     color: var(--ab_violet);
   }
-  .ab-account-table tbody tr:nth-child(6).active td button,
-  .ab-account-table tbody tr:nth-child(6):hover td button,
-  .ab-account-table tbody tr:nth-child(3).active td button,
+  .ab-account-table tbody tr.not-available:hover td button,
   .ab-account-table tbody tr:hover td button {
     opacity: 1;
     visibility: visible;
@@ -208,26 +206,26 @@
     white-space: nowrap;
   }
   .ab-button-style.not-available-button,
-  .ab-account-table tbody tr:nth-child(6):hover td > button,
-  .ab-account-table tbody tr:nth-child(6) td > button {
+  .ab-account-table tbody tr.not-available:hover td > button,
+  .ab-account-table tbody tr.not-available td > button {
     background-color: var(--ab_gray);
   }
-  .ab-account-table tbody tr:nth-child(6) td button.ab-buy-button,
-  .ab-account-table tbody tr:nth-child(6).active td button.ab-buy-button {
+  .ab-account-table tbody tr.not-available td button.ab-buy-button,
+  .ab-account-table tbody tr.not-available.active td button.ab-buy-button {
     display: none;
   }
-  .ab-account-table tbody tr:nth-child(6):hover td button.ab-available-button,
-  .ab-account-table tbody tr:nth-child(6).active td button.ab-available-button {
+  .ab-account-table tbody tr.not-available:hover td button.ab-available-button,
+  .ab-account-table tbody tr.not-available.active td button.ab-available-button {
     display: inline-block;
   }
   @media screen and (max-width: 991px) {
-    .ab-account-table tbody tr:nth-child(6):hover td button.ab-available-button,
-    .ab-account-table tbody tr:nth-child(6).active td button.ab-available-button {
+    .ab-account-table tbody tr.not-available:hover td button.ab-available-button,
+    .ab-account-table tbody tr.not-available.active td button.ab-available-button {
       display: none;
     }
     .ab-button-style.not-available-button,
-    .ab-account-table tbody tr:nth-child(6):hover td > button,
-    .ab-account-table tbody tr:nth-child(6) td > button {
+    .ab-account-table tbody tr.not-available:hover td > button,
+    .ab-account-table tbody tr.not-available td > button {
       padding: 19px 40px;
     }
   }
@@ -236,8 +234,8 @@
       padding: 23px 0 23px 15px;
     }
   }
-  .ab-account-table tbody tr:nth-child(6).active td,
-  .ab-account-table tbody tr:nth-child(6):hover td {
+  .ab-account-table tbody tr.not-available.active td,
+  .ab-account-table tbody tr.not-available:hover td {
     color: #000000;
   }
   
@@ -340,7 +338,7 @@
   
   .ab-account-table
     tbody
-    tr:nth-child(6):hover
+    tr.not-available:hover
     td.popup-box-item:hover
     .ab-account-select-popups.not-available-popups {
     display: flex;
@@ -377,15 +375,28 @@
     .ab-account-select-right-content
     .account-types-icons {
     margin-bottom: 35px;
-  }
+  } 
   .ab-account-select-popups
     .ab-account-select-right-content
     .ab-button-style.buy-button {
     width: 193px;
-  }
+  } 
   .ab-account-category-based-list {
     position: relative;
   }
+  .ab-account-table tbody tr.active:hover td > .ab-account-select-popups .not-available-button,
+  .ab-account-table tbody tr.not-available:hover td > .ab-account-select-popups .buy-button,
+  .ab-account-table tbody tr.active:hover td > .ab-available-button,
+  .ab-account-table tbody tr.not-available:hover td > .ab-buy-button {
+    display: none !important;
+  }
+  .ab-account-table tbody tr.not-available:hover td > .ab-account-select-popups .not-available-button, 
+  .ab-account-table tbody tr.active:hover td > .ab-account-select-popups .buy-button,
+  .ab-account-table tbody tr.not-available:hover td > .ab-available-button,
+  .ab-account-table tbody tr.active:hover td > .ab-buy-button {
+    display: inline-block !important;
+  }
+
   @media screen and (max-width: 991px) {
     .ab-account-select-popups {
       gap: 38px;
@@ -573,7 +584,7 @@
       flex-direction: column;
       align-items: flex-start;
     }
-    .ab-account-table tbody tr:nth-child(6) td button.ab-available-button {
+    .ab-account-table tbody tr.not-available td button.ab-available-button {
       display: none;
     }
     .ab-order-details-content.ab-order-details-popup.open-info

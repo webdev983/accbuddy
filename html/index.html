@@ -7,9 +7,9 @@
 
 <!-- ============main content wrapper==========[start] -->
 <div class="ab-main-content-wrapper">
-    <div class="ab-container">
+    <div class="ab-container"> 
         <div class="ab-main-content-box home-main-page main-content-one">
-
+ 
             <!-- main content start here -->
             <main class="ab-main--content">
                 <!-- account section start -->
@@ -24,14 +24,14 @@
                         @@include("partials/account/_account-types-tabs.html")
                         <!-- category based account list -->
                         <div class="ab-account-types-list-overview">
-                            <div class="ab-account-category-tabs">
+                            <div class="ab-account-category-tabs"> 
                                 <button class="account-category-btn active"><img
                                         src="image/fire-icons.svg" width="24" height="31"
                                         alt="icons intract" class="intract-icon"> Hot</button>
                                 <button class="account-category-btn"><img
                                         src="image/pin-mark-icons.svg" width="25" height="24"
                                         alt="icons intract" class="intract-icon"> Sale</button>
-                                <button class="account-category-btn"><img
+                                <button class="account-category-btn"><img 
                                         src="image/new-stars-icons.svg" width="32" height="34"
                                         alt="icons intract" class="intract-icon"> New</button>
                             </div>
@@ -80,7 +80,7 @@
                                                     another search.</p>
                                             </td>
                                          </tr>
-                                        @@loop("partials/_accounts-list-item.html", "data/accountData.json")
+                                        @@loop("partials/_accounts-list-item.html", "data/accountsdata.json")
 
                                     </tbody>
                                 </table>
@@ -110,9 +110,9 @@
                                     another search.</p>
                             </td>  
                         </tr>
-                        @@loop("partials/_accounts-list-item.html", "data/all-account-data.json")
+                        @@loop("partials/_accounts-list-item.html", "data/accountsdata.json")
                     </tbody>
-                </table>
+                </table> 
 
             </div>
         </div>

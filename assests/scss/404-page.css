@@ -12,7 +12,6 @@
 .ab-main-content-box.not-found-page {
     display: grid;
     grid-template-areas: 'area-one area-three' 'area-two area-three';
-    gap: 0;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
   }

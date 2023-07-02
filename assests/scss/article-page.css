@@ -10,11 +10,15 @@
 /****************** 
  article page style
 ======================  */
+.ab-main--content.article-page{
+  padding-bottom: 84px;
+}
 .ab-main--content.article-page > .ab-article-content-box {
     padding-top: 0;
   }
   .ab-main--content.article-page > .ab-article-content-box.articles-block-2 {
     padding-top: 86px;
+    padding-bottom: 0;
   }
   .ab-main--content.article-details-page .ab-article-details-section {
     padding-top: 0;
