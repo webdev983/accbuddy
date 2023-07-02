@@ -19,10 +19,12 @@
                                     another search.</p>
                             </td>
                         </tr>
+                        @@loop("../_accounts-list-item.html", "../../data/accountData.json")
                         <tr>
                             <td>Mail.ru old</td>
                             <td>4141241</td>
-                            <td><span>$0.19</span> <button class="ab-buy-button">Buy</button>
+                            <td><span>$0.19</span> 
+                                <button class="ab-buy-button">Buy</button>
                                 <button class="ab-available-button">Not available</button>
                             </td>
                             <td class="popup-box-item">
