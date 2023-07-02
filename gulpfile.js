@@ -92,7 +92,7 @@ gulp.task("webpImage", () => {
 gulp.task("svgImage", () => {
   return( 
   gulp
-.src('assests/image/*.{svg,gif,pdf}')
+.src('assests/image/*.{svg,gif,pdf,webp}')
 .pipe(gulp.dest('src/image'))
 );
 });

@@ -1,122 +1,98 @@
 @@include("partials/_head.html",{
-    "pageCss": 'signUp-page',
-    })
-    @@include("partials/_header.html")
-        <!-- ============main content wrapper==========[start] -->
-        <div class="ab-main-content-wrapper">
-            <div class="ab-container">
-                <div class="ab-main-content-box ab-auth-main-cont">
+"pageCss": 'signUp-page',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box ab-auth-main-cont">
 
-                    <!-- main content start here -->
-                    <main class="ab-main--content ab-auth-wrap-page">
-                        <div class="ab-auth-details-content authentication-signup-page-wrap">
-                            <h2 class="ab-order-title"><img src="./assests/image/users-union-icons.svg" alt="auth user icons" class="auth-icons"> Sign up</h2>
-                            <div class="ab-auth-content-wrap-box authentication-signup-page">
-                                <!-- NOTE: [no-access-warning,email-warning] those class 
+            <!-- main content start here -->
+            <main class="ab-main--content ab-auth-wrap-page">
+                <div class="ab-auth-details-content authentication-signup-page-wrap">
+                    <h2 class="ab-order-title"><img src="image/users-union-icons.svg" alt="auth user icons"
+                            class="auth-icons"> Sign up</h2>
+                    <div class="ab-auth-content-wrap-box authentication-signup-page">
+                        <!-- NOTE: [no-access-warning,email-warning] those class 
                                     need to pass based on topic when showing error for requered items -->
-                                <div class="ab-input-group-content-box">
-                                    <span class="warning-text"><img src="./assests/image/warning-white.svg" alt="">
-                                        Please check
-                                        your internet connection and try again.</span>
-                                    <span class="warning-text"><img src="./assests/image/warning-white.svg" alt="">
-                                        Email not
-                                        registered, you may register now.</span>
-                                    <div class="ab-auth-input-authentication-wrap-cont">
-                                        <div class="ab-input-group">
-                                            <input type="email" required name="email" class="ab-input-items"
-                                                placeholder="user@gmail.com">
-                                            <span class="alart-text">Please enter a valid email address.</span>
-                                        </div>
-                                        <div class="ab-input-group">
-                                            <label  class="password-view"><img
-                                                    src="./assests/image/eye.svg" alt="eye icons"></label>
-                                            <input type="password" required  class="ab-input-items"
-                                                placeholder="Password">
-                                            <span class="alart-text">Password must be at least 8 characters in length
-                                                and
-                                                contain
-                                                uppercase, lowercase letters, and special characters.</span>
-                                        </div>
-                                        <div class="ab-input-group">
-                                            <label  class="password-view"><img
-                                                    src="./assests/image/eye.svg" alt="eye icons"></label>
-                                            <input type="password" required  class="ab-input-items"
-                                                placeholder="Password">
-                                            <span class="alart-text">Password must be at least 8 characters in length
-                                                and
-                                                contain
-                                                uppercase, lowercase letters, and special characters.</span>
-                                        </div>
-                                          <!-- passing extra class('warning') for invalid/required inputs warning  -->
-                                          <div class="ab-check-requred">
-                                            <label for="checkedRequered4">
-                                                <input type="checkbox" id="checkedRequered4" class="check-mark">
-                                                <span class="ab-check-mark-box"></span>
-                                                <span class="text">I have read and agree to the Privacy Policy and Terms of
-                                                    Service</span>
-                                            </label>
-                                        </div>
-                                        <button class="ab-button-style ab-submite-btn">Sign up</button>
-                                    </div>
+                        <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                                Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                                Email not
+                                registered, you may register now.</span>
+                            <div class="ab-auth-input-authentication-wrap-cont">
+                                <div class="ab-input-group">
+                                    <input type="email" required name="email" class="ab-input-items"
+                                        placeholder="user@gmail.com">
+                                    <span class="alart-text">Please enter a valid email address.</span>
                                 </div>
+                                <div class="ab-input-group">
+                                    <label class="password-view"><img src="image/eye.svg" alt="eye icons"></label>
+                                    <input type="password" required class="ab-input-items" placeholder="Password">
+                                    <span class="alart-text">Password must be at least 8 characters in length
+                                        and
+                                        contain
+                                        uppercase, lowercase letters, and special characters.</span>
+                                </div>
+                                <div class="ab-input-group">
+                                    <label class="password-view"><img src="image/eye.svg" alt="eye icons"></label>
+                                    <input type="password" required class="ab-input-items" placeholder="Password">
+                                    <span class="alart-text">Password must be at least 8 characters in length
+                                        and
+                                        contain
+                                        uppercase, lowercase letters, and special characters.</span>
+                                </div>
+                                <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                                <div class="ab-check-requred">
+                                    <label for="checkedRequered4">
+                                        <input type="checkbox" id="checkedRequered4" class="check-mark">
+                                        <span class="ab-check-mark-box"></span>
+                                        <span class="text">I have read and agree to the Privacy Policy and Terms of
+                                            Service</span>
+                                    </label>
+                                </div>
+                                <button class="ab-button-style ab-submite-btn">Sign up</button>
                             </div>
-
                         </div>
-                        <div class="ab-auth-details-main-flex">
-                            <div class="ab-auth-details-content authentication-signin-page-wrap">
-                                <h2 class="ab-order-title"><img src="./assests/image/useer-violet-icons.svg" alt="auth user icons" class="auth-icons"> <a href="./signin.html">Sign in</a></h2>
-                            </div> 
-                            <div class="ab-auth-details-content authentication-guest-page-wrap">
-                                <h2 class="ab-order-title"><img src="./assests/image/Vector.svg" alt="auth user icons" class="auth-icons"> <a href="./guest-order.html">Find a guest order</a></h2>
-                            </div>
-                        </div>
-                        <!-- promo content start -->
-                        <div class="ab-promo-content-box">
-                            <h3 class="ab-promo-title"><span class="ab-color2-text">Your</span> One-Stop Destination
-                                To
-                                Buy <span class="ab-color2-text">Verified</span> Social
-                                Media & Email <span class="ab-color2-text">Accounts</span>!
-                            </h3>
-                            <div class="ab-promo-brand">
-                                <img class="desktop-view" src="./assests/image/probo-brand-logo.svg"  width="306.29" height="51.07" alt="brand logo">
-                                <img class="mobo-view" src="./assests/image/block-brand-logo1.svg" width="88" height="75" alt="brand logo">
-                            </div>
-                        </div>
-                        <!-- [END] -->
-                    </main>
-
-                    <!-- sidebar content start here -->
-                    <aside class="ab-main--sidebar-content">
-                        <!-- text block content start -->
-                        <div class="ab-block-content-box white-bg-block">
-                            <h4 class="block-text-title">
-                                We accept most popular <span class="ab-color-text">Cryptocurrencies</span> (Bitcoin,
-                                Ethereum, Litecoin and Bitcoin Cash),
-                                Perfectmoney, and credit card payments are also <span
-                                    class="ab-color-text">available</span>.
-                            </h4>
-                        </div>
-                        <!-- [END] -->
-                        <!-- text block content start -->
-                        <div class="ab-block-content-box color-bg-block">
-                            <h4 class="block-text-title">
-                                <span class="ab-color2-text">Your</span> One-Stop <br> Destination <br> To Buy <span
-                                    class="ab-color2-text">Verified</span> <br> Social Media <br> & Email <br> <span
-                                    class="ab-color2-text">Accounts</span>!
-                            </h4>
-                            <div class="block-box-brand"><img src="./assests/image/block-brand-logo1.svg" width="88" height="75"
-                                    alt="brand logo"></div>
-                        </div>
-                        <!-- [END] -->
-                    </aside>
+                    </div>
 
                 </div>
-            </div>
+                <div class="ab-auth-details-main-flex">
+                    <div class="ab-auth-details-content authentication-signin-page-wrap">
+                        <h2 class="ab-order-title"><img src="image/useer-violet-icons.svg" alt="auth user icons"
+                                class="auth-icons"> <a href="./signin.html">Sign in</a></h2>
+                    </div>
+                    <div class="ab-auth-details-content authentication-guest-page-wrap">
+                        <h2 class="ab-order-title"><img src="image/Vector.svg" alt="auth user icons" class="auth-icons">
+                            <a href="./guest-order.html">Find a guest order</a></h2>
+                    </div>
+                </div>
+                @@include("partials/_promo.html")
+
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
         </div>
-        <!-- ============main content wrapper==========[end] -->
-     <!-- footer partials start -->
-     @@include("partials/_footer.html")
-     <!-- cookies policy start -->
-     @@include("partials/_cookies.html")
-     <!-- [end] -->
-     @@include("partials/_foot.html")
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

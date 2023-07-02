@@ -1,86 +1,57 @@
 @@include("partials/_head.html",{
-    "pageCss": 'payment-receve',
-    })
-    @@include("partials/_header.html")
-        <!-- ============main content wrapper==========[start] -->
-        <div class="ab-main-content-wrapper">
-            <div class="ab-container">
-                <div class="ab-main-content-box order-detail-wrapper-box payment-conformation-info-wrap">
+"pageCss": 'payment-receve',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box order-detail-wrapper-box payment-conformation-info-wrap">
 
-                    <!-- main content start here -->
-                    <main class="ab-main--content order-details--page payment-conformation-info">
-                        <div class="ab-payment-details-content">
-                            <div class="ab-payment-details-wrapper">
-                                <div class="ab-tablet-view-wrapper">
-                                    <h2 class="ab-payment-title"><img src="./assests/image/warning-icons.svg"
-                                            alt="warning icons" class="ab-title-mark-icons"> Payment failed</h2>
-                                    <ul class="account-info-items">
-                                        <li class="account-info-link"><a href="/">Order history</a></li>
-                                        <li class="account-info-link"><a href="/">Account settings</a></li>
-                                        <li class="account-info-link"><a href="/"> Logout</a></li>
-                                    </ul>
-                                </div>
-                                <div class="ab-payment-details-info-box">
-                                    <h6 class="ab-payment-conf-title">Transaction attempt has failed
-                                    </h6>
-                                    <p class="ab-payment-conf-desc">Please try another merchant.</p>
+            <!-- main content start here -->
+            <main class="ab-main--content order-details--page payment-conformation-info">
+                <div class="ab-payment-details-content">
+                    <div class="ab-payment-details-wrapper">
+                        <div class="ab-tablet-view-wrapper">
+                            <h2 class="ab-payment-title"><img src="image/warning-icons.svg" alt="warning icons"
+                                    class="ab-title-mark-icons"> Payment failed</h2>
+                            @@include("partials/_account-info-link.html")
 
-                                </div>
-
-                            </div>
                         </div>
-                        <!-- promo content start -->
-                        <div class="ab-promo-content-box">
-                            <h3 class="ab-promo-title"><span class="ab-color2-text">Your</span> One-Stop Destination
-                                To
-                                Buy <span class="ab-color2-text">Verified</span> Social
-                                Media & Email <span class="ab-color2-text">Accounts</span>!
-                            </h3>
-                            <div class="ab-promo-brand">
-                                <img class="desktop-view" src="./assests/image/probo-brand-logo.svg"  width="306.29" height="51.07" alt="brand logo">
-                                <img class="mobo-view" src="./assests/image/block-brand-logo1.svg" width="88" height="75" alt="brand logo">
-                            </div>
-                        </div>
-                        <!-- [END] -->
-                    </main>
+                        <div class="ab-payment-details-info-box">
+                            <h6 class="ab-payment-conf-title">Transaction attempt has failed
+                            </h6>
+                            <p class="ab-payment-conf-desc">Please try another merchant.</p>
 
-                    <!-- sidebar content start here -->
-                    <aside class="ab-main--sidebar-content">
-                        <ul class="account-info-items">
-                            <li class="account-info-link"><a href="/">Order history</a></li>
-                            <li class="account-info-link"><a href="/">Account settings</a></li>
-                            <li class="account-info-link"><a href="/"> Logout</a></li>
-                        </ul>
-                        <!-- text block content start -->
-                        <div class="ab-block-content-box white-bg-block">
-                            <h4 class="block-text-title">
-                                We accept most popular <span class="ab-color-text">Cryptocurrencies</span> (Bitcoin,
-                                Ethereum, Litecoin and Bitcoin Cash),
-                                Perfectmoney, and credit card payments are also <span
-                                    class="ab-color-text">available</span>.
-                            </h4>
                         </div>
-                        <!-- [END] -->
-                        <!-- text block content start -->
-                        <div class="ab-block-content-box color-bg-block">
-                            <h4 class="block-text-title">
-                                <span class="ab-color2-text">Your</span> One-Stop <br> Destination <br> To Buy <span
-                                    class="ab-color2-text">Verified</span> <br> Social Media <br> & Email <br> <span
-                                    class="ab-color2-text">Accounts</span>!
-                            </h4>
-                            <div class="block-box-brand"><img src="./assests/image/block-brand-logo1.svg" width="88" height="75"
-                                    alt="brand logo"></div>
-                        </div>
-                        <!-- [END] -->
-                    </aside>
 
+                    </div>
                 </div>
-            </div>
+                @@include("partials/_promo.html")
+
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                @@include("partials/_account-info-link.html")
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
         </div>
-        <!-- ============main content wrapper==========[end] -->
-      <!-- footer partials start -->
-      @@include("partials/_footer.html")
-      <!-- cookies policy start -->
-      @@include("partials/_cookies.html")
-      <!-- [end] -->
-      @@include("partials/_foot.html")
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

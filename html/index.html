@@ -4,7 +4,7 @@
 })
 @@include("partials/_header.html")
 <!-- [end] -->
- 
+
 <!-- ============main content wrapper==========[start] -->
 <div class="ab-main-content-wrapper">
     <div class="ab-container">
@@ -18,14 +18,18 @@
             <aside class="ab-main--sidebar-content">
                 <!-- block content styles one -->
                 @@include("partials/_block-content-v1.html")
- 
+
                 <!-- block content styles two -->
                 @@include("partials/_block-content-v2.html")
 
-                <!-- aside news section  -->
-                @@include("partials/_aside-news.html",{ 
-                "title": 'News',
-                })
+                <!-- news content start -->
+                <div class="ab-news-content-box">
+                    <h4 class="news-title">News</h4>
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
             </aside>
 
         </div>
@@ -41,13 +45,16 @@
                 })
                 <!-- text block content start -->
                 @@include("partials/_block-content-v2.html",{
-                "class": 'ab-block-4',
+                "class": 'ab-block-4',  
                 })
-
-                <!-- aside news content start -->
-                @@include("partials/_aside-news.html",{
-                "title": 'News',
-                })
+  
+                 <!-- news content start --> 
+                 <div class="ab-news-content-box">
+                    <ul class="news-content-items"> 
+                        @@loop("partials/_news-items.html", "data/data2.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
 
             </aside>
 
@@ -57,7 +64,7 @@
                 <!-- promo partials section  -->
                 @@include("partials/_promo.html")
 
-                <!-- promo partials section  -->
+                <!-- article partials section  -->
                 @@include("partials/_articles.html")
             </div>
         </div>
