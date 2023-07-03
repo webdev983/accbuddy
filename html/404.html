@@ -1,0 +1,76 @@
+@@include("partials/_head.html",{
+"pageCss": '404-page',
+})
+@@include("partials/_header.html")
+<!-- [end] -->
+
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper not-found-page-wrap-main">
+    <div class="ab-container">
+        <h1 class="not-found-error-title">404</h1>
+        <div class="ab-main-content-box not-found-page">
+
+            <!-- main content start here -->
+            <main class="ab-main--content not-found-page-wrap">
+
+                <!-- account section start -->
+                <section class="ab-account-section">
+                    <h2 class="ab-title"> Sorry, no such page.
+                        Please <span class="ab-color-text">try</span> to visit our <span
+                            class="ab-color-text">another</span> pages.</h2>
+                    <div class="ab-account-content-wrapper">
+                        <!-- account search widgets -->
+                        @@include("partials/account/_search-widgets.html")
+                        <!-- account type tabs -->
+                        @@include("partials/account/_account-types-tabs.html")
+                    </div>
+                </section>
+                <!-- [END] --> 
+
+            </main>
+            <!-- sidebar content start here -->
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html",{
+                "class": 'ab-block-3',
+                })
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": 'ab-block-4',
+                })
+
+                <!-- news content start -->
+                <div class="ab-news-content-box">
+                    <h4 class="news-title">News</h4>
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
+
+            </aside>
+
+            <!-- main content start here -->
+            <div class="ab-main--content not-found-page-wrap-two">
+
+                <!-- promo partials section  -->
+                @@include("partials/_promo.html")
+
+                <!-- article partials section  -->
+                @@include("partials/_articles.html")
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

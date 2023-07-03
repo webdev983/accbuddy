@@ -1,0 +1,247 @@
+@@include("partials/_head.html",{
+"pageCss": 'acc-settings',
+})
+@@include("partials/_header.html")
+<!-- [end] -->
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box account-settings-pages-main-wrap">
+
+            <!-- main content start here -->
+            <main class="ab-main--content account-settings-page">
+                <div class="settings-page-content">
+                    <div class="ab-tablet-view-info-box">
+                        <h2 class="ab-title">Account settings</h2>
+                        @@include("partials/_account-info-link.html")
+                    </div>
+
+                    <div class="ab-account-details-info">
+                        <ul class="ab-account-details-list-item">
+                            <li class="ab-account-details-name">
+                                <div class="ab-account-info-main-wrp">
+                                    <div class="ab-account-info-content">
+                                        <p class="ab-account-data-title"><span class="ab-account-data-icons"><img
+                                                    src="image/envalop.svg" alt="envelop icon"></span>
+                                            Email</p>
+                                        <p class="ab-account-data-info">user@gmail.com</p>
+                                    </div>
+                                    <button class="ab-button-style ab-changed-btn">Change</button>
+                                </div>
+                                <!-- reset or changed email address states -->
+                                <div class="ab-account-info-changed-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+                                                <div class="ab-input-group warning">
+                                                    <input name="email" type="email" class="ab-input" required
+                                                        placeholder="New email">
+                                                    <span class="warn-text">Please enter a valid email address</span>
+                                                </div>
+                                                <div class="ab-input-group warning">
+                                                    <button class="view-password"><img src="image/eye.svg"
+                                                            alt="eye icons"></button>
+                                                    <input name="Password" type="email" class="ab-input"
+                                                        placeholder="Password">
+                                                </div>
+                                                <div class="ab-button-group">
+                                                    <button class="ab-button-style ab-footer-button">Change</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                                <!-- confirmation email for code states -->
+                                <div class="ab-account-info-changed-states confirmetion-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+                                                <div class="ab-changed-states-text-cont">
+                                                    <p class="ab-change-states-text">Confirmation code have been sent to
+                                                        <b><a href="/">newuser@gmail.com</a><span>.</span></b>
+                                                        Please check it including spam folder.
+                                                    </p>
+                                                </div>
+                                                <div class="ab-button-group">
+                                                    <button class="ab-button-style ab-footer-button">Send code
+                                                        again</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                                <!-- successfull  email reset or change states -->
+                                <div class="ab-account-info-changed-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+                                                <divclass="ab-changed-states-text-cont">
+                                                    <span><img src="image/checkmark.svg" alt="checkmark icons"
+                                                            class="check-mark"> Successfully</span>
+                                                    <p class="ab-change-states-text">Email has changes succesfully.</p>
+                                                    </divclass=>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                            </li>
+                            <li class="ab-account-details-name">
+                                <div class="ab-account-info-main-wrp">
+                                    <div class="ab-account-info-content">
+                                        <p class="ab-account-data-title"><span class="ab-account-data-icons"><img
+                                                    src="image/lock.svg" alt="envelop icon"></span>
+                                            Password</p>
+                                        <p class="ab-account-data-info">*********</p>
+                                    </div>
+                                    <button class="ab-button-style ab-changed-btn">Change</button>
+                                </div>
+                                <!-- password reset or changed states -->
+                                <div class="ab-account-info-changed-states changed-password-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+
+                                                <div class="ab-input-group">
+                                                    <button class="view-password"><img src="image/eye.svg"
+                                                            alt="eye icons"></button>
+                                                    <input name="Password" type="email" class="ab-input"
+                                                        placeholder="Current password">
+                                                </div>
+                                                <div class="ab-input-group">
+                                                    <button class="view-password"><img src="image/eye.svg"
+                                                            alt="eye icons"></button>
+                                                    <input name="Password" type="email" class="ab-input"
+                                                        placeholder="New password">
+                                                </div>
+                                                <div class="ab-input-group">
+                                                    <button class="view-password"><img src="image/eye.svg"
+                                                            alt="eye icons"></button>
+                                                    <input name="Password" type="email" class="ab-input"
+                                                        placeholder="Confirm new password">
+                                                </div>
+                                                <div class="ab-button-group">
+                                                    <button class="ab-button-style ab-footer-button">Change</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                                <!-- successfull  email reset or change states -->
+                                <div class="ab-account-info-changed-states successfull-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+                                                <div class="ab-changed-states-text-cont">
+                                                    <span><img src="image/checkmark.svg" alt="checkmark icons"
+                                                            class="check-mark"> Successfully</span>
+                                                    <p class="ab-change-states-text">New password created succesfully.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                            </li>
+                            <li class="ab-account-details-name">
+                                <div class="ab-account-info-main-wrp">
+                                    <div class="ab-account-info-content">
+                                        <p class="ab-account-data-title"><span class="ab-account-data-icons"><img
+                                                    src="image/user-small.svg" alt="envelop icon"></span> Name
+                                        </p>
+                                        <p class="ab-account-data-info">Johnny Appleseed</p>
+                                    </div>
+                                    <button class="ab-button-style ab-changed-btn">Change</button>
+                                </div>
+                                <!-- reset or changed user name states -->
+                                <div class="ab-account-info-changed-states changed-user-name-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+                                                <div class="ab-input-group">
+                                                    <input type="text" class="ab-input" required
+                                                        placeholder="First name">
+                                                </div>
+                                                <div class="ab-input-group">
+                                                    <input type="text" class="ab-input" required
+                                                        placeholder="Second name">
+                                                </div>
+                                                <div class="ab-button-group">
+                                                    <button class="ab-button-style ab-footer-button">Change</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                            </li>
+                            <li class="ab-account-details-name">
+                                <div class="ab-account-info-main-wrp">
+                                    <div class="ab-account-info-content">
+                                        <p class="ab-account-data-title"><span class="ab-account-data-icons"><img
+                                                    src="image/call-icons.png" alt="call icon"></span>
+                                            Phone</p>
+                                        <p class="ab-account-data-info">+31 654 318-41-17</p>
+                                    </div>
+                                    <button class="ab-button-style ab-changed-btn">Change</button>
+                                </div>
+                                <!-- reset or changed email address states -->
+                                <div class="ab-account-info-changed-states changed-contact-number-states">
+                                    <form action="/post" class="ab-changed-states-input-form">
+                                        <div class="ab-form-input-box">
+                                            <div class="ab-changed-state-wrapper">
+                                                <div class="ab-input-group warning">
+                                                    <input type="tel" class="ab-input" required
+                                                        placeholder="+31 654 745-46-11">
+                                                    <span class="warn-text">Please enter a valid email address</span>
+                                                </div>
+                                                <div class="ab-input-group">
+                                                    <button class="get-code">Get code</button>
+                                                    <input type="text" class="ab-input" required
+                                                        placeholder="Confrim code">
+                                                </div>
+                                                <div class="ab-button-group">
+                                                    <button class="ab-button-style ab-footer-button">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- [end] -->
+                            </li>
+                        </ul>
+                    </div>
+                    @@include("partials/_promo.html")
+
+                </div>
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                @@include("partials/_account-info-link.html")
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

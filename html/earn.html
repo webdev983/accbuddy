@@ -1,0 +1,68 @@
+@@include("partials/_head.html",{
+    "pageCss": 'earn-page',
+    }) 
+    @@include("partials/_header.html")
+        <!-- ============main content wrapper==========[start] --> 
+        <div class="ab-main-content-wrapper">
+            <div class="ab-container"> 
+                <div class="ab-main-content-box earn-page">  
+                    <!-- main content start here -->  
+                    <main class="ab-main--content earn-page-wrap"> 
+                        <!-- benefit section start -->
+                        @@include("partials/_earn-benefit.html",{ 
+                            "Title": 'Earn Money Selling Accounts',
+                        })
+
+                        <!-- CTA section start -->    
+                        @@include("partials/_cta.html",{
+                            "title": 'Send us your <span class="ab-white-text">questions</span> and comments and we will <span class="ab-white-text">answer</span> in details'
+                        })
+                    </main>
+                    <!-- sidebar content start here -->
+                    <aside class="ab-main--sidebar-content">
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                    "class": '',
+                    })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                    "class": '',
+                    })
+                 <!-- news content start -->
+                 <div class="ab-news-content-box">
+                    <h4 class="news-title">News</h4>
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
+
+
+                    </aside>
+                    <!-- main content start here -->
+                    <div class="ab-main--content earn-page-wrap-two">
+                                     <!-- promo partials section  -->
+                                   @@include("partials/_promo.html")
+
+                            <!-- text block content start -->
+                           @@include("partials/_block-content-v2.html",{
+                            "class": 'ab-block-4',
+                            })
+                     <!-- article partials section  -->
+                     @@include("partials/_articles.html")
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- ============main content wrapper==========[end] -->
+
+          <!-- footer partials start -->
+          @@include("partials/_footer.html")
+          <!-- cookies policy start -->
+          @@include("partials/_cookies.html")
+          <!-- [end] -->
+          @@include("partials/_foot.html")

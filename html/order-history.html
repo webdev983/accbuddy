@@ -1,0 +1,82 @@
+@@include("partials/_head.html",{
+"pageCss": 'order-history',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box order-history-page-wrap">
+
+            <!-- main content start here -->
+            <main class="ab-main--content">
+                <div class="order-history-page-content">
+                    <div class="ab-tablet-view-wrapper">
+                        <h2 class="ab-title">Order history</h2>
+                        @@include("partials/_account-info-link.html")
+
+                    </div>
+
+                    <div class="not-found-order-history-item">
+                        <img src="image/brand-logo-marquee.svg" alt="brand logo">
+                        <p class="ab-not-found-order-title">It looks like you haven't placed any orders with us
+                            yet</p>
+                    </div>
+                    <div class="ab-order-historty-info--box">
+                        <div class="ab-order-historty-info-pc-items">
+                            <table class="ab-order-history-items-table">
+                                <thead class="ab-order-history-title-list">
+                                    <tr>
+                                        <th class="ab-order-history-title-item">Date</th>
+                                        <th class="ab-order-history-title-item">Number</th>
+                                        <th class="ab-order-history-title-item">Item</th>
+                                        <th class="ab-order-history-title-item">Amount due</th>
+                                        <th class="ab-order-history-title-item">Amount due</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="ab-order-history-main-list">
+                                @@loop("partials/_order-list-table-item.html", "data/order.json")
+                                </tbody>
+                            </table> 
+                            @@include("partials/_paginetion.html")
+                        </div>
+
+                        <div class="ab-order-historty-info-smallSc-items">
+                            <div class="ab-order-historty-info-details-items">
+                                @@loop("partials/_order-list-items-mobo.html", "data/order.json")
+                            </div>
+                            <div class="pagination-widgets">
+                                <button class="pagination-btn view-more-btn">Load more</button>
+                            </div>
+                        </div>
+                    </div>
+                    @@include("partials/_promo.html")
+
+                </div>
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                @@include("partials/_account-info-link.html")
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

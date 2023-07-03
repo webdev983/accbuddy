@@ -1,0 +1,82 @@
+@@include("partials/_head.html",{
+"pageCss": 'guest-order-page',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box ab-auth-main-cont">
+
+            <!-- main content start here -->
+            <main class="ab-main--content ab-auth-wrap-page">
+                <div class="ab-auth-details-content authentication-guest-page-wrap">
+
+                    <h2 class="ab-order-title"><img src="image/Vector.svg" alt="auth user icons" class="auth-icons"> <a
+                            href="./guest-order.html">Find a guest order</a></h2>
+                    <div class="ab-auth-content-wrap-box authentication-signin-page authentication-guest-page">
+                        <!-- NOTE: [no-access-warning,email-warning] those class 
+                                    need to pass based on topic when showing error for requered items -->
+                        <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                                Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                                Email not
+                                registered, you may register now.</span>
+                            <div class="ab-auth-input-authentication-wrap-cont">
+                                <div class="ab-input-group">
+                                    <input type="text" required name="text" class="ab-input-items"
+                                        placeholder="Order number">
+                                    <span class="alart-text">Enter the correct order number.</span>
+                                </div>
+                                <div class="ab-input-group">
+                                    <input type="email" required name="email" class="ab-input-items"
+                                        placeholder="Email">
+                                    <span class="alart-text">Please enter a valid email address.</span>
+                                </div>
+                                <button class="ab-button-style ab-submite-btn">Find</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ab-auth-details-main-flex">
+                    <div class="ab-auth-details-content  authentication-signin-page-wrap">
+                        <h2 class="ab-order-title"><img src="image/useer-violet-icons.svg" alt="auth user icons"
+                                class="auth-icons"> <a href="./signin.html">Sign in</a>
+                        </h2>
+                    </div>
+                    <div class="ab-auth-details-content authentication-signup-page-wrap">
+                        <h2 class="ab-order-title"><img src="image/users-union-icons.svg" alt="auth user icons"
+                                class="auth-icons"> New user? <a href="./signup.html">Sign
+                                up</a></h2>
+                    </div>
+                </div>
+                @@include("partials/_promo.html")
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

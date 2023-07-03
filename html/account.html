@@ -1,0 +1,70 @@
+@@include("partials/_head.html",{
+"pageCss": 'account-page',
+})
+@@include("partials/_header.html")
+<!-- [end] -->
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box account-pages">
+
+            <!-- main content start here -->
+            <main class="ab-main--content account-page">
+                <div class="ab-account-sub-link-tablet-view">
+                    <div class="ab-account-tablet-view-wrapper">
+                        <h2 class="ab-title">Account</h2>
+                        <div class="account-info-box">
+                            <div class="account-details-link-card">
+                                <a href="./order-history.html">
+                                    <div class="ab-account-titlcont">
+                                        <h4 class="ab-account-title">Order history</h4>
+                                        <img class="account-info-icons" src="image/clock-timer-icons.svg"
+                                            alt="icons clock" />
+                                    </div>
+                                    <span class="total-number-order">9 orders completed</span>
+                                </a>
+                            </div>
+                            <div class="account-details-link-card">
+                                <a href="./account-settings.html">
+                                    <div class="ab-account-titlcont">
+                                        <h4 class="ab-account-title">Account settings</h4>
+                                        <img class="account-info-icons" src="image/users-outline-icon.png"
+                                            alt="icons clock" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    @@include("partials/_account-info-link.html")
+
+                </div>
+
+                @@include("partials/_promo.html")
+
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                @@include("partials/_account-info-link.html")
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

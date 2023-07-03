@@ -1,0 +1,85 @@
+@@include("partials/_head.html",{
+"pageCss": 'signIn-page',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box ab-auth-main-cont">
+
+            <!-- main content start here -->
+            <main class="ab-main--content ab-auth-wrap-page">
+                <div class="ab-auth-details-content authentication-signin-page-wrap">
+                    <h2 class="ab-order-title"><img src="image/useer-violet-icons.svg" alt="auth user icons"
+                            class="auth-icons"> Sign in</h2>
+
+                    <div class="ab-auth-content-wrap-box authentication-signin-page">
+                        <!-- NOTE: [no-access-warning,email-warning] those class 
+                                    need to pass based on topic when showing error for requered items -->
+                        <div class="ab-input-group-content-box">
+                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                                Please check
+                                your internet connection and try again.</span>
+                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                                Email not
+                                registered, you may register now.</span>
+                            <div class="ab-auth-input-authentication-wrap-cont">
+                                <div class="ab-input-group">
+                                    <input type="email" required name="email" class="ab-input-items"
+                                        placeholder="user@gmail.com">
+                                    <span class="alart-text">Please enter a valid email address.</span>
+                                </div>
+                                <div class="ab-input-group ">
+                                    <label class="password-view"><img src="image/eye.svg" alt="eye icons"></label>
+                                    <input type="password" required class="ab-input-items" placeholder="Password">
+                                    <span class="alart-text">Password must be at least 8 characters in length
+                                        and
+                                        contain
+                                        uppercase, lowercase letters, and special characters.</span>
+                                </div>
+                                <button class="ab-button-style ab-submite-btn">Sign in</button>
+                                <a href="./reset-password.html" class="ab-reset-password-link">Forgot password?</a>
+                            </div>
+                            <a href="./reset-password.html" class="ab-button-style ab-reset-password-btn">Reset
+                                password</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ab-auth-details-main-flex">
+                    <div class="ab-auth-details-content authentication-signup-page-wrap">
+                        <h2 class="ab-order-title"><img src="image/users-union-icons.svg" alt="auth user icons"
+                                class="auth-icons"> New user? <a href="./signup.html">Sign
+                                up</a></h2>
+                    </div>
+                    <div class="ab-auth-details-content authentication-guest-page-wrap">
+                        <h2 class="ab-order-title"><img src="image/Vector.svg" alt="auth user icons" class="auth-icons">
+                            <a href="./guest-order.html">Find a guest order</a></h2>
+                    </div>
+                </div>
+                @@include("partials/_promo.html")
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

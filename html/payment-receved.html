@@ -1,0 +1,62 @@
+@@include("partials/_head.html",{
+"pageCss": 'payment-receve',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box order-detail-wrapper-box payment-conformation-info-wrap">
+
+            <!-- main content start here -->
+            <main class="ab-main--content order-details--page payment-conformation-info">
+                <div class="ab-payment-details-content">
+                    <div class="ab-payment-details-wrapper">
+                        <div class="ab-tablet-view-wrapper">
+                            <h2 class="ab-payment-title"><img src="image/checkmark.svg" alt="marks icons">
+                                Payment received</h2>
+                            @@include("partials/_account-info-link.html")
+
+                        </div>
+                        <div class="ab-payment-details-info-box">
+                            <h6 class="ab-payment-conf-title">Thanks for shopping with us</h6>
+                            <p class="ab-payment-conf-desc">For all your order details, check
+                                out the confirmation email we`re sending to <a
+                                    href="mailto:user@gmail.com">user@gmail.com.</a></p>
+                            <div class="ab-payment-order-box">
+                                <p class="ab-payment-order-id">Order № 3478741</p>
+                                <button class="ab-button-style ab-view-details-btn">View
+                                    details</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                @@include("partials/_promo.html")
+
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                @@include("partials/_account-info-link.html")
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

@@ -1,0 +1,73 @@
+@@include("partials/_head.html",{
+"pageCss": 'article-details',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box article-details-page--wrapper"> 
+
+            <!-- main content start here -->
+            <main class="ab-main--content article-details-page">
+                <!-- article details section start-->
+                @@include("partials/_articles-details.html")
+
+                <!-- newsletter partials start --> 
+                @@include("partials/_newsletter.html")
+
+                <!-- article partials section  -->
+                @@include("partials/_articles.html")
+                <!-- promo partials section  -->
+                @@include("partials/_promo.html")
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+
+               <!-- news content start -->
+               <div class="ab-news-content-box">
+                <h4 class="news-title">News</h4>
+                <ul class="news-content-items">
+                    @@loop("partials/_news-items.html", "data/data.json")
+                </ul>
+            </div>
+            <!-- [END] -->
+
+
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html",{
+                "class": 'ab-block-3',
+                })
+
+ 
+               <!-- news content start -->
+               <div class="ab-news-content-box">
+                <ul class="news-content-items">
+                    @@loop("partials/_news-items.html", "data/data2.json")
+                </ul>
+            </div>
+            <!-- [END] -->
+
+
+            </aside>
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

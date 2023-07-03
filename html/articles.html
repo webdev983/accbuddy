@@ -1,0 +1,83 @@
+@@include("partials/_head.html",{
+"pageCss": 'article-page',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box article-page--wrapper">
+
+            <!-- main content start here -->
+            <main class="ab-main--content article-page">
+
+                <!-- article partials section  -->
+                @@include("partials/_articles.html")
+                <!-- promo partials section  -->
+                @@include("partials/_promo.html")
+                <!-- single article details section-->
+               @@include("partials/_single-article-details.html")
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": 'extra-text-block--view',
+                })
+            
+                  <!-- article partials section  -->
+                  @@include("partials/_articles.html",{
+                    "class": 'articles-block-2'
+                  })
+                @@include("partials/_paginetion.html") 
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": 'extra-text-block--view',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": 'extra-text-block--view',
+                })
+
+                <!-- news content start -->
+                <div class="ab-news-content-box">
+                    <h4 class="news-title">News</h4>
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
+
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": 'ab-block-3',
+                })
+
+
+                 <!-- news content start -->
+                 <div class="ab-news-content-box">
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data2.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": 'ab-block-4',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

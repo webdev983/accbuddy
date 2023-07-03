@@ -1,0 +1,187 @@
+<!-- header partials start -->
+@@include("partials/_head.html",{
+"pageCss": 'home',
+})
+@@include("partials/_header.html")
+<!-- [end] -->
+
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container"> 
+        <div class="ab-main-content-box home-main-page main-content-one">
+ 
+            <!-- main content start here -->
+            <main class="ab-main--content">
+                <!-- account section start -->
+                <section class="ab-account-section">
+                    <h1 class="ab-title">If you need <span class="ab-color-text">quality</span> 100% <span
+                            class="ab-color-text">legal</span> bulk <span class="ab-color-text">accounts</span>,
+                        you've come to the right place.</h1>
+                    <div class="ab-account-content-wrapper">
+                        <!-- account search widgets -->
+                        @@include("partials/account/_search-widgets.html")
+                        <!-- account type tabs -->
+                        @@include("partials/account/_account-types-tabs.html")
+                        <!-- category based account list -->
+                        <div class="ab-account-types-list-overview">
+                            <div class="ab-account-category-tabs"> 
+                                <button class="account-category-btn active"><img
+                                        src="image/fire-icons.svg" width="24" height="31"
+                                        alt="icons intract" class="intract-icon"> Hot</button>
+                                <button class="account-category-btn"><img
+                                        src="image/pin-mark-icons.svg" width="25" height="24"
+                                        alt="icons intract" class="intract-icon"> Sale</button>
+                                <button class="account-category-btn"><img 
+                                        src="image/new-stars-icons.svg" width="32" height="34"
+                                        alt="icons intract" class="intract-icon"> New</button>
+                            </div>
+                            <div class="ab-account-category-based-list">
+                                <table class="ab-account-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Provider
+                                                <div class="ab-update-view-btns">
+                                                    <button class="ab-upd-arow-top"><img
+                                                            src="image/color-arrow-top.svg" width="19"
+                                                            height="13" alt="arrow-top"></button>
+                                                    <button class="ab-upd-arrow-down"><img
+                                                            src="image/color-arrow-down.svg"
+                                                            width="19" height="13" alt="arrow down"></button>
+                                                </div>
+                                            </th>
+                                            <th>Quantity
+                                                <div class="ab-update-view-btns">
+                                                    <button class="ab-upd-arow-top"><img
+                                                            src="image/color-arrow-top.svg" width="19"
+                                                            height="13" alt="arrow-top"></button>
+                                                    <button class="ab-upd-arrow-down"><img
+                                                            src="image/color-arrow-down.svg"
+                                                            width="19" height="13" alt="arrow down"></button>
+                                                </div>
+                                            </th>
+                                            <th>Price
+                                                <div class="ab-update-view-btns">
+                                                    <button class="ab-upd-arow-top"><img
+                                                            src="image/color-arrow-top.svg" width="19"
+                                                            height="13" alt="arrow-top"></button>
+                                                    <button class="ab-upd-arrow-down"><img
+                                                            src="image/color-arrow-down.svg"
+                                                            width="19" height="13" alt="arrow down"></button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                        
+                                    <tbody class="">
+                                        <tr class="no-search-result">
+                                            <td colspan="3">
+                                                <p class="not-fount-text">Sorry, no results for <span
+                                                        class="search-keywords">Mailru</span>. Please try
+                                                    another search.</p>
+                                            </td>
+                                         </tr>
+                                        @@loop("partials/_accounts-list-item.html", "data/accountsdata.json")
+
+                                    </tbody>
+                                </table>
+                        
+                            </div>
+                        </div>
+                        <!-- [end] -->
+                        <!-- all account list  -->
+                               <!-- all account content html start -->
+        <div class="ab-account-types-list-overview ab-all-accounts-types">
+
+            <div class="ab-account-category-based-list">
+                <table class="ab-account-table"> 
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+                                <h4>All accounts</h4> 
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="">
+                        <tr class="no-search-result"> 
+                            <td colspan="3">
+                                <p class="not-fount-text">Sorry, no results for <span
+                                        class="search-keywords">Mailru</span>. Please try
+                                    another search.</p>
+                            </td>  
+                        </tr>
+                        @@loop("partials/_accounts-list-item.html", "data/accountsdata.json")
+                    </tbody>
+                </table> 
+
+            </div>
+        </div>
+        <!-- [END] -->
+                    </div>
+                </section>
+                <!-- [END] -->
+            </main>
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html")
+
+                <!-- block content styles two -->
+                @@include("partials/_block-content-v2.html")
+
+                <!-- news content start -->
+                <div class="ab-news-content-box">
+                    <h4 class="news-title">News</h4>
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
+            </aside>
+
+        </div>
+
+        <div class="ab-main-content-box home-main-page main-content-two">
+            <!-- aside news section  -->
+            @@include("partials/_benefit.html")
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                <!-- block content styles one -->
+                @@include("partials/_block-content-v1.html",{
+                "class": 'ab-block-3',
+                })
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": 'ab-block-4',
+                })
+
+                <!-- news content start -->
+                <div class="ab-news-content-box">
+                    <ul class="news-content-items">
+                        @@loop("partials/_news-items.html", "data/data2.json")
+                    </ul>
+                </div>
+                <!-- [END] -->
+
+            </aside>
+
+            <!-- main content start here -->
+            <div class="ab-main--content">
+
+                <!-- promo partials section  -->
+                @@include("partials/_promo.html")
+
+                <!-- article partials section  -->
+                @@include("partials/_articles.html")
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

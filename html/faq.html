@@ -1,0 +1,82 @@
+@@include("partials/_head.html",{
+"pageCss": 'faq-page',
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box faq-page-wrapper">
+ 
+            <!-- main content start here -->
+            <main class="ab-main--content faq-page">
+                <!-- FAQ section start -->
+                <section class="ab-faq-section">
+                    <h2 class="ab-faq-title">FAQ</h2>
+                    <div class="ab-faq-content-wrap">
+                        <!-- faq cards items -->  
+                        @@include("partials/_faq-content.html",{ 
+                            "faqTitle": "How to buy"
+                        }) 
+                        <!-- faq cards items -->
+                        @@include("partials/_faq-content.html",{
+                            "faqTitle": "How to earn"
+                        })
+                        <!-- faq cards items -->
+                        @@include("partials/_faq-content.html",{
+                            "faqTitle": "About cryptocurrencies"
+                        })
+                        <!-- faq cards items -->
+                        @@include("partials/_faq-content.html",{
+                            "faqTitle": "Sale"
+                        })
+                        
+                    </div>
+                </section>
+                <!-- [END] -->
+
+                <!-- CTA section start -->
+                @@include("partials/_cta.html",{
+                "title": "If you didn't find the answer to your question, write to us.We will respond promptly"
+                })
+                @@include("partials/_promo.html")
+
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+               <!-- news content start -->
+               <div class="ab-news-content-box">
+                <h4 class="news-title">News</h4>
+                <ul class="news-content-items">
+                    @@loop("partials/_news-items.html", "data/data.json")
+                </ul>
+            </div>
+            <!-- [END] -->
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": 'ab-block-3',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")
