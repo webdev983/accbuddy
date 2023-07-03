@@ -1,0 +1,29 @@
+<tr class="@@productStatus">
+    <td>@@productName</td>
+    <td>@@productQty</td>
+    <td><span>$@@productPrice</span>
+        <button class='ab-buy-button'>Buy</button>
+        <button class='ab-available-button'>Not available</button>
+    </td>
+    <td class="popup-box-item">
+        <!-- [NOTE:]when click user select account 'buy button', 
+thet time need to pass class 'open-info' 
+this popup will be visible for user buy -->
+
+        <div class="ab-account-select-popups">
+            <div class="ab-account-select-left-content">
+                <h6 class="ab-account-select-title">@@productName</h6>
+                <p class="ab-description">
+                    @@productDescr
+                </p>
+            </div>
+            <div class="ab-account-select-right-content">
+                <img src="@@productImageUrl" width="56" height="56" alt="@@productImageText"
+                    class="account-types-icons">
+                <button class='ab-button-style buy-button'>Buy</button>
+                <button class='ab-button-style not-available-button'>Not available</button>
+            </div>
+        </div>
+        <!-- [END] -->
+    </td>
+</tr>

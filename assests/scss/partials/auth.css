@@ -1,0 +1,368 @@
+
+/*===========================================
+    authentication styles start 
+  ======================================*/
+  .ab-authentication-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 127px;
+    background: rgb(204, 189, 227, 0.75);
+    z-index: 999;
+    padding-left: 4px;
+    padding-right: 4px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding-bottom: 72px;
+  }
+  .ab-auth-main-content {
+    position: relative;
+  }
+  .ab-auth-main-content .ab-close-btn-auth-btn,
+  .ab-authentication-wrap .ab-close-btn-auth-btn {
+    position: absolute;
+    top: -39px;
+    right: 42px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  .ab-authentication-wrap.guest-order-popups
+    .ab-auth-info-content.sign-in-content {
+    margin-bottom: 20px !important;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .ab-authentication-wrap .ab-close-btn-auth-btn {
+      display: block;
+    }
+  }
+  .ab-reset-password-content {
+    position: relative;
+  }
+  @media screen and (max-width: 767px) {
+    .ab-authentication-wrap {
+      background: rgb(204, 189, 227, 1);
+    }
+  }
+  .ab-authentication-wrap.open-info {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: painted;
+  }
+  .ab-authentication-wrap .ab-reset-password-content {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 77px 80px 79px 80px;
+    background: var(--ab_violet);
+  }
+  .ab-authentication-wrap .ab-reset-password-content .ab-reset-password-box {
+    padding: 25px 29px 34px 29px;
+    background: var(--ab_light);
+  }
+  .ab-authentication-wrap .ab-title {
+    margin-bottom: 27px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_violet);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  .ab-input-group-content-box .ab-input-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .ab-input-group-content-box .ab-input-group .ab-input-items {
+    width: 100%;
+    padding: 19px 21px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--ab_violet);
+  }
+  
+  .ab-input-group-content-box .ab-button-style.ab-submite-btn {
+    background: var(--ab_violet);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-content: center;
+  }
+  .ab-input-group-content-box p {
+    margin-bottom: 30px;
+  }
+  .ab-input-group-content-box .ab-input-group {
+    position: relative;
+  }
+  
+  .ab-input-group-content-box .ab-input-group .password-view {
+    position: absolute;
+    right: 21px;
+    top: 22px;
+  }
+  
+  .ab-authentication-wrap .ab-auth-main-content {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--ab_violet);
+    padding: 77px 79px 78px 80px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .ab-authentication-wrap .ab-auth-main-content .ab-auth-left-content {
+    width: 100%;
+  }
+  .ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content {
+    width: 100%;
+    max-width: 380px;
+  }
+  .ab-authentication-wrap
+    .ab-auth-main-content
+    .ab-auth-right-content
+    .ab-auth-info-content.guest-order-content {
+    padding: 25px 34px;
+    background: var(--ab_orange);
+    height: auto;
+  }
+  .ab-auth-main-content .ab-auth-left-content .ab-auth-info-content {
+    padding: 25px 34px;
+    background: var(--ab_light);
+  }
+  .ab-auth-main-content
+    .ab-auth-left-content
+    .ab-auth-info-content:not(:last-child) {
+    margin-bottom: 81px;
+  }
+  .ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content .ab-title {
+    color: var(--ab_white);
+  }
+  .ab-authentication-wrap.guest-order-popups
+    .ab-auth-info-content.sign-up-content
+    .ab-title {
+    margin-bottom: 0;
+  }
+  .ab-authentication-wrap.guest-order-popups
+    .ab-auth-left-content
+    .ab-auth-info-content:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .ab-authentication-wrap.sign-up-popups .ab-auth-info-content.sign-in-content {
+    margin-bottom: 20px !important;
+  }
+  .ab-authentication-wrap.sign-up-popups
+    .ab-auth-info-content.sign-in-content
+    .ab-title {
+    margin-bottom: 0;
+  }
+  .ab-authentication-wrap.sign-in-popups .ab-auth-info-content.sign-in-content {
+    margin-bottom: 20px !important;
+  }
+  
+  .ab-authentication-wrap.sign-in-popups
+    .ab-auth-info-content.sign-up-content
+    .ab-title {
+    margin-bottom: 0;
+  }
+  .ab-auth-info-content.guest-order-content
+    .ab-auth-info-content.guest-order-content
+    .ab-input-group:nth-child(2)
+    .ab-input-items,
+  .ab-authentication-wrap.sign-in-popups
+    .ab-auth-info-content.sign-in-content
+    .ab-input-group:nth-child(2)
+    .ab-input-items {
+    padding-right: 77px;
+  }
+  .ab-authentication-wrap.sign-in-popups
+    .ab-auth-info-content.sign-in-content
+    .ab-input-group
+    .password-view {
+    right: 80px;
+  }
+  .ab-auth-info-content.guest-order-content
+    .ab-input-group
+    .ab-button-style.ab-submite-button,
+  .ab-auth-info-content.sign-in-content
+    .ab-input-group
+    .ab-button-style.ab-submite-button {
+    width: 60px;
+    position: absolute;
+    right: 0;
+    height: 61px;
+    background: var(--ab_violet);
+    padding-top: 17px;
+    z-index: 99;
+  }
+  .ab-reset-password-popup {
+    display: none;
+  }
+  .ab-auth-info-content.sign-in-content.incorrect-password {
+    margin-bottom: 29px !important;
+  }
+  .ab-auth-info-content.sign-in-content.incorrect-password
+    ~ .ab-reset-password-popup {
+    display: block;
+    margin-bottom: 29px;
+    text-align: center;
+    color: var(--ab_white);
+    text-decoration: underline;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: var(--ab_white);
+  }
+  
+  @media screen and (max-width: 991px) {
+    .ab-authentication-wrap .ab-reset-password-content {
+      padding: 39px 38px 42px 37px;
+    }
+    .ab-authentication-wrap .ab-reset-password-content .ab-reset-password-box {
+      padding: 16px 13px 15px 16px;
+    }
+    .ab-authentication-wrap .ab-title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .ab-authentication-wrap .ab-auth-main-content {
+      padding: 39px 39px 41px 37px;
+      flex-direction: column;
+    }
+    .ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content {
+      padding: 0;
+      height: 216px;
+    }
+    .ab-auth-main-content .ab-auth-right-content .ab-auth-info-content,
+    .ab-auth-main-content .ab-auth-left-content .ab-auth-info-content {
+      padding: 16px 13px 13px 16px;
+    }
+    .ab-authentication-wrap
+      .ab-input-group-content-box
+      .ab-input-group
+      .ab-input-items {
+      padding: 11px 21px;
+    }
+    .ab-authentication-wrap.sign-in-popups
+      .ab-input-group-content-box
+      .ab-input-group
+      .password-view {
+      top: 14px;
+      right: 70px;
+    }
+    .ab-input-group-content-box .ab-input-group .password-view {
+      top: 14px;
+    }
+    .ab-auth-info-content.guest-order-content
+      .ab-input-group
+      .ab-button-style.ab-submite-button,
+    .ab-auth-info-content.sign-in-content
+      .ab-input-group
+      .ab-button-style.ab-submite-button {
+      width: 44px;
+      height: 45px;
+      padding-top: 10px;
+    }
+    .ab-auth-info-content.guest-order-content
+      .ab-input-group
+      .ab-button-style.ab-submite-button
+      img,
+    .ab-auth-info-content.sign-in-content
+      .ab-input-group
+      .ab-button-style.ab-submite-button
+      img {
+      width: 13.5px;
+      height: 13.17px;
+    }
+    .ab-authentication-wrap.guest-order-popups
+      .ab-auth-info-content.sign-in-content
+      .ab-input-group-content-box {
+      display: none;
+    }
+    .ab-authentication-wrap.guest-order-popups
+      .ab-auth-info-content.sign-in-content
+      .ab-title {
+      margin-bottom: 0;
+    }
+    .ab-authentication-wrap.sign-in-popups
+      .ab-auth-right-content
+      .ab-auth-info-content.guest-order-content
+      .ab-input-group-content-box,
+    .ab-authentication-wrap.sign-up-popups
+      .ab-auth-right-content
+      .ab-auth-info-content.guest-order-content
+      .ab-input-group-content-box {
+      display: none;
+    }
+    .ab-authentication-wrap.sign-in-popups
+      .ab-auth-right-content
+      .ab-auth-info-content.guest-order-content
+      .ab-title,
+    .ab-authentication-wrap.sign-up-popups
+      .ab-auth-right-content
+      .ab-auth-info-content.guest-order-content
+      .ab-title {
+      margin-bottom: 0 !important;
+    }
+    .ab-authentication-wrap.sign-in-popups .ab-auth-right-content,
+    .ab-authentication-wrap.sign-up-popups .ab-auth-right-content {
+      height: auto;
+    }
+    .ab-authentication-wrap.sign-up-popups
+      .ab-auth-right-content
+      .ab-auth-info-content.guest-order-content
+      .ab-input-group-content-box {
+      display: none;
+    }
+    .ab-authentication-wrap.sign-up-popups
+      .ab-auth-right-content
+      .ab-auth-info-content.guest-order-content
+      .ab-title {
+      margin-bottom: 0 !important;
+    }
+  
+    .ab-authentication-wrap.sign-up-popups .ab-auth-right-content {
+      height: auto;
+    }
+    .ab-auth-info-content.sign-in-content {
+      grid-area: flow-one;
+      margin-bottom: 0 !important;
+    }
+    .ab-auth-info-content.sign-up-content {
+      grid-area: flow-two;
+    }
+    .ab-authentication-wrap.sign-up-popups
+      .ab-auth-main-content
+      .ab-auth-left-content {
+      width: 100%;
+      display: grid;
+      grid-template-areas: 'flow-two' 'flow-one';
+      grid-row-gap: 20px;
+    }
+    .ab-authentication-wrap.sign-up-popups .ab-auth-info-content.sign-in-content {
+      margin-bottom: 0px !important;
+    }
+    .ab-authentication-wrap .ab-auth-main-content .ab-auth-right-content {
+      max-width: 100%;
+    }
+    .ab-authentication-wrap .ab-auth-main-content {
+      max-width: 370px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

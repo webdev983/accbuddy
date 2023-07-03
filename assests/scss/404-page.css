@@ -1,0 +1,78 @@
+
+@import url('./partials/header.css');
+@import url('./partials/account-select.css');
+@import url('./partials/article.css');
+@import url('./partials/promo.css');
+@import url('./partials/block-content.css');
+@import url('./partials/news.css');
+@import url('./partials/footer.css');
+/******************************************
+    404 not found error page style css 
+*********************************************/
+.ab-main-content-box.not-found-page {
+    display: grid;
+    grid-template-areas: 'area-one area-three' 'area-two area-three';
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+  .ab-main-content-box.not-found-page > :nth-child(1) {
+    grid-area: area-one;
+  }
+  
+  .ab-main-content-box.not-found-page > :nth-child(2) {
+    grid-area: area-three;
+  }
+  .ab-main-content-box.not-found-page > :nth-child(3) {
+    grid-area: area-two;
+  }
+  .ab-main-content-wrapper.not-found-page-wrap-main .not-found-error-title {
+    text-align: center;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 500px;
+    line-height: 625px;
+    color: #ccbde3;
+  }
+  @media screen and (max-width: 1280px) {
+    .ab-main-content-wrapper.not-found-page-wrap-main .not-found-error-title {
+      font-size: 345px;
+      line-height: 1;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-main-content-box.not-found-page {
+      display: block;
+    }
+    .ab-main-content-wrapper.not-found-page-wrap-main .not-found-error-title {
+      font-size: 199px;
+      line-height: 1;
+    }
+    .ab-main-content-box.not-found-page .ab-main--content.not-found-page-wrap {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    .ab-main-content-wrapper.not-found-page-wrap-main .ab-promo-content-box {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-main-content-wrapper.not-found-page-wrap-main .not-found-error-title {
+      font-size: 199px;
+      line-height: 1;
+    }
+    .ab-main-content-box.not-found-page .ab-main--content.not-found-page-wrap {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    .ab-main-content-box.not-found-page
+      .ab-main--content.not-found-page-wrap
+      .ab-account-section
+      .ab-title {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+    .ab-main-content-wrapper.not-found-page-wrap-main .not-found-error-title {
+      font-size: 170px;
+    }
+  }
