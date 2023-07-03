@@ -1,0 +1,55 @@
+@import url('./partials/header.css');
+@import url('./partials/auth-pages.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+
+.ab-auth-content-wrap-box.confirmation-reset-password
+  .ab-auth-input-reset-password
+  .ab-input-group
+  .get-code {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--ab_orange);
+  height: 100%;
+  max-width: 100px;
+  width: 100%;
+  font-family: var(--ab_primary-font);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ab-input-group-content-box .ab-input-group .password-view {
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 9;
+  background: #fff;
+  padding: 22px 15px 15px 10px;
+}
+@media screen and (max-width: 991px) {
+  .ab-auth-content-wrap-box.confirmation-reset-password
+    .ab-input-group-content-box
+    .ab-auth-input-reset-password
+    .ab-input-group
+    .password-view {
+    top: 0px;
+  }
+}
+
+.ab-auth-content-wrap-box.reset-confirmation-mail,
+.ab-auth-content-wrap-box.confirmation-reset-password,
+.ab-auth-content-wrap-box.reset-success-massage{
+    display: none;
+}
+
+.ab-auth-content-wrap-box.reset-confirmation-mail.confirmation-mail-open,
+.ab-auth-content-wrap-box.confirmation-reset-password.confirmation-password-open,
+.ab-auth-content-wrap-box.reset-success-massage.success-massage-open{
+    display: block;
+}

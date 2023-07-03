@@ -1,0 +1,170 @@
+@import url('./partials/header.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/******************************
+    checkout page style 
+  **************************/
+  .ab-checkout-info-details-wrap {
+    padding: 87px 77px 89px 79px;
+    position: relative;
+    margin-bottom: 97px;
+    background-color: rgb(204, 189, 227, 0.2);
+  }
+  
+  .ab-checkout-info-details-wrap .ab-checkout-buy-item-content {
+    margin-bottom: 50px;
+  }
+  .ab-checkout-info-details-wrap .ab-checkout-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: flex-end;
+  }
+  .ab-checkout-info-details-wrap
+    .ab-checkout-btn-box
+    .ab-button-style.ab-buy-button {
+    max-width: 140px;
+    background: var(--ab_gray);
+  }
+  .ab-checkout-info-details-wrap
+    .ab-checkout-btn-box
+    .ab-button-style.ab-buy-button.ab-paypal-buy-button {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6c305;
+    border-radius: 7px;
+  }
+  main.ab-main--content.order-details--page.ab-checkout--page
+    .ab-promo-content-box {
+    margin-bottom: 50px;
+  }
+  .ab-checkout-info-details-wrap
+    .ab-checkout-buy-item-content
+    .ab-chekout-buy-item-texts {
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .ab-checkout-info-details-wrap
+    .ab-checkout-buy-item-content
+    .ab-chekout-buy-item-texts
+    .ab-text {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #59219e;
+  }
+  .ab-checkout-info-details-wrap .ab-checkout-buy-item-content .ab-buy-amound {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: #59219e;
+    margin-bottom: 0;
+  }
+  main.ab-main--content.order-details--page.ab-checkout--page
+    .ab-chekout-buy-item-texts
+    img.ab-buy-item-logo {
+    width: 79.64px;
+    height: 79.64px;
+  }
+  .ab-main--content.ab-checkout--page .account-info-items {
+    display: none;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .ab-checkout-info-details-wrap {
+      padding: 67px 55px 69px 55px;
+    }
+    .ab-checkout-info-details-wrap .ab-checkout-btn-box {
+      gap: 30px;
+      justify-content: space-between;
+    }
+    .ab-checkout-info-details-wrap
+      .ab-checkout-buy-item-content
+      .ab-chekout-buy-item-texts
+      .ab-text {
+      max-width: 350px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-checkout-info-details-wrap
+      .ab-checkout-buy-item-content
+      .ab-chekout-buy-item-texts
+      .ab-text {
+      max-width: 414px;
+    }
+    .ab-checkout-info-details-wrap {
+      padding: 58px 49px 59px 48px;
+    }
+    .ab-main--content.order-details--page.ab-checkout--page
+      .ab-order-details-wrapper {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    .ab-checkout-info-details-wrap .ab-checkout-btn-box {
+      justify-content: space-between;
+    }
+    .ab-checkout-info-details-wrap
+      .ab-checkout-buy-item-content
+      .ab-chekout-buy-item-texts {
+      margin-bottom: 0;
+    }
+    .ab-main-content-box.order-detail-wrapper-box.checkout-details-wrapper
+      .ab-order-details-wrapper {
+      padding-bottom: 0;
+    }
+    .ab-main-content-box.order-detail-wrapper-box.checkout-details-wrapper
+      .ab-order-details-wrapper
+      .ab-checkout-info-details-wrap {
+      padding-bottom: 89px;
+    }
+    .ab-main-content-box.order-detail-wrapper-box.checkout-details-wrapper
+      .ab-main--sidebar-content {
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 991px)  and (min-width: 768px) {
+    .ab-main--content.ab-checkout--page .account-info-items {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-checkout-info-details-wrap {
+      padding: 0;
+      background-color: transparent;
+    }
+    .ab-main--content.order-details--page.ab-checkout--page
+      .ab-order-details-wrapper {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+    .ab-main--content.order-details--page.ab-checkout--page
+      .ab-tablet-view-wrapper {
+      padding-left: 0;
+    }
+    .ab-checkout-info-details-wrap
+      .ab-checkout-buy-item-content
+      .ab-chekout-buy-item-texts {
+      flex-direction: column;
+      gap: 33px;
+      margin-bottom: 32px;
+    }
+    .ab-checkout-info-details-wrap .ab-checkout-btn-box {
+      flex-direction: column-reverse;
+      gap: 38px;
+    }
+    .ab-main-content-box.order-detail-wrapper-box.checkout-details-wrapper
+      .ab-order-details-wrapper
+      .ab-checkout-info-details-wrap {
+      padding-bottom: 0px;
+      margin-bottom: 76px;
+    }
+  }
+  

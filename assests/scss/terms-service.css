@@ -1,0 +1,36 @@
+@import url('./partials/header.css');
+@import url('./partials/block-content.css');
+@import url('./partials/promo.css');
+@import url('./partials/footer.css');
+/*********************************
+    term and service section style css 
+********************************/
+.ab-term-service-section {
+    position: relative;
+    padding-bottom: 98px;
+  }
+  .ab-term-service-section .ab-title {
+    margin-bottom: 67px;
+  }
+  .ab-term-service-content .term-desc {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .ab-term-service-content .term-desc:not(:last-child) {
+    margin-bottom: 56px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .ab-term-service-section {
+      padding-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .ab-main-content-box.term-service-main-wrapper .ab-main--sidebar-content {
+      margin-top: 50px;
+    }
+  }

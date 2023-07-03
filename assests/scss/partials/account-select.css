@@ -1,0 +1,674 @@
+
+/*********************************
+    account types section style css 
+********************************/
+.ab-account-section .ab-title {
+    margin-bottom: 50px;
+    max-width: 855px;
+  }
+  .ab-account-types-list-overview {
+    position: relative;
+    background: rgb(204, 189, 227, 0.2);
+    padding: 44px 80px 34px 83px;
+  }
+  .ab-account-types-list-overview.ab-all-accounts-types{padding-bottom: 82px;padding-top: 40px;}
+  .ab-account-types-list-overview.ab-all-accounts-types {
+    margin-top: 22px;
+  }
+  .ab-account-search-widgets {
+    padding: 40px 80px 43px 80px;
+    position: relative;
+    background: var(--ab_light);
+    display: flex;
+    align-items: center;
+  }
+  .ab-account-search-widgets #search {
+    width: 100%;
+    padding: 25px 0 25px 29px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #59219e;
+  }
+  .ab-account-search-widgets .input-search-icons {
+    position: absolute;
+    right: 97px;
+    cursor: pointer;
+    top: 60px;
+  }
+  .ab-account-content-wrapper .ab-account-types-list-tabs {
+    padding: 25px 80px 52px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .ab-account-content-wrapper .ab-account-types-list-tabs .account-tabs-btn {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--ab_violet);
+    background: transparent;
+    max-width: 110px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .ab-account-content-wrapper .ab-account-types-list-tabs .account-tabs-btn:hover,
+  .ab-account-content-wrapper
+    .ab-account-types-list-tabs
+    .account-tabs-btn.active {
+    color: var(--ab_orange);
+  }
+  .ab-account-types-list-overview .ab-account-category-tabs {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid var(--ab_violet);
+  }
+  .ab-account-types-list-overview
+    .ab-account-category-tabs
+    .account-category-btn {
+    width: 100%;
+    background: transparent;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 7.38px 7.5px 10.38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 37px;
+    transition: all 350ms ease-in 0s;
+  }
+  
+  .ab-account-types-list-overview
+    .ab-account-category-tabs
+    .account-category-btn.active {
+    padding-top: 18.72px;
+    padding-bottom: 18.72px;
+    height: 68px;
+  }
+  .intract-icon {
+    display: none;
+    transition: all 350ms ease-in 0s;
+  }
+  
+  .ab-account-types-list-overview
+    .ab-account-category-tabs
+    .account-category-btn.active
+    .intract-icon {
+    display: block;
+  }
+  .ab-account-types-list-overview
+    .ab-account-category-tabs
+    .account-category-btn:first-child {
+    background-color: var(--ab_violet);
+    color: var(--ab_white);
+  }
+  .ab-account-types-list-overview
+    .ab-account-category-tabs
+    .account-category-btn:nth-child(2) {
+    background-color: var(--ab_orange);
+    color: var(--ab_white);
+  }
+  .ab-account-types-list-overview
+    .ab-account-category-tabs
+    .account-category-btn:last-child {
+    background-color: var(--ab_light);
+    color: var(--ab_violet);
+  }
+  .ab-account-table thead tr th {
+    padding-top: 23.45px;
+    padding-bottom: 17.51px;
+    border-bottom: 1px solid var(--ab_light);
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--ab_violet);
+  }
+  .ab-account-table thead tr th .ab-update-view-btns {
+    display: inline-flex;
+    gap: 5px;
+  }
+  .ab-account-table tbody tr td {
+    height: 30px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7d7d7d;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .ab-account-table tbody tr td:nth-child(1),
+  .ab-account-table thead tr th:nth-child(1) {
+    padding-left: 25px;
+  }
+  .ab-account-table tbody tr td:nth-child(3),
+  .ab-account-table thead tr th:nth-child(3) {
+    padding-right: 64px;
+  }
+  .ab-account-table tbody tr td:nth-child(1) {
+    width: 450px;
+  }
+  .ab-account-table tbody tr td:nth-child(2) {
+    width: 172px;
+  }
+  .ab-account-table tbody tr td:nth-child(3) span {
+    width: 82px;
+    display: inline-block;
+  }
+  .ab-account-table tbody tr td:nth-child(3) button {
+    margin-left: 24px;
+    height: 24px;
+    width: 129px;
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--ab_white);
+    background-color: var(--ab_orange);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .ab-account-table tbody tr:hover td {
+    color: var(--ab_violet);
+  }
+  .ab-account-table tbody tr.not-available:hover td button,
+  .ab-account-table tbody tr:hover td button {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: painted;
+  }
+  .ab-account-table tbody tr td button.ab-available-button {
+    display: none;
+  }
+  .ab-button-style.not-available-button {
+    padding: 14px 19px;
+    white-space: nowrap;
+  }
+  .ab-button-style.not-available-button,
+  .ab-account-table tbody tr.not-available:hover td > button,
+  .ab-account-table tbody tr.not-available td > button {
+    background-color: var(--ab_gray);
+  }
+  .ab-account-table tbody tr.not-available td button.ab-buy-button,
+  .ab-account-table tbody tr.not-available.active td button.ab-buy-button {
+    display: none;
+  }
+  .ab-account-table tbody tr.not-available:hover td button.ab-available-button,
+  .ab-account-table tbody tr.not-available.active td button.ab-available-button {
+    display: inline-block;
+  }
+  @media screen and (max-width: 991px) {
+    .ab-account-table tbody tr.not-available:hover td button.ab-available-button,
+    .ab-account-table tbody tr.not-available.active td button.ab-available-button {
+      display: none;
+    }
+    .ab-button-style.not-available-button,
+    .ab-account-table tbody tr.not-available:hover td > button,
+    .ab-account-table tbody tr.not-available td > button {
+      padding: 19px 40px;
+    }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .ab-account-search-widgets #search {
+      padding: 23px 0 23px 15px;
+    }
+  }
+  .ab-account-table tbody tr.not-available.active td,
+  .ab-account-table tbody tr.not-available:hover td {
+    color: #000000;
+  }
+  
+  .ab-account-select-popups.not-available-popups .ab-button-style.buy-button {
+    background: var(--ab_gray);
+  }
+  @media screen and (max-width: 767px) {
+    .ab-account-section .ab-title {
+      margin-bottom: 40px;
+    }
+  .ab-account-types-list-overview.ab-all-accounts-types{padding-top: 0px;}
+
+  }
+  /* select account popups */
+  
+  .ab-account-select-popups {
+    position: relative;
+    padding: 20px 26px 28px 27px;
+    background: var(--ab_white);
+    border: 1px solid var(--ab_light);
+    display: flex;
+    gap: 59px;
+    align-items: center;
+    max-width: 700px;
+    height: 231px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right: 10%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 250ms ease-in-out 0.1ms;
+    z-index: 999;
+    display: none;
+  }
+  
+  /* =============search result not found============== */
+  .ab-account-category-based-list .ab-account-table .no-search-result td {
+    padding: 60px 29px 0px;
+    background: transparent;
+  }
+  .ab-account-category-based-list .ab-account-table .no-search-result {
+    background: transparent;
+  }
+  .ab-account-category-based-list
+    .ab-account-table
+    .no-search-result
+    td
+    .not-fount-text {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--ab_violet);
+    max-width: 412px;
+  }
+  .ab-account-category-based-list
+    .ab-account-table
+    .no-search-result
+    td
+    .not-fount-text
+    span {
+    font-weight: 600;
+  }
+  .ab-account-table thead tr:first-child {
+    background: transparent;
+  }
+  .ab-account-category-based-list tbody.not-found-result tr:first-child {
+    display: block;
+  }
+  .ab-account-category-based-list tbody tr:first-child {
+    display: none;
+  }
+  .ab-account-category-based-list .not-found-result tr:not(:first-child) {
+    display: none;
+  }
+  @media screen and (max-width: 1420px) {
+    .ab-account-select-popups {
+      right: 0;
+    }
+  }
+  .popup-box-item {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .ab-account-category-based-list tbody tr {
+    position: relative;
+  }
+  .ab-account-select-popups.not-available-popups {
+    display: none !important;
+  }
+  
+  .ab-account-table
+    tbody
+    tr.not-available:hover
+    td.popup-box-item:hover
+    .ab-account-select-popups.not-available-popups {
+    display: flex;
+  }
+  .ab-account-category-based-list
+    tbody
+    tr:hover
+    td.popup-box-item:hover
+    .ab-account-select-popups,
+  .ab-account-select-popups.open-info {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: painted;
+    display: flex;
+  }
+  
+  .ab-account-select-popups .ab-account-select-left-content .ab-account-setitle {
+    margin-bottom: 11px;
+  }
+  .ab-account-select-popups .ab-account-select-left-content .ab-description {
+    font-family: var(--ab_primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .ab-account-select-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ab-account-select-popups
+    .ab-account-select-right-content
+    .account-types-icons {
+    margin-bottom: 35px;
+  } 
+  .ab-account-select-popups
+    .ab-account-select-right-content
+    .ab-button-style.buy-button {
+    width: 193px;
+  } 
+  .ab-account-category-based-list {
+    position: relative;
+  }
+  .ab-account-table tbody tr.active:hover td > .ab-account-select-popups .not-available-button,
+  .ab-account-table tbody tr.not-available:hover td > .ab-account-select-popups .buy-button,
+  .ab-account-table tbody tr.active:hover td > .ab-available-button,
+  .ab-account-table tbody tr.not-available:hover td > .ab-buy-button {
+    display: none !important;
+  }
+  .ab-account-table tbody tr.not-available:hover td > .ab-account-select-popups .not-available-button, 
+  .ab-account-table tbody tr.active:hover td > .ab-account-select-popups .buy-button,
+  .ab-account-table tbody tr.not-available:hover td > .ab-available-button,
+  .ab-account-table tbody tr.active:hover td > .ab-buy-button {
+    display: inline-block !important;
+  }
+
+  @media screen and (max-width: 991px) {
+    .ab-account-select-popups {
+      gap: 38px;
+      max-height: 431px;
+      z-index: 999;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      width: calc(564px - 8px);
+    }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .ab-account-content-wrapper .ab-account-types-list-tabs {
+      padding: 15px 0px 43px 0px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-account-select-popups {
+      gap: 20px;
+      height: 431px;
+      z-index: 999;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      width: calc(372px - 8px);
+    }
+    .ab-account-select-popups .ab-account-select-left-content .ab-description {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (max-width: 1280px) and (min-width: 992px) {
+    .ab-account-content-wrapper .ab-account-types-list-tabs {
+      padding: 17px 42px 17px 38px;
+      flex-wrap: wrap;
+    }
+    .ab-account-types-list-overview {
+      position: relative;
+      background: rgb(204, 189, 227, 0.2);
+      padding: 44px 38px 82px 42px;
+    }
+    .ab-account-table tbody tr td:nth-child(3),
+    .ab-account-table thead tr th:nth-child(3) {
+      padding-right: 20px;
+      display: flex;
+    }
+    .ab-account-table tbody tr td:nth-child(1) {
+      width: 45%;
+    }
+    .ab-account-table tbody tr td:nth-child(3) button {
+      width: 80px;
+      pointer-events: none;
+      margin-left: 10px;
+      overflow: hidden;
+      font-size: 10px;
+    }
+    .ab-account-table tbody tr td:nth-child(3) span {
+      width: 46px;
+      display: inline-block;
+    }
+    .ab-account-search-widgets {
+      padding: 40px 38px 43px 38px;
+    }
+    .ab-account-search-widgets .input-search-icons {
+      right: 60px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .ab-payment-details-content,
+    .ab-order-details-content.ab-order-details-popup {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    .ab-payment-details-content .ab-payment-details-wrapper,
+    .ab-order-details-content.ab-order-details-popup .ab-order-details-wrapper {
+      padding: 48px !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-payment-details-content,
+    .ab-order-details-content.ab-order-details-popup {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .ab-account-table tbody tr td {
+      font-size: 14px;
+      line-height: 30px;
+    }
+  
+    .ab-main-content-box.home-main-page .ab-account-content-wrapper {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  
+    .ab-account-search-widgets .input-search-icons > img {
+      width: 100%;
+      height: 100%;
+    }
+    .ab-account-types-list-overview {
+      padding: 0px 0px 40px 0px;
+    }
+    .ab-account-types-list-overview .ab-account-category-tabs {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+    .ab-account-table tbody tr td {
+      cursor: pointer;
+    }
+    .ab-account-table tbody tr td:nth-child(3) button {
+      display: none;
+    }
+    .ab-account-table tbody tr td:nth-child(1) {
+      width: 45%;
+      min-width: 170px;
+    }
+    .ab-account-table tbody tr td:nth-child(2) {
+      width: 30%;
+      min-width: 113px;
+    }
+    .ab-account-table tbody tr td:nth-child(3),
+    .ab-account-table thead tr th:nth-child(3) {
+      padding-right: 38px;
+      width: 100%;
+      min-width: 100%;
+      max-width: 81px;
+    }
+    .ab-account-types-list-overview
+      .ab-account-category-tabs
+      .account-category-btn.active {
+      min-width: 144px;
+    }
+    .ab-account-types-list-overview .ab-account-category-tabs {
+      gap: 7.52px;
+    }
+    .ab-main-content-box.home-main-page .ab-account-section .ab-title {
+      padding-left: 42px;
+      padding-right: 18px;
+    }
+    .ab-account-content-wrapper .ab-account-types-list-tabs .account-tabs-btn {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  
+    .ab-payment-details-content .ab-payment-details-wrapper,
+    .ab-order-details-content .ab-order-details-wrapper {
+      padding: 30px 38px;
+    }
+    .ab-order-details-content
+      .ab-order-details-wrapper
+      .ab-order-details-info-box {
+      display: block;
+    }
+    .ab-order-info-input-group {
+      position: relative;
+    }
+    .ab-order-details-left {
+      margin-bottom: 18px;
+    }
+    .ab-order-payment-method .ab-title {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .ab-order-details-content .ab-order-details-wrapper .ab-order-details-notes {
+      margin-top: 37.27px;
+      padding: 28.44px 38px 52px 32px;
+      background: var(--ab_violet);
+    }
+    .ab-order-details-info-box
+      .ab-order-details-left
+      .ab-order-title-box
+      .ab-order-account-icons {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ab-order-details-info-box .ab-order-details-left .ab-order-title-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .ab-payment-details-info-box .ab-payment-order-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .ab-account-table tbody tr.not-available td button.ab-available-button {
+      display: none;
+    }
+    .ab-order-details-content.ab-order-details-popup.open-info
+      .ab-order-details-popup-input-group
+      .ab-button-style.ab-buy-button {
+      padding: 20px 0;
+      max-width: 180px;
+    }
+    .ab-order-details-content.ab-order-details-popup
+      .ab-order-details-info-box
+      .ab-order-details-order-info {
+      grid-template-columns: 1fr 276px;
+      gap: 38px;
+    }
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .ab-account-search-widgets .input-search-icons {
+      right: 76px;
+      top: 54px;
+    }
+    .ab-account-search-widgets {
+      padding: 33px 48px 35px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .ab-account-search-widgets #search {
+      padding: 11px 7.55px 11px 15px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .ab-account-search-widgets .input-search-icons {
+      right: 46.5px;
+      top: 25.55px;
+      width: 19.5px;
+      height: 20.55px;
+      z-index: 9;
+      background: var(--ab_white);
+    }
+    .ab-account-search-widgets {
+      padding: 15.19px 38px 16.15px;
+    }
+  }
+
+  @media screen and (max-width: 1420px) and (min-width: 1281px) {
+    .ab-account-content-wrapper .ab-account-types-list-tabs {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1280px) and (min-width: 992px) {
+    .ab-account-content-wrapper .ab-account-types-list-tabs {
+      padding: 17px 42px 17px 38px;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .ab-account-types-list-overview
+      .ab-account-category-tabs
+      .account-category-btn.active {
+      min-width: 144px;
+    }
+    .ab-account-content-wrapper .ab-account-types-list-tabs .account-tabs-btn {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+  }
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .ab-account-content-wrapper .ab-account-types-list-tabs {
+      padding: 15px 0px 43px 0px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+  }
+  @media screen and (max-width: 767px) {
+    .ab-account-content-wrapper .ab-account-types-list-tabs {
+      padding: 15px 34px 43px 38px;
+      display: grid;
+      gap: 11px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .ab-account-types-list-tabs button {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
