@@ -65,7 +65,7 @@ gulp.task("webp", () => {
 
 // Copy other images (SVG, GIF) to docs folder
 gulp.task("otherImages", () => {
-  return gulp.src("assests/image/**/*.{svg,gif}").pipe(gulp.dest("docs/image"));
+  return gulp.src("assests/image/**/*.{svg,gif,webp}").pipe(gulp.dest("docs/image"));
 });
 
 // HTML task
