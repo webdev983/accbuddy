@@ -79,7 +79,7 @@ gulp.task("html", () => {
     .pipe(livereload());
 });
 
-// Watch files
+// Watch files.
 gulp.task("watch", () => {
   livereload.listen();
   gulp.watch("assests/scss/**/*", gulp.series("css"));
