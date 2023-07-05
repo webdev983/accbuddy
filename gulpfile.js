@@ -104,4 +104,4 @@ gulp.task("serve", () => {
 });
 
 // Default task
-gulp.task("default", gulp.parallel("css", "webfonts", "webp", "otherImages", "html", "serve", "watch"));
+gulp.task("default", gulp.parallel("css", "webfonts", /*"webp",*/ "otherImages", "html", /*"serve",*/ "watch"));
