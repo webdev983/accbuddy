@@ -11,8 +11,9 @@ const minify = require("gulp-clean-css");
 const include = require("gulp-file-include");
 const beautify = require("gulp-beautify");
 const sass = require("gulp-sass")(require("sass"));
-const webp = require("gulp-webp");
 const livereload = require("gulp-livereload");
+const terser = require("gulp-terser");
+const uglify = require("gulp-uglify");
 
 // CSS task
 gulp.task("css", () => {
@@ -53,18 +54,8 @@ gulp.task("webfonts", () => {
   return gulp.src("assests/scss/web/*.{ttf,woff,woff2,eot,svg}").pipe(gulp.dest("docs/css/web"));
 });
 
-// Convert images to WebP
-gulp.task("webp", () => {
-  return gulp
-    .src("assests/image/**/*.{jpg,png}")
-    .pipe(webp())
-    .pipe(gulp.dest("docs/image"))
-    .pipe(browsersync.stream())
-    .pipe(livereload());
-});
-
-// Copy other images (SVG, GIF) to docs folder
-gulp.task("otherImages", () => {
+// Copy other images (SVG, GIF,WEBP) to docs folder
+gulp.task("Images", () => {
   return gulp.src("assests/image/**/*.{svg,gif,webp}").pipe(gulp.dest("docs/image"));
 });
 
@@ -79,15 +70,30 @@ gulp.task("html", () => {
     .pipe(livereload());
 });
 
-// Watch files.
+// JavaScript task
+gulp.task("js", () => {
+  return gulp
+    .src([
+      "assests/*.js", 
+      "assests/js/**/*.js", 
+      "assests/js/*.js"
+    ])
+    .pipe(terser())
+    .pipe(uglify())
+    .pipe(gulp.dest("docs/js"))
+    .pipe(browsersync.stream())
+    .pipe(livereload());
+});
+
+// Watch files
 gulp.task("watch", () => {
   livereload.listen();
   gulp.watch("assests/scss/**/*", gulp.series("css"));
   gulp.watch("html/partials/**/_*.html", gulp.series("html"));
   gulp.watch("html/*.html", gulp.series("html"));
   gulp.watch("assests/scss/web/*", gulp.series("webfonts"));
-  gulp.watch("assests/image/**/*.{jpg,png}", gulp.series("webp"));
-  gulp.watch("assests/image/**/*.{svg,gif}", gulp.series("otherImages"));
+  gulp.watch("assests/image/**/*.{svg,gif}", gulp.series("Images"));
+  gulp.watch("assests/js/*.js", gulp.series("js"));
 });
 
 // Serve task
@@ -104,4 +110,4 @@ gulp.task("serve", () => {
 });
 
 // Default task
-gulp.task("default", gulp.parallel("css", "webfonts", /*"webp",*/ "otherImages", "html", /*"serve",*/ "watch"));
+gulp.task("watch", gulp.parallel("css", "webfonts", "Images", "html", "js", "serve", "watch"));

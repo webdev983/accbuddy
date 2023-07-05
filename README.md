@@ -40,19 +40,18 @@ Step - 05 : npm i browser-sync         [ Browser-sync ]
 
 Step - 06 : npm i cssnano              [ CSS nano ]
 
-Step - 07 : npm i gulp-concat          [ gulp-concat ] 
+Step - 07 : npm i gulp-postcss         [ Postcss ]
 
-Step - 08 : npm i gulp-plumber         [ Plumber ]      
+Step - 08 : npm i gulp-terser     [ js terser ] 
 
-Step - 09 : npm i gulp-postcss         [ Postcss ]
+Step - 09 : npm i gulp-uglify     [ js uglify ] 
 
 Step - 10 : npm i gulp-livereload     [ Livereload ] 
 
-Step - 11 : npm i gulp-notify         [ Notify ]
 
 
 Note : If package json file already created so just use this command "npm i"
 
 -- After installing all plugins just add the last command for the gulp task call. 
 
-Step * -> " gulp " [Note : Run Project]
+Step * -> "gulp watch" [Note : Run Project]

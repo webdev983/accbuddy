@@ -69,6 +69,8 @@ coverage
 static/server
 out.zip
 out.rar
+gulpfile-preview.js
+package-preview.json
 
 /layout.html
 /assests/css/pro-styled.css
