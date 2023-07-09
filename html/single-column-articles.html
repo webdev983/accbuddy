@@ -13,22 +13,24 @@
             <!-- main content start here -->
             <main class="ab-main--content article-page">
 
-                <!-- article partials section  -->
-                @@include("partials/_articles.html")
+                <!-- single article  section  -->
+                @@include("partials/_single-column-article.html") 
+                <!-- [end] -->
+
                 <!-- promo partials section  -->
                 @@include("partials/_promo.html")
                 <!-- single article details section-->
-               @@include("partials/_single-article-details.html")
+                @@include("partials/_single-article-details.html")  
                 <!-- text block content start -->
                 @@include("partials/_block-content-v2.html",{
                 "class": 'extra-text-block--view',
                 })
-            
-                  <!-- article partials section  -->
-                  @@include("partials/_articles.html",{
-                    "class": 'articles-block-2'
-                  })
-                @@include("partials/_paginetion.html") 
+
+                <!-- article partials section  -->
+                @@include("partials/_articles.html",{
+                "class": 'articles-block-2'
+                })
+                @@include("partials/_paginetion.html")
             </main>
 
             <!-- sidebar content start here -->
@@ -46,7 +48,7 @@
 
                 <!-- news content start -->
                 <div class="ab-news-content-box">
-                    <h4 class="news-title ab-orange-color">News</h4>
+                    <h4 class="news-title ab-violate-color">News</h4>
                     <ul class="news-content-items">
                         @@loop("partials/_news-items.html", "data/data.json")
                     </ul>
@@ -60,8 +62,8 @@
                 })
 
 
-                 <!-- news content start -->
-                 <div class="ab-news-content-box">
+                <!-- news content start -->
+                <div class="ab-news-content-box">
                     <ul class="news-content-items">
                         @@loop("partials/_news-items.html", "data/data2.json")
                     </ul>

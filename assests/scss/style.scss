@@ -59,7 +59,30 @@
   --ab_primary-font: 'Lexend', sans-serif;
   --ab_secondary-font: 'Gotham', sans-serif;
 }
-
+.ab-orange-color > a,
+.ab-orange-color{
+  color: #fa9c29 !important;
+}
+.ab-violate-color > a,
+.ab-violate-color{
+  color: #59219e !important;
+} 
+.ab-light-color > a,
+.ab-light-color{
+  color: #ccbde3 !important;
+}
+.ab-white-color > a,
+.ab-white-color{
+  color: #ffffff !important;
+}
+.ab-gray-color > a,
+.ab-gray-color{
+  color: #7d7d7d !important;
+}
+.ab-warning-color > a,
+.ab-warning-color{
+  color: #ff0000 !important;
+}
 body {
   margin: 0;
   padding: 0;
@@ -128,10 +151,7 @@ input::placeholder {
 .ab-textarea-group .warn-text {
   margin-bottom: 20px;
 }
-.ab-textarea-group.warning,
-.ab-input-group.warning {
-	padding-bottom: 15px;
-}
+
 .success-text,
 .alart .alart-text,
 .warning .warn-text {

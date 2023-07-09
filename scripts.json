@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "name": "footer",
+      "include": "partials/_footer.html", 
+      "script": "js/footer-form.js",
+      "headScript": ""
+    },
+    {
+      "name": "product",
+      "include": "partials/_promo.html",
+      "script": "js/protduct.js",
+      "headScript": ""
+    },
+    {
+      "name": "articles",
+      "include": "partials/_articles.html",
+      "script": "js/article.js",
+      "headScript": ""
+    }
+  ]
+}
