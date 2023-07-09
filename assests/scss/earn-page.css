@@ -12,7 +12,7 @@
 .ab-main-content-box.earn-page {
     display: grid;
     grid-template-areas: 'area-one area-three' 'area-two area-three';
-    gap: 0;
+    gap: 20px;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
   }
