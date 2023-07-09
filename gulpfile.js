@@ -22,25 +22,9 @@ const fs = require('fs');
 gulp.task("css", () => {
   return gulp
     .src([
-      "assests/scss/404-page.css",
-      "assests/scss/acc-settings.css",
-      "assests/scss/account-page.css",
-      "assests/scss/article-details.css",
-      "assests/scss/article-page.css",
-      "assests/scss/checkout-page.css",
-      "assests/scss/earn-page.css",
-      "assests/scss/faq-page.css",
-      "assests/scss/guest-order-page.css",
-      "assests/scss/home.css",
-      "assests/scss/marchent-page.css",
-      "assests/scss/order-details.css",
-      "assests/scss/order-history.css",
-      "assests/scss/payment-details.css",
-      "assests/scss/payment-receve.css",
-      "assests/scss/reset-pass-page.css",
-      "assests/scss/signIn-page.css",
-      "assests/scss/signUp-page.css",
-      "assests/scss/terms-service.css",
+      "assests/*.css",
+      "assests/scss/**/*.css",
+      "assests/scss/*.css",
       "assests/scss/style.scss",
     ])
     .pipe(sass({ outputStyle: "expanded" }))
