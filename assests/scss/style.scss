@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: 'Lexend';
-  src: url('../../web/Lexend-ExtraBold.eot');
-  src: url('../../web/Lexend-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('../../web/Lexend-ExtraBold.woff2') format('woff2'),
-    url('../../web/Lexend-ExtraBold.woff') format('woff'),
-    url('../../web/Lexend-ExtraBold.ttf') format('truetype'),
-    url('../../web/Lexend-ExtraBold.svg#Lexend-ExtraBold') format('svg');
+  src: url('./web/Lexend-ExtraBold.eot');
+  src: url('./web/Lexend-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./web/Lexend-ExtraBold.woff2') format('woff2'),
+    url('./web/Lexend-ExtraBold.woff') format('woff'),
+    url('./web/Lexend-ExtraBold.ttf') format('truetype'),
+    url('./web/Lexend-ExtraBold.svg#Lexend-ExtraBold') format('svg');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -25,12 +25,12 @@
 
 @font-face {
   font-family: 'Lexend';
-  src: url('../../web/Lexend-SemiBold.eot');
-  src: url('../../web/Lexend-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../../web/Lexend-SemiBold.woff2') format('woff2'),
-    url('../../web/Lexend-SemiBold.woff') format('woff'),
-    url('../../web/Lexend-SemiBold.ttf') format('truetype'),
-    url('../../web/Lexend-SemiBold.svg#Lexend-SemiBold') format('svg');
+  src: url('./web/Lexend-SemiBold.eot');
+  src: url('./web/Lexend-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./web/Lexend-SemiBold.woff2') format('woff2'),
+    url('./web/Lexend-SemiBold.woff') format('woff'),
+    url('./web/Lexend-SemiBold.ttf') format('truetype'),
+    url('./web/Lexend-SemiBold.svg#Lexend-SemiBold') format('svg');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -38,12 +38,12 @@
 
 @font-face {
   font-family: 'Lexend';
-  src: url('../../web/Lexend-Regular.eot');
-  src: url('../../web/Lexend-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../../web/Lexend-Regular.woff2') format('woff2'),
-    url('../../web/Lexend-Regular.woff') format('woff'),
-    url('../../web/Lexend-Regular.ttf') format('truetype'),
-    url('../../web/Lexend-Regular.svg#Lexend-Regular') format('svg');
+  src: url('./web/Lexend-Regular.eot');
+  src: url('./web/Lexend-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./web/Lexend-Regular.woff2') format('woff2'),
+    url('./web/Lexend-Regular.woff') format('woff'),
+    url('./web/Lexend-Regular.ttf') format('truetype'),
+    url('./web/Lexend-Regular.svg#Lexend-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -59,7 +59,30 @@
   --ab_primary-font: 'Lexend', sans-serif;
   --ab_secondary-font: 'Gotham', sans-serif;
 }
-
+.ab-orange-color > a,
+.ab-orange-color{
+  color: #fa9c29 !important;
+}
+.ab-violate-color > a,
+.ab-violate-color{
+  color: #59219e !important;
+} 
+.ab-light-color > a,
+.ab-light-color{
+  color: #ccbde3 !important;
+}
+.ab-white-color > a,
+.ab-white-color{
+  color: #ffffff !important;
+}
+.ab-gray-color > a,
+.ab-gray-color{
+  color: #7d7d7d !important;
+}
+.ab-warning-color > a,
+.ab-warning-color{
+  color: #ff0000 !important;
+}
 body {
   margin: 0;
   padding: 0;
@@ -128,10 +151,7 @@ input::placeholder {
 .ab-textarea-group .warn-text {
   margin-bottom: 20px;
 }
-.ab-textarea-group.warning,
-.ab-input-group.warning {
-	padding-bottom: 15px;
-}
+
 .success-text,
 .alart .alart-text,
 .warning .warn-text {
@@ -1298,40 +1318,3 @@ main.ab-main--content.payment-details--page .ab-promo-content-box {
     margin-bottom: 0;
   }
 }
-
-
-/* FORM UI RESPONSE HANDLE CSS */
-
-.plank {
-  height: 61.34px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 17.38px;
-  gap: 10.22px;
-  margin-bottom: 5px;
-}
-
-.plank-red {
-  background-color: var(--ab_warning);
-  color: var(--ab_white);
-}
-
-.plank-green {
-  background-color: green;
-  color: var(--ab_white);
-}
-
-.hidden {
-  display: none;
-}
-
-/* .plank-dismiss {
-  margin-left: auto;
-  width: 30px;
-  height: 30px;
-  font-size: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-} */
