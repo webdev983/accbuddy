@@ -11,7 +11,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 10,
     "productDiscountPrice": "",
-    "productQty": 100,
+    "productQty": 0,
     "productImageUrl": "https://www.svgrepo.com/show/516737/google-voice-alt.svg",
     "productImageText": "google incon"
   },
@@ -27,7 +27,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 7,
     "productDiscountPrice": "",
-    "productQty": 10,
+    "productQty": 0,
     "productImageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1024px-Facebook_f_logo_%282021%29.svg.png?20210818083032",
     "productImageText": "facebook icon"
   },
@@ -43,7 +43,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 6,
     "productDiscountPrice": "",
-    "productQty": 10,
+    "productQty": 0,
     "productImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg",
     "productImageText": "twitter icon"
   },
@@ -59,7 +59,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 2,
     "productDiscountPrice": "",
-    "productQty": 10,
+    "productQty": 0,
     "productImageUrl": "https://www.svgrepo.com/show/331550/protonmail.svg",
     "productImageText": "protonmail icon"
   },
@@ -75,7 +75,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 3,
     "productDiscountPrice": "",
-    "productQty": 10,
+    "productQty": 0,
     "productImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Reddit_logo.svg",
     "productImageText": "rededit icon"
   },
@@ -91,7 +91,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 3,
     "productDiscountPrice": "",
-    "productQty": 30,
+    "productQty": 0,
     "productImageUrl": "https://www.svgrepo.com/show/473800/steam.svg",
     "productImageText": "steam icon"
   },
@@ -107,7 +107,7 @@
     "productUpdateTimestamp": 1687265221,
     "productPrice": 0.5, 
     "productDiscountPrice": "",
-    "productQty": 100,
+    "productQty": 0,
     "productImageUrl": "https://www.svgrepo.com/show/373951/outlook.svg",
     "productImageText": "outlook icon"
   }
