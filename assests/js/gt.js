@@ -1,4 +1,4 @@
-async function loadScript() {
+async function loadGoogleTag() {
   const script = document.createElement('script');
   script.src = "https://www.googletagmanager.com/gtag/js?id=G-MTKNRB2JR5";
   document.head.append(script);
@@ -7,8 +7,8 @@ async function loadScript() {
   });
 }
 
-function executeScript() {
-  loadScript().then(() => {
+function executeGoogleTag() {
+  loadGoogleTag().then(() => {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -16,4 +16,4 @@ function executeScript() {
   });
 }
 
-window.addEventListener('load', executeScript);
+window.addEventListener('load', executeGoogleTag);
