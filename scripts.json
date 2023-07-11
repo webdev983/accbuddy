@@ -17,6 +17,12 @@
       "include": "partials/_articles.html",
       "script": "js/article.js",
       "headScript": ""
+    },
+    {
+      "name": "account",
+      "include": "partials/_account.html",
+      "script": "js/account.js",
+      "headScript": ""
     }
   ]
 }
