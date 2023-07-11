@@ -1,8 +1,14 @@
 {
   "sections": [
     {
+      "name": "account",
+      "include": "partials/_account.html",
+      "script": "js/account.js",
+      "headScript": ""
+    },
+    {
       "name": "footer",
-      "include": "partials/_footer.html", 
+      "include": "partials/_footer.html",
       "script": "js/footer-form.js",
       "headScript": ""
     },
