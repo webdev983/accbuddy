@@ -1,4 +1,4 @@
-async function loadGoogleTag() {
+/*async function loadGoogleTag() {
   const script = document.createElement('script');
   script.src = "https://www.googletagmanager.com/gtag/js?id=G-MTKNRB2JR5";
   document.head.append(script);
@@ -17,3 +17,4 @@ function executeGoogleTag() {
 }
 
 window.addEventListener('load', executeGoogleTag);
+*/
