@@ -240,6 +240,7 @@
         </header>
         <!-- ============header section styles==========[end] -->
 <!-- ============main content wrapper==========[start] -->
+<script src="./js/shopping-cart.js"></script>
 <div class="ab-main-content-wrapper">
     <div class="ab-container">
         <div class="ab-main-content-box payment-detail-wrapper-box ab-marchant-details-wrapper">
@@ -248,7 +249,10 @@
             <main class="ab-main--content payment-details--page ab-marchant-details-page">
                 <div class="ab-order-details-content ab-order-details-popup open-info">
                     <div class="ab-tablet-view-wrapper">
-                        <h1 class="ab-order-title ab-violate-color">Shopping Cart is empty</h1>
+
+                        <h1 class="ab-order-title ab-violate-color">Shopping Cart</h1>
+
+
                         <ul class="account-info-items">
     <li class="account-info-link"><a href="/">Order history</a></li>
     <li class="account-info-link"><a href="/">Account settings</a></li>
@@ -262,7 +266,7 @@
                                     <div class="ab-order-title-box">
                                         <h6 class="ab-order-info-title ab-violate-color">Gmail.com PVA</h6>
                                         <img src="/image/gmail-small-icons0.svg" alt="gmail icons"
-                                            class="ab-order-account-icons">
+                                            class="ab-order-account-icons" style="max-width: 5%;">
                                     </div>
                                     <p class="ab-order-info-desc">Accounts are phone verified
                                         with
@@ -282,7 +286,7 @@
                                         <div class="ab-order-info-item">
                                             <p class="ab-quantity-title">Quantity</p>
                                             <div class="ab-quatitly-fild">
-                                                <input type="text" class="ab-quantity-number" value="100">
+                                                <input type="text" class="ab-quantity-number" value="100" onchange="calculateTotal()">
                                             </div>
                                         </div>
                                         <div class="ab-order-quatity-item">
@@ -311,7 +315,7 @@
                                             <div class="ab-check-box-select">
                                                 <label for="abPayment1" class="ab-checkbox-content">
                                                     <div class="ab-ckeck-mark-box">
-                                                        <input type="checkbox" name="checkbox" id="abPayment1">
+                                                        <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showPaypalButton()">
                                                         <div class="ab-custom-check"></div>
                                                     </div>
                                                     <div class="payment-methods"><img src="/image/paypal.svg"
@@ -336,12 +340,13 @@
                                 <!-- where user select merchant then need to pass a extra class
                                              'select-merchant' then the email btn should be shown -->
                                 <div class="ab-order-details-popup-input-group">
-                                    <div class="ab-order-info-input-group">
+                                    <!--
+                                    <div class="ab-order-info-input-group" >
                                         <label class="ab-order-input-info-title">Email</label>
                                         <input type="email" name="email" id="email" placeholder=""
                                             class="ab-input-info-item">
-                                    </div>
-                                    <button class="ab-button-style ab-buy-button ab-paypal-buy-button">Buy now with <img
+                                    </div >-->
+                                    <button class="ab-button-style ab-buy-button ab-paypal-buy-button" onclick = "openPopup()">Buy now with <img
                                             src="/image/paypal.svg" alt="paypal icons"
                                             class="payment-methods-img"></button>
                                 </div>
