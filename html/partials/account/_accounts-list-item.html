@@ -23,10 +23,17 @@ this popup will be visible for user buy -->
             <div class="ab-account-select-right-content">
                 <img src="@@productImageUrl" width="56" height="56" alt="@@productImageText"
                     class="account-types-icons">
-                <button class='ab-button-style buy-button'>Buy</button>
+                <button class='ab-button-style buy-button' onclick="saveCart('@@PK')">Buy</button>
                 <button class='ab-button-style not-available-button'>Not available</button>
             </div>
         </div>
         <!-- [END] -->
     </td>
 </tr>
+<script>
+    function saveCart(PK) {
+        const cart = {itemID:PK,quantity:"1"}
+        localStorage.setItem('cart', JSON.stringify(cart))
+        window.location.href = "/shopping-cart.html";
+    }
+</script>
