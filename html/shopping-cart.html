@@ -5,6 +5,7 @@
 "title": 'Accbuddy Buy Software with Discount - Accbuddy',
 })
 @@include("partials/_header.html")
+<script src = './js/shopping-cart.js'></script>
 <!-- ============main content wrapper==========[start] -->
 <div class="ab-main-content-wrapper">
     <div class="ab-container">
@@ -44,7 +45,7 @@
                                         <div class="ab-order-info-item">
                                             <p class="ab-quantity-title">Quantity</p>
                                             <div class="ab-quatitly-fild">
-                                                <input type="text" class="ab-quantity-number" value="100" onchange="calculateTotal()">
+                                                <input type="text" class="ab-quantity-number" value="1" oninput="calculateTotal()">
                                             </div>
                                         </div>
                                         <div class="ab-order-quatity-item">
@@ -73,7 +74,7 @@
                                             <div class="ab-check-box-select">
                                                 <label for="abPayment1" class="ab-checkbox-content">
                                                     <div class="ab-ckeck-mark-box">
-                                                        <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showPaypalButton()">
+                                                        <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showButton('abPayment1')">
                                                         <div class="ab-custom-check"></div>
                                                     </div>
                                                     <div class="payment-methods"><img src="/image/paypal.svg"
@@ -85,7 +86,7 @@
                                             <div class="ab-check-box-select">
                                                 <label for="abPayment2" class="ab-checkbox-content">
                                                     <div class="ab-ckeck-mark-box">
-                                                        <input type="checkbox" name="checkbox" id="abPayment2">
+                                                        <input type="checkbox" name="checkbox" id="abPayment2" onclick ="showButton('abPayment2')">
                                                         <div class="ab-custom-check"></div>
                                                     </div>
                                                     <div class="payment-methods">Another
