@@ -19,6 +19,10 @@
 
     <script src="js/gt.js"  defer></script>
     
+
+    
+     
+
     <script src="js/footer-form.js"  defer></script>
 
   </head>
@@ -239,6 +243,7 @@
             </div>
         </header>
         <!-- ============header section styles==========[end] -->
+<script src = './js/shopping-cart.js'></script>
 <!-- ============main content wrapper==========[start] -->
 <script src="./js/shopping-cart.js"></script>
 <div class="ab-main-content-wrapper">
@@ -251,7 +256,6 @@
                     <div class="ab-tablet-view-wrapper">
 
                         <h1 class="ab-order-title ab-violate-color">Shopping Cart</h1>
-
 
                         <ul class="account-info-items">
     <li class="account-info-link"><a href="/">Order history</a></li>
@@ -286,7 +290,9 @@
                                         <div class="ab-order-info-item">
                                             <p class="ab-quantity-title">Quantity</p>
                                             <div class="ab-quatitly-fild">
-                                                <input type="text" class="ab-quantity-number" value="100" onchange="calculateTotal()">
+
+                                                <input type="text" class="ab-quantity-number" value="1" oninput="calculateTotal()">
+
                                             </div>
                                         </div>
                                         <div class="ab-order-quatity-item">
@@ -315,7 +321,9 @@
                                             <div class="ab-check-box-select">
                                                 <label for="abPayment1" class="ab-checkbox-content">
                                                     <div class="ab-ckeck-mark-box">
-                                                        <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showPaypalButton()">
+
+                                                        <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showButton('abPayment1')">
+
                                                         <div class="ab-custom-check"></div>
                                                     </div>
                                                     <div class="payment-methods"><img src="/image/paypal.svg"
@@ -327,7 +335,7 @@
                                             <div class="ab-check-box-select">
                                                 <label for="abPayment2" class="ab-checkbox-content">
                                                     <div class="ab-ckeck-mark-box">
-                                                        <input type="checkbox" name="checkbox" id="abPayment2">
+                                                        <input type="checkbox" name="checkbox" id="abPayment2" onclick ="showButton('abPayment2')">
                                                         <div class="ab-custom-check"></div>
                                                     </div>
                                                     <div class="payment-methods">Another
