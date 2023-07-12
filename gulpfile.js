@@ -69,7 +69,7 @@ gulp.task("fileInclude", () => {
     )
     .pipe(replace('<!-- headScriptsJson -->', function (match) {
       if (this.file.needScriptsJson) {
-        return '<script src="scripts.json" async></script>\n';
+        return '<script src="scripts.json" defer></script>\n';
       }
       return '';
     }))
@@ -82,7 +82,7 @@ gulp.task("fileInclude", () => {
     .pipe(replace(/<!--\s*build:([^ ]+?)\s*-->[\s\S]*?<!--\s*endbuild\s*-->/g, function (match, p1) {
       const section = scripts.sections.find(s => s.name === p1);
       if (section && this.file.flags[section.name]) {
-        return `<script src="${section.script}" async></script>`;
+        return `<script src="${section.script}"  defer></script>`;
       }
       return '';
     }))
@@ -92,7 +92,7 @@ gulp.task("fileInclude", () => {
       // Generate script tags for sections with headScript property
       scripts.sections.forEach(section => {
         if (section.headScript && this.file.flags[section.name]) {
-          scriptTags += `<script src="${section.headScript}" async></script>\n`;
+          scriptTags += `<script src="${section.headScript}"  defer></script>\n`;
         }
       });
       return scriptTags;

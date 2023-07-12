@@ -1,5 +1,32 @@
-document.addEventListener("DOMContentLoaded", function () {
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    function loadScriptOnce() {
+        let isGrecaptachaLoaded = false
+    
+        // closure is utilized to implement boolean variable for loading once condition
+        function loadScript() {
+            // every focus of inputs will go check if it is loaded
+            // because of closure, isGrecaptachaLoaded will be always tracked by loadscript function
+            if (!isGrecaptachaLoaded) {
+                const script = document.createElement('script');
+                script.src = "https://www.google.com/recaptcha/api.js";
+                script.async = true;
+                script.defer = true;
+                document.head.appendChild(script);
+                isGrecaptachaLoaded = true;
+            }
+        }
+    
+        const form = document.querySelector('#footer-form');
+        const inputs = [form.querySelector('#name'), form.querySelector('#email'), form.querySelector('#text'), form.querySelector('#checkedRequered')]
+    
+        inputs.forEach(function (input) {
+            input.addEventListener('focus', loadScript);
+        });
+    }
+
+    console.log('load', loadScriptOnce);
     if (loadScriptOnce) {
         loadScriptOnce()
         console.log(' recaptcha.js loaded')

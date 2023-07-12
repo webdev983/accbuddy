@@ -19,12 +19,6 @@
       "headScript": ""
     },
     {
-      "name": "footer-recaptcha",
-      "include": "partials/_footer.html", 
-      "script": "js/recaptcha.js",
-      "headScript": ""
-    },
-    {
       "name": "product",
       "include": "partials/_promo.html",
       "script": "js/protduct.js",
