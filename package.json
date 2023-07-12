@@ -30,7 +30,7 @@
     "gulp-terser": "^2.1.0",
     "gulp-uglify": "^3.0.2",
     "postcss": "^8.4.12",
-    "sass": "^1.45.1",
+    "sass": "^1.63.6",
     "through2": "^4.0.2"
   }
 }
