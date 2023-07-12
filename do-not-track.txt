@@ -1,0 +1,6 @@
+404.html
+account-settings.html
+index.html
+order-details.html
+payment-failed.html
+payment-receved.html`
