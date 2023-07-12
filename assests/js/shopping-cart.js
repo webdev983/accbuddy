@@ -134,6 +134,7 @@ async function openPopup() {
     }
 
 }
+
 function showButton(selectedId) {
     console.log('clicked')
     //uncheck other inputs
@@ -152,6 +153,7 @@ function showButton(selectedId) {
         else{
             elements[i].className = elements[i].className.replace(' select-merchant','')
         }
+
     }
 }
 document.addEventListener("DOMContentLoaded", async function () {
@@ -161,6 +163,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     // Modify logo
     const { productDescr, productImageUrl, productName, productImageText, productQty, productWarning } = await product
+
 
 
     let logo = document.querySelector('.ab-order-account-icons');
@@ -185,6 +188,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         availableSpan.innerHTML = productQty;
     }
 
+
     let noteDesc = document.querySelector('.ab-note-desc');
     if (noteDesc) {
         noteDesc.innerHTML = productWarning;
@@ -201,6 +205,7 @@ async function calculateTotal() {
     const { productPrice } = await product
 
 
+
     // Change price
     let priceSpan = document.querySelector('.ab-order-price');
     if (priceSpan) {
@@ -212,7 +217,9 @@ async function calculateTotal() {
     if (discountSpan) {
         discountSpan.innerHTML = `-$${discount}`;
     }
+
     total = productPrice * parseInt(quantitySpan.value) * (1 - discount / 100)
+
     // Change amount due
     let amountDueSpan = document.querySelector('.ab-due-title + .ab-order-price');
     if (amountDueSpan) {

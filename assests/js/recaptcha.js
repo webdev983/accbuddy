@@ -3,7 +3,7 @@ const getElemValuesByIds = (ids) => {
         const elem = document.getElementById(id)
         return elem.value
     })
-}
+} 
 
 function loadScriptOnce() {
     let isGrecaptachaLoaded = false

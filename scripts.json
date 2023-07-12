@@ -1,6 +1,12 @@
 {
   "sections": [
     {
+      "name": "header",
+      "include": "partials/_header.html",
+      "script": "js/gt.js",
+      "headScript": ""
+    },
+    {
       "name": "account",
       "include": "partials/_account.html",
       "script": "js/account.js",
@@ -10,6 +16,12 @@
       "name": "footer",
       "include": "partials/_footer.html",
       "script": "js/footer-form.js",
+      "headScript": ""
+    },
+    {
+      "name": "footer-recaptcha",
+      "include": "partials/_footer.html", 
+      "script": "js/recaptcha.js",
       "headScript": ""
     },
     {
