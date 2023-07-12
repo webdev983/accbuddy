@@ -265,7 +265,7 @@
                     </div>
                     <div class="ab-order-details-wrapper">
                         <div class="ab-order-details-info-box">
-                            <div class="ab-order-details-order-info">
+                            <div class="ab-order-details-order-info ab-screen-load">
                                 <div class="ab-order-details-left">
                                     <div class="ab-order-title-box">
                                         <h6 class="ab-order-info-title ab-violate-color">Gmail.com PVA</h6>
@@ -311,7 +311,14 @@
                                             <span class="ab-order-price">$13.00</span>
                                         </div>
                                     </div>
+                                   
                                 </div>
+                                 <!-- start preloader screen here -->
+                                 <div class="ab-preloader-screen">
+                                    <img src="image/brand-logo-marquee.svg" alt="brand logo">
+                                    <p class="ab-screen-highlight-title ab-violate-color">Please wait a second...</p>
+                            </div>
+                            <!-- [end] -->
                             </div>
                             <div class="ab-payment-details-page-main-wrapper">
                                 <div class="ab-order-payment-method">
@@ -321,9 +328,7 @@
                                             <div class="ab-check-box-select">
                                                 <label for="abPayment1" class="ab-checkbox-content">
                                                     <div class="ab-ckeck-mark-box">
-
                                                         <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showButton('abPayment1')">
-
                                                         <div class="ab-custom-check"></div>
                                                     </div>
                                                     <div class="payment-methods"><img src="/image/paypal.svg"
@@ -357,6 +362,7 @@
                                     <button class="ab-button-style ab-buy-button ab-paypal-buy-button" onclick = "openPopup()">Buy now with <img
                                             src="/image/paypal.svg" alt="paypal icons"
                                             class="payment-methods-img"></button>
+                                                <button class="ab-button-style ab-buy-button">Buy</button>
                                 </div>
                                 <!-- [end] -->
                             </div>
