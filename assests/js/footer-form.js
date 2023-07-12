@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    function handleFormFooterResponse(message) {
+    function handleFormFooterResponse(message) { 
         const plank = document.querySelector("#footer-error-plank")
         plank.classList.add("hidden")
         // flow: add UI response -> insert as first element of ab-form-inbox -> change grid-template-areas into ab-form-input-box-success
