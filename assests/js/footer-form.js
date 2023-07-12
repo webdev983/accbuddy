@@ -1,6 +1,13 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    const getElemValuesByIds = (ids) => {
+        return Array.from(ids).map(id => {
+            const elem = document.getElementById(id)
+            return elem.value
+        })
+    } 
+    
     function loadScriptOnce() {
         let isGrecaptachaLoaded = false
     
@@ -26,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    console.log('load', loadScriptOnce);
     if (loadScriptOnce) {
         loadScriptOnce()
         console.log(' recaptcha.js loaded')
