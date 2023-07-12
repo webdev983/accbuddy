@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const submitBtn = FOOTER_FORM.querySelector('#submit')
 
         submitBtn.innerHTML = "sending"
-        SUBMIT_BUTTON.disabled = false
+        SUBMIT_BUTTON.disabled = true
 
         const asyncSubmit = async () => {
             const result = { message: "", errorMessage: null, status: null }
@@ -225,7 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
             return result
         }
 
-        SUBMIT_BUTTON.disabled = true
         const result = await asyncSubmit()
         submitBtn.innerHTML = "send"
 
