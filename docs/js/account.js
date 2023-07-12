@@ -1,1 +1,1 @@
-function saveCart(t){localStorage.setItem("cart",JSON.stringify({itemID:t,quantity:"1"})),window.location.href="/shopping-cart.html"}
+function saveCart(t){localStorage.setItem("cart",JSON.stringify({itemID:t,quantity:"1"})),window.location.href="./shopping-cart.html"}
