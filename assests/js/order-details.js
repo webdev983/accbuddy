@@ -7,10 +7,10 @@ const orderID = `orderID-${urlParams.get('orderId')}`;
 const accessToken = getAccessToken()
 let order = fetchOrderById()
 
-let product = order.then((order)=>fetchProductById(`productID-${order.orderProductID}`))
+let product = order.then((order) => fetchProductById(`productID-${order.orderProductID}`))
 const link = generateOrderLink()
 document.addEventListener("DOMContentLoaded", async function () {
-    
+
     order = await order;
     product = await product
     // Replace values in the HTML code
@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     let orderDateElement = orderNumberElement.parentElement.nextElementSibling.querySelector('.ab-order-info-desc');
     let orderStatusElement = orderDateElement.parentElement.nextElementSibling.querySelector('.ab-order-info-desc');
 
-    orderNumberElement.textContent = "№ " + order.PK.replace('orderID-','');
+    orderNumberElement.textContent = "№ " + order.PK.replace('orderID-', '');
     orderDateElement.textContent = formatDate(order.orderTimestamp);
     orderStatusElement.textContent = order.orderInternalStatus;
     let accountInfoElement = document.querySelector('.ab-account-info-list');
 
-    accountInfoElement.innerHTML  = `<a href="${await link}">Download</a>`;
-    
+    accountInfoElement.innerHTML = (await link).text;
+
 })
 function formatDate(timestamp) {
     let date = new Date(timestamp * 1000);
@@ -61,7 +61,7 @@ function getAccessToken() {
 }
 async function fetchOrderById() {
     const payload = {
-        getOrder:{
+        getOrder: {
             orderID,
             email
         }
@@ -80,7 +80,7 @@ async function fetchOrderById() {
 }
 async function generateOrderLink() {
     const payload = {
-        generateOrderLink:{
+        generateOrderLink: {
             orderID,
             email
         }
