@@ -134,11 +134,30 @@ async function openPopup() {
     }
 
 }
-function showPaypalButton() {
+
+function showButton(selectedId) {
     console.log('clicked')
+    //uncheck other inputs
+    let checkboxes = document.getElementsByName('checkbox');
+    let checked ;
+    checkboxes.forEach(function (checkbox) {
+        if (checkbox.id !== selectedId) {
+            checkbox.checked = false;
+        }
+        else{
+            checked = checkbox.checked
+        }
+    });
+
     const elements = document.getElementsByClassName('ab-order-details-popup-input-group')
     for (let i = 0; i < elements.length; i++) {
-        elements[i].className += " select-merchant";
+        if (selectedId === 'abPayment1' && checked) {
+            elements[i].className += " select-merchant";
+        }
+        else{
+            elements[i].className = elements[i].className.replace(' select-merchant','')
+        }
+
     }
 }
 document.addEventListener("DOMContentLoaded", async function () {
@@ -147,9 +166,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         marchantDetails.innerHTML = "Shopping card is empty";
     }
     // Modify logo
-    const { productDescr, productImageUrl, productName, productImageText, productQty } = await product
-    
-    
+    const { productDescr, productImageUrl, productName, productImageText, productQty, productWarning } = await product
+
+
+
     let logo = document.querySelector('.ab-order-account-icons');
 
     if (logo) {
@@ -171,17 +191,24 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (availableSpan) {
         availableSpan.innerHTML = productQty;
     }
+
+
+    let noteDesc = document.querySelector('.ab-note-desc');
+    if (noteDesc) {
+        noteDesc.innerHTML = productWarning;
+    }
     await calculateTotal()
 
-    
+
 })
 
-async function calculateTotal(){
-    
+async function calculateTotal() {
+
     let quantitySpan = document.querySelector('.ab-quantity-number');
-    
-    const {productPrice} = await product
-    
+
+    const { productPrice } = await product
+
+
 
     // Change price
     let priceSpan = document.querySelector('.ab-order-price');
@@ -194,7 +221,9 @@ async function calculateTotal(){
     if (discountSpan) {
         discountSpan.innerHTML = `-$${discount}`;
     }
-    total =productPrice * parseInt(quantitySpan.value) * (1-discount/100)
+
+    total = productPrice * parseInt(quantitySpan.value) * (1 - discount / 100)
+
     // Change amount due
     let amountDueSpan = document.querySelector('.ab-due-title + .ab-order-price');
     if (amountDueSpan) {

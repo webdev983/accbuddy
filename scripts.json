@@ -29,6 +29,12 @@
       "include": "partials/_articles.html",
       "script": "js/article.js",
       "headScript": ""
+    },
+    {
+      "name": "cart",
+      "include": "shopping-cart.html",
+      "script": "js/shopping-cart.js",
+      "headScript": ""
     }
   ]
 }
