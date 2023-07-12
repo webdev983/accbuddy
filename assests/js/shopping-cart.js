@@ -139,15 +139,19 @@ function showButton(selectedId) {
     console.log('clicked')
     //uncheck other inputs
     let checkboxes = document.getElementsByName('checkbox');
+    let checked ;
     checkboxes.forEach(function (checkbox) {
         if (checkbox.id !== selectedId) {
             checkbox.checked = false;
+        }
+        else{
+            checked = checkbox.checked
         }
     });
 
     const elements = document.getElementsByClassName('ab-order-details-popup-input-group')
     for (let i = 0; i < elements.length; i++) {
-        if (selectedId === 'abPayment1') {
+        if (selectedId === 'abPayment1' && checked) {
             elements[i].className += " select-merchant";
         }
         else{
