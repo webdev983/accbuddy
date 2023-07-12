@@ -1,1 +1,0 @@
-const getElemValuesByIds=e=>Array.from(e).map(e=>document.getElementById(e).value);
