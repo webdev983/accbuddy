@@ -139,12 +139,12 @@ function showButton(selectedId) {
     console.log('clicked')
     //uncheck other inputs
     let checkboxes = document.getElementsByName('checkbox');
-    let checked ;
+    let checked;
     checkboxes.forEach(function (checkbox) {
         if (checkbox.id !== selectedId) {
             checkbox.checked = false;
         }
-        else{
+        else {
             checked = checkbox.checked
         }
     });
@@ -154,8 +154,8 @@ function showButton(selectedId) {
         if (selectedId === 'abPayment1' && checked) {
             elements[i].className += " select-merchant";
         }
-        else{
-            elements[i].className = elements[i].className.replace(' select-merchant','')
+        else {
+            elements[i].className = elements[i].className.replace(' select-merchant', '')
         }
 
     }
@@ -198,6 +198,13 @@ document.addEventListener("DOMContentLoaded", async function () {
         noteDesc.innerHTML = productWarning;
     }
     await calculateTotal()
+    let preloaderScreen = document.querySelector('.ab-preloader-screen');
+
+    // Check if the div element exists
+    if (preloaderScreen) {
+        // Remove the div element from its parent
+        preloaderScreen.parentNode.removeChild(preloaderScreen);
+    }
 
 
 })
