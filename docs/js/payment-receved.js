@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",async function(){var e=new URLSearchParams(window.location.search),t=e.get("email"),e=e.get("orderId"),n=document.getElementById("emailLink"),d=document.getElementById("orderId");n.textContent=t,n.href="mailto:"+t,d.textContent=e});
