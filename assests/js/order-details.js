@@ -26,9 +26,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     const quantityElement = document.querySelector('.ab-quantity-number');
     const priceElement = document.querySelector('.ab-order-price');
     const warningElement = document.querySelector('.ab-note-desc');
+    const discountElement = document.getElementById('discount');
+    const totalElement = document.getElementById('total');
+
+    totalElement.textContent = `$${order.totalPaid}`;
+    discountElement.textContent = `-$${order.orderDiscount}`;
     warningElement.textContent = product.productWarning;
-    quantityElement.textContent = product.productQty;
-    priceElement.textContent = "$" + product.productPrice.toFixed(2);
+    quantityElement.textContent = order.productsOrdered;
+    priceElement.textContent = "$" + product.productPrice;
     // Replace order info list
     let orderNumberElement = document.querySelector('.ab-order-info-desc');
     let orderDateElement = orderNumberElement.parentElement.nextElementSibling.querySelector('.ab-order-info-desc');
