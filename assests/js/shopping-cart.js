@@ -127,10 +127,10 @@ async function openPopup() {
         })
             .then(response => response.json())
             .then(data => data.response)
-        window.location.href = "/payment-receved.html";
+        window.location.href = `./payment-receved.html?email=${response.email}&orderId=${response.shopId}`;
     }
     catch (e) {
-        window.location.href = "/payment-failed.html";
+        window.location.href = "./payment-failed.html";
     }
 
 }
