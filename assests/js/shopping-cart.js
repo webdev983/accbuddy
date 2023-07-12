@@ -5,7 +5,7 @@ let cart = getShoppingCart()
 let product = fetchProductById(cart.itemID)
 let customer
 const token = getAccessToken()
-
+let qty = 1
 let total = 0
 function getShoppingCart() {
     let cart = localStorage.getItem('cart')
@@ -92,7 +92,7 @@ async function openPopup() {
             ]
         },
         shoppingCartData: {
-            quantity: cart.quantity.toString(),
+            quantity: qty.toString(),
             itemID: cart.itemID.replace('productID-', ''),
             discount: customer?.customerDiscount?.toString() || "0",
             customerID: customer?.PK || `guest-${generateUUID()}`
@@ -226,9 +226,9 @@ async function calculateTotal() {
     // Change your discount
     let discountSpan = document.querySelector('.ab-discount-title + .ab-order-price');
     if (discountSpan) {
-        discountSpan.innerHTML = `-$${discount}`;
+        discountSpan.innerHTML = `-$${productPrice * parseInt(quantitySpan.value) *  discount / 100}`;
     }
-
+    qty = parseInt(quantitySpan.value)
     total = productPrice * parseInt(quantitySpan.value) * (1 - discount / 100)
 
     // Change amount due
