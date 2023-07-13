@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log('signup js loaded')
-    
+
     const SIGNUP_FORM = document.querySelector("#signup-form")
 
     class Input {
@@ -168,7 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
             SIGNUP_FORM.querySelector('#user-email').innerText = email
             const h6 = SIGNUP_FORM.querySelector('#resend-email-btn')
             h6.addEventListener('click', async () => {
-                console.log('resend via h6')
                 const res = await resendEmail(email)
                 if (res.errorMessage === null) {
                     SIGNUP_FORM.querySelector('#sent-resent').innerText = 're-sent'
@@ -177,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     h6.style.display = "none"
                     h6Inactive.style.display = "block"
                     const resendTimer = SIGNUP_FORM.querySelector('#resend-timer')
-                    console.log('resendTimer12', resendTimer)
+
                     // make resent-email-btn-inactive show
                     const timer = setInterval(() => {
                         if (resendTimer) {
@@ -198,12 +197,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             })
 
+            SIGNUP_FORM.querySelector('#resend-ok').addEventListener('click', () => {
+                window.location.assign(window.location.href.replace("signup.html", "index.html"))
+            })
 
             SUBMIT_BUTTON.disabled = false
-
-            // setTimeout(() => {
-            //     window.location.assign(window.location.href.replace("signup.html", "index.html"))
-            // }, 5000)
         }
         grecaptcha.reset()
     }

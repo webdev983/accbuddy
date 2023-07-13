@@ -25,7 +25,7 @@
                             <p class="plank">Email already registered, please sign in.</p>
                             <button id="plank-close" class="plank-red plank-dismiss" style="font-size:24px;"
                                 type="button">&times;</button>
-                        </div>
+                        </div> 
                         <form id="signup-form" action="?">
                             <div class="ab-input-group-content-box ">
                                 <span class="warning-text "><img src="image/warning-white.svg" alt="">
@@ -47,7 +47,7 @@
                                     <div class="ab-input-group">
                                         <label class="password-view"><img class="toggle-eye"
                                                 src="image/eye.svg" alt="eye icons"></label>
-                                        <input id="signup-password" type="password" required class="ab-input-items"
+                                        <input id="signup-password" name="password" type="password"  class="ab-input-items"
                                             placeholder="Password">
                                         <span class="alart-text"
                                             style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
@@ -62,7 +62,7 @@
                                     <div class="ab-input-group">
                                         <label class="password-view"><img class="toggle-eye"
                                                 src="image/eye.svg" alt="eye icons"></label>
-                                        <input id="signup-confirm-password" type="password" required
+                                        <input id="signup-confirm-password" name="confirmPassword" type="password" 
                                             class="ab-input-items" placeholder="Confirm Password">
                                         <span class="alart-text"
                                             style=" align-items: center; gap: 10.22px; margin-top: 13.08px"><img
@@ -74,7 +74,7 @@
                                     <!-- passing extra class('warning') for invalid/required inputs warning  -->
                                     <div class="ab-check-requred">
                                         <label for="checkedRequered4">
-                                            <input type="checkbox" id="checkedRequered4" class="check-mark">
+                                            <input type="checkbox" id="checkedRequered4"  name="checkbox" class="check-mark">
                                             <span class="ab-check-mark-box"></span>
                                             <span class="text">I have read and agree to the Privacy Policy and Terms
                                                 of
@@ -86,7 +86,7 @@
                                             order to register, you should accept the terms and conditions.
                                         </span>
                                     </div>
-                                    <button id="signup-submit" class="ab-button-style ab-submite-btn">Sign
+                                    <button id="signup-submit" type="button" class="ab-button-style ab-submite-btn">Sign
                                         up</button>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                                             </p>
                                         </div>
                                         <div class="reset-utilities">
-                                            <button id="resend-ok" class="ab-button-style ab-submite-btn">Ok</button>
+                                            <button id="resend-ok" type="button" class="ab-button-style ab-submite-btn">Ok</button>
                                             <h6 id="resend-email-btn" class="resend-email">Resend email</h6>
                                             <h6 id="resend-email-btn-inactive" class="resend-email inactive">Send again
                                                 in <span id="resend-timer">60</span>s</h6>
