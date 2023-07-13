@@ -149,16 +149,21 @@ function showButton(selectedId) {
         }
     });
 
-    const elements = document.getElementsByClassName('ab-order-details-popup-input-group')
-    for (let i = 0; i < elements.length; i++) {
-        if (selectedId === 'abPayment1' && checked) {
-            elements[i].className += " select-merchant";
-        }
-        else {
-            elements[i].className = elements[i].className.replace(' select-merchant', '')
-        }
-
+    
+    
+    let ppButton = document.getElementById('pp-button')
+    let buyButton = document.getElementById('buy-button')
+    if (selectedId === 'abPayment1' && checked) {
+        buyButton.style.display = "none";
+        ppButton.style.display = "flex";
     }
+    
+    else {
+        ppButton.style.display = "none";
+        buyButton.style.display = "flex";
+    }
+
+    
 }
 document.addEventListener("DOMContentLoaded", async function () {
     if (!await cart) {

@@ -6,6 +6,7 @@
 })
 @@include("partials/_header.html")
 <!-- ============main content wrapper==========[start] -->
+<script src="./js/track-order.js"></script>
 <div class="ab-main-content-wrapper">
     <div class="ab-container">
         <div class="ab-main-content-box ab-auth-main-cont">
@@ -20,7 +21,7 @@
                         <!-- NOTE: [no-access-warning,email-warning] those class 
                                     need to pass based on topic when showing error for requered items -->
                         <div class="ab-input-group-content-box">
-                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
+                            <span class="warning-text" id="internet-error"><img src="image/warning-white.svg" alt="">
                                 Please check
                                 your internet connection and try again.</span>
                             <span class="warning-text"><img src="image/warning-white.svg" alt="">
@@ -29,15 +30,15 @@
                             <div class="ab-auth-input-authentication-wrap-cont">
                                 <div class="ab-input-group">
                                     <input type="text" required name="text" class="ab-input-items"
-                                        placeholder="Order number">
+                                        placeholder="Order number" id="order-number">
                                     <span class="alart-text">Enter the correct order number.</span>
                                 </div>
                                 <div class="ab-input-group">
                                     <input type="email" required name="email" class="ab-input-items"
-                                        placeholder="Email">
+                                        placeholder="Email" id="email">
                                     <span class="alart-text">Please enter a valid email address.</span>
                                 </div>
-                                <button class="ab-button-style ab-submite-btn">Find</button>
+                                <button class="ab-button-style ab-submite-btn" onclick="findOrder()">Find</button>
                             </div>
                         </div>
                     </div>
