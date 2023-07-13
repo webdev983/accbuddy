@@ -8,7 +8,6 @@
 ======================================*/
 .ab-main--content.ab-marchant-details-page
   .ab-button-style.ab-buy-button.ab-paypal-buy-button {
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -17,6 +16,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  display: none;
 }
 .ab-available-quantity{
   font-family: Lexend;
