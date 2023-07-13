@@ -82,7 +82,7 @@ gulp.task("fileInclude", () => {
     .pipe(replace(/<!--\s*build:([^ ]+?)\s*-->[\s\S]*?<!--\s*endbuild\s*-->/g, function (match, p1) {
       const section = scripts.sections.find(s => s.name === p1);
       if (section && this.file.flags[section.name]) {
-        return `<script src="${section.script}"  defer></script>`;
+        return `<script src="${section.script}" defer></script>\n`;
       }
       return '';
     }))

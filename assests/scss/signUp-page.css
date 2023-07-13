@@ -3,3 +3,43 @@
 @import url('./partials/block-content.css');
 @import url('./partials/promo.css');
 @import url('./partials/footer.css');
+
+
+.resend-email {
+    text-decoration: underline;
+    color: var(--ab_violet);
+    cursor: pointer;
+}
+
+.resend-email.inactive {
+    text-decoration: underline;
+    color: #A990D3;
+    cursor: default;
+    display: none;
+}
+
+
+.reset-utilities {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 9px;
+}
+
+.ab-input-group-content-box {
+    width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    .ab-auth-content-wrap-box.reset-confirmation-mail .ab-input-group-content-box .ab-auth-input-reset-password .ab-input-group-content-box {
+        flex: 0 0 100%;
+    }
+}
+
+
+#signup-submit:disabled {
+    cursor: not-allowed !important;
+    background-color:  #F6CE8E !important;
+  }

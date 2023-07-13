@@ -35,6 +35,12 @@
       "include": "shopping-cart.html",
       "script": "js/shopping-cart.js",
       "headScript": ""
+    },
+    {
+      "name": "signup",
+      "include": "signup.html",
+      "script": "js/signup-form.js",
+      "headScript": ""
     }
   ]
 }
