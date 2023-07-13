@@ -1,8 +1,6 @@
 "use strict";
 
 // Load plugins
-
-const sitemap = require("gulp-sitemap");
 const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
 const cssnano = require("cssnano");
@@ -18,59 +16,6 @@ const terser = require("gulp-terser");
 const uglify = require("gulp-uglify");
 const replace = require('gulp-replace');
 const fs = require('fs');
-const del = require('del');
-
-//delete html 
-gulp.task('clean-html', function () {
-  return del('docs/**/*.html');
-});
-
-//replace links
-
-gulp.task('replace-html', function () {
-    return gulp.src('docs/**/*.html')
-        .pipe(replace('.html', ''))
-        .pipe(gulp.dest('docs'));
-});
-
-
-// rename files
-gulp.task('rename-files', function () {
-    return gulp.src('docs/**/*.html')
-        .pipe(rename({ extname: '' }))
-        .pipe(gulp.dest('docs'));
-});
-// moverobots
-
-gulp.task('move-robots', function() {
-  return gulp.src('html/robots.txt')
-    .pipe(rename('robots.txt'))
-    .pipe(gulp.dest('docs'));
-});
-
-//sitemap task
-
-
-gulp.task('sitemap', function () {
-    return gulp.src([
-        'html/**/*.html',
-        '!html/404.html',
-        '!html/account-settings.html',
-        '!html/order-details.html',
-        '!html/payment-failed.html',
-        '!html/payment-received.html'
-    ], {
-        read: false
-    })
-    .pipe(sitemap({
-        siteUrl: 'https://www.accbuddy.com',
-        getLoc: function (siteUrl, loc, entry) {
-            return loc.replace('.html', '');
-        }
-    }))
-    .pipe(replace('.html', ''))
-    .pipe(gulp.dest('./docs'));
-});
 
 
 // CSS task
@@ -137,7 +82,7 @@ gulp.task("fileInclude", () => {
     .pipe(replace(/<!--\s*build:([^ ]+?)\s*-->[\s\S]*?<!--\s*endbuild\s*-->/g, function (match, p1) {
       const section = scripts.sections.find(s => s.name === p1);
       if (section && this.file.flags[section.name]) {
-        return `<script src="${section.script}" defer></script>\n`;
+        return `<script src="${section.script}"  defer></script>`;
       }
       return '';
     }))
@@ -192,10 +137,4 @@ gulp.task("watch", () => {
 });
 
 // Default task
-
-// Default task
-gulp.task("default", gulp.parallel("css", "webfonts", "images", "fileInclude", "js", "sitemap", "move-robots","watch"));
-
-
-
-gulp.task("finish", gulp.series("replace-html", "rename-files","clean-html"));
+gulp.task("default", gulp.parallel("css", "webfonts", "images", "fileInclude", "js", "watch"));
