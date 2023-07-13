@@ -77,6 +77,8 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 async function openPopup() {
+    const originalButtonText = disableppButon()
+
     product = await product;
     customer = await customer
     let payload = {
@@ -108,11 +110,15 @@ async function openPopup() {
         .then(response => response.json())
         .then(data => data.response)
 
+    enableppButon(originalButtonText)
     const popup = window.open(url, 'newwindow', 'width=600,height=600')
     while (!popup?.closed) {
         console.log('not closed')
         await sleep(1000)
     }
+
+    disableppButon()
+
     const paypalId = url.split('?token=')[1]
 
     console.log(paypalId)
@@ -134,7 +140,21 @@ async function openPopup() {
     }
 
 }
-
+function disableppButon(){
+    const ppButton = document.getElementById('pp-button');
+    
+    // Disable the button and change the text to "Processing"
+    ppButton.classList.add('inactive');
+    const originalButtonText = ppButton.innerHTML;
+    ppButton.innerHTML = 'Processing...';
+    return originalButtonText
+}
+function enableppButon(originalButtonText){
+    const ppButton = document.getElementById('pp-button');
+    
+    ppButton.classList.remove('inactive');
+    ppButton.innerHTML = originalButtonText;
+}
 function showButton(selectedId) {
     console.log('clicked')
     //uncheck other inputs
