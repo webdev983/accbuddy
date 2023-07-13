@@ -45,6 +45,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     let accountInfoElement = document.querySelector('.ab-account-info-list');
 
     accountInfoElement.innerHTML = (await link).text;
+    let preloaderScreen = document.querySelector('.ab-preloader-screen');
+
+    // Check if the div element exists
+    if (preloaderScreen) {
+        // Remove the div element from its parent
+        preloaderScreen.parentNode.removeChild(preloaderScreen);
+    }
 
 })
 function formatDate(timestamp) {
