@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /404
+Disallow: /account-settings
+Disallow: /order-details
+Disallow: /payment-failed
+Disallow: /payment-received

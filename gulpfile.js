@@ -1,6 +1,8 @@
 "use strict";
 
 // Load plugins
+
+const sitemap = require("gulp-sitemap");
 const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync").create();
 const cssnano = require("cssnano");
@@ -16,6 +18,38 @@ const terser = require("gulp-terser");
 const uglify = require("gulp-uglify");
 const replace = require('gulp-replace');
 const fs = require('fs');
+
+// moverobots
+
+gulp.task('move-robots', function() {
+  return gulp.src('html/robots.txt')
+    .pipe(rename('robots.txt'))
+    .pipe(gulp.dest('docs'));
+});
+
+//sitemap task
+
+
+gulp.task('sitemap', function () {
+    return gulp.src([
+        'html/**/*.html',
+        '!html/404.html',
+        '!html/account-settings.html',
+        '!html/order-details.html',
+        '!html/payment-failed.html',
+        '!html/payment-received.html'
+    ], {
+        read: false
+    })
+    .pipe(sitemap({
+        siteUrl: 'https://www.accbuddy.com',
+        getLoc: function (siteUrl, loc, entry) {
+            return loc.replace('.html', '');
+        }
+    }))
+    .pipe(replace('.html', ''))
+    .pipe(gulp.dest('./docs'));
+});
 
 
 // CSS task
@@ -137,4 +171,4 @@ gulp.task("watch", () => {
 });
 
 // Default task
-gulp.task("default", gulp.parallel("css", "webfonts", "images", "fileInclude", "js", "watch"));
+gulp.task("default", gulp.parallel("css", "webfonts", "images", "fileInclude", "js", "sitemap", "move-robots","watch"));
