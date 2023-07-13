@@ -6,6 +6,11 @@
 /*============================================
            merchant page style 
 ======================================*/
+.inactive {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #F6CE8E;
+}
 .ab-main--content.ab-marchant-details-page
   .ab-button-style.ab-buy-button.ab-paypal-buy-button {
   align-items: center;
