@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Forgot your password? Don't worry, AccBuddy has got you covered. Use our simple and secure password reset process to regain access to your account in no time">
-  <meta name="keyword" content="buy Windows 11 product key, buy Windows 10 product key, buy VMware Fusion PRO 13, buy VMware Workstation PRO 17">
-  <link rel="canonical" href="https://accbuddy.com/reset-password">
+  <meta name="description" content="Experience hassle-free delivery with AccBuddy. Our reliable shipping policy ensures your purchase reaches you on time, every time">
+  <meta name="keyword" content="accbuddy shipping policy">
+  <link rel="canonical" href="https://accbuddy.com/shipping-policy">
 
-  <title>Accbuddy Your One-Stop Destination To Buy Accounts</title>
+  <title>Our Shipping Policy - AccBuddy</title>
 
   <!-- link style start here -->
   <link rel="stylesheet" href="css/style.min.css" media="all">
-  <link rel="stylesheet" href="css/reset-pass-page.min.css" media="all">
+  <link rel="stylesheet" href="css/article.min.css" media="all">
 
   <!-- script start here -->
   
@@ -35,7 +35,7 @@
             <div class="ab-container">
                 <div class="ab-header-wrapper">
                     <div class="ab-header-nav-box">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34"
                                 alt="ab brand logo">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
@@ -44,15 +44,15 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
                                     height="27" alt="currency icons" class="currency-icons">
-                                 <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                 <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -83,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -91,17 +91,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -109,7 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -126,7 +126,7 @@
                 <!-- [mobile menu here to start] -->
                 <div class="ab-mobile-slide-nav">
                     <div class="ab-alide-nav-brand">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
                                 alt="ab brand logo">
                         </a>
@@ -146,7 +146,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -154,7 +154,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -162,17 +162,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -180,7 +180,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -194,10 +194,10 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
@@ -247,112 +247,38 @@
 <!-- ============main content wrapper==========[start] -->
 <div class="ab-main-content-wrapper">
     <div class="ab-container">
-        <div class="ab-main-content-box ab-auth-main-cont">
+        <div class="ab-main-content-box article-widgets-main-wrapper">
 
             <!-- main content start here -->
-            <main class="ab-main--content ab-auth-wrap-page">
-                <div class="ab-auth-details-content">
-                    <h1 class="ab-order-title ab-violate-color">Reset password</h1>
-                    <div class="ab-auth-content-wrap-box reset-password-one">
-                        <!-- NOTE: [no-access-warning,email-warning] those class 
-                                    need to pass based on topic when showing error for requered items -->
-                        <div class="ab-input-group-content-box">
-                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
-                                Please check
-                                your internet connection and try again.</span>
-                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
-                                Email not
-                                registered, you may register now.</span>
-                            <div class="ab-auth-input-reset-password">
-                                <div class="ab-input-group">
-                                    <input type="email" required name="email" class="ab-input-items"
-                                        placeholder="user@gmail.com">
-                                    <span class="alart-text">Please enter a valid email address.</span>
-                                </div>
-                                <button class="ab-button-style ab-submite-btn">Next</button>
-                            </div>
-                        </div>
-                    </div>
+            <main class="ab-main--content article-widgets-page">
 
-                    <!-- ================= -->
-                    <!-- by passing extra class this states will be shown 'confirmation-mail-open' -->
-                    <div class="ab-auth-content-wrap-box reset-confirmation-mail ">
-                        <!-- NOTE: [no-access-warning,email-warning] those class 
-                                    need to pass based on topic when showing error for requered items -->
-                        <div class="ab-input-group-content-box">
-                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
-                                Please check
-                                your internet connection and try again.</span>
-                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
-                                Email not
-                                registered, you may register now.</span>
-                            <div class="ab-auth-input-reset-password">
-                                <div class="ab-input-group-content-box">
-                                    <p class="ab-input-text">
-                                        Confirmation code have been sent to <a href="/">user@gmail.com</a>.
-                                        Please check it
-                                        including spam folder.
-                                    </p>
-                                </div>
-                                <button class="ab-button-style ab-submite-btn">Ok</button>
-                            </div>
-                        </div>
+                <section class="ab-article-widgets-section">
+                    <h1 class="ab-title ab-violate-color">Shipping Policy</h1>
+                    <div class="ab-article-widgets-content">
+                        <!-- pass in here 
+                            'single-column-article-widgets' 
+                                         or 
+                            'two-column-article-widgets'
+                            for layoutout one or two columns -->
+                        <div class="ab-article-widgets-wrap  single-column-article-widgets">
+                            <!-- single pragraph text can be added in here using 'p.term-text' html tags -->
+                            <p class="term-desc">
+                                We deliver digital services, including online accounts for various platforms, which are delivered instantly upon purchase. In rare cases where the account is not immediately available or subject to manual review, delivery may be delayed. Please note that as we sell digital services, there is no physical shipping required, and all orders are delivered electronically via email.
+                            </p>
+                            <p class="term-desc">
+                                If you have any questions or concerns about your order or the delivery process, please don't hesitate to contact us at support@accbuddy.com. We are happy to help!
+                            </p>
+                            <!-- [end] -->
 
-                    </div>
-                    <!-- ================= -->
-                    <!-- by passing extra class this states will be shown 'confirmation-password-open' -->
-                    <div class="ab-auth-content-wrap-box confirmation-reset-password">
-                        <!-- NOTE: [no-access-warning,email-warning] those class 
-                                    need to pass based on topic when showing error for requered items -->
-                        <div class="ab-input-group-content-box">
-                            <span class="warning-text"><img src="image/warning-white.svg" alt="">
-                                Please check
-                                your internet connection and try again.</span>
-                            <div class="ab-auth-input-reset-password">
-                                <div class="ab-input-group">
-                                    <input type="text" class="ab-input-items" required placeholder="Confrim code">
-                                </div>
-                                <div class="ab-input-group">
-                                    <label class="password-view"><img src="image/eye.svg" alt="eye icons"></label>
-                                    <input type="password" required name="password" class="ab-input-items"
-                                        placeholder="Password">
-                                    <span class="alart-text">Password must be at least 8 characters in length
-                                        and
-                                        contain
-                                        uppercase, lowercase letters, and special characters.</span>
-                                </div>
-                                <div class="ab-input-group">
-                                    <label class="password-view"><img src="image/eye.svg" alt="eye icons"></label>
-                                    <input type="password" required name="password" class="ab-input-items"
-                                        placeholder="Confirm password">
-                                    <span class="alart-text">Passwords don't match.</span>
-                                </div>
-                                <button class="ab-button-style ab-submite-btn">Save</button>
-                            </div>
+                            <!-- card group text title + pragraph  -->
+                            <!-- [end] -->
                         </div>
                     </div>
-                    <!-- ================= -->
-                    <!-- by passing extra class this states will be shown 'success-massage-open' -->
-                    <div class="ab-auth-content-wrap-box reset-success-massage ">
+                </section>
+                <!-- [END] -->
 
-                        <!-- NOTE: [password-reset-success] those class 
-                                    need to pass based on topic when showing error for requered items -->
-                        <div class="ab-auth-input-reset-password">
-                            <div class="ab-input-group-content-box">
-                                <p class="ab-success-title"><img src="image/checkmark.svg" alt="">
-                                    Successfully</p>
-                                <p class="ab-input-text">
-                                    New password created succesfully.
-                                </p>
-                            </div>
-                            <button class="ab-button-style ab-submite-btn"><img src="image/users-fill-white.svg"
-                                    alt="user icons" class="user-icons"> Sign
-                                in</button>
-                        </div>
-                    </div>
-                </div>
-               <!-- promo partials section  -->
-               <!-- promo content start -->
+                <!-- promo content start -->
+                <!-- promo content start -->
 <div class="ab-promo-content-box">
     <h3 class="ab-promo-title"><span class="ab-color2-text">Your</span> One-Stop Destination To
         Buy <span class="ab-color2-text">Verified</span> Social Media & Email <span
@@ -361,10 +287,13 @@
             height="51.07" alt="brand logo"></div>
 </div>
 <!-- [END] -->
+
+
             </main>
 
             <!-- sidebar content start here -->
             <aside class="ab-main--sidebar-content">
+
                 <!-- text block content start -->
                 <!-- text block content start -->
 <div class="ab-block-content-box white-bg-block ">
@@ -403,7 +332,7 @@
             <!-- footer top nav start -->
             <div class="ab-footer-top">
                 <div class="ab-footer-nav-box">
-                    <a href="./index.html" class="ab-footer-brand">
+                    <a href="./index" class="ab-footer-brand">
                         <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34" width="" height=""
                             alt="ab brand logo">
                         <img src="image/brand-logo-mobo.svg" class="mobo-logo" width="124" height="20"
@@ -412,15 +341,15 @@
                     <div class="ab-footer-nav">
                         <ul class="ab-footer-nav-items">
                             <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                            <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                            <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                            <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                            <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                            <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                            <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                            <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                            <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                                 </ul>
                         <div class="ab-currency-button">
                             <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
                                 alt="currency icons" class="currency-icons">
-                                <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                         </div>
                     </div>
                 </div>
@@ -511,12 +440,12 @@
                         </div>
                         <div class="ab-footer-link-wrap">
                             <ul class="ab-main-footer-links">
-                                <li class="ab-footer-link"><a href="./terms-of-service.html">Terms of Service</a></li>
-                                <li class="ab-footer-link"><a href="./shipping-policy.html">Shipping Policy</a></li>
-                                <li class="ab-footer-link"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                                <li class="ab-footer-link"><a href="./refund-policy.html">Refund Policy</a></li>
-                                <li class="ab-footer-link"><a href="./payment-policy.html">Payment Policy</a></li>
-                                <li class="ab-footer-link"><a href="./cookies-policy.html">Cookies Policy</a></li>
+                                <li class="ab-footer-link"><a href="./terms-of-service">Terms of Service</a></li>
+                                <li class="ab-footer-link"><a href="./shipping-policy">Shipping Policy</a></li>
+                                <li class="ab-footer-link"><a href="./privacy-policy">Privacy Policy</a></li>
+                                <li class="ab-footer-link"><a href="./refund-policy">Refund Policy</a></li>
+                                <li class="ab-footer-link"><a href="./payment-policy">Payment Policy</a></li>
+                                <li class="ab-footer-link"><a href="./cookies-policy">Cookies Policy</a></li>
                             </ul>
                         </div>
                     </div>

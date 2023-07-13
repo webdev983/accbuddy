@@ -1,15 +1,41 @@
-@@include("partials/_head.html",{
-"pageCss": 'article',
-"title": "The Importance of Registered Services in Today's Digital Age - AccBuddy",
-"description": "Discover the power of registered services in the digital age with AccBuddy's article. Gain insights into their significance and unlock new possibilities in the modern digital landscape",
-"keywordText": 'accbuddy article',
-"canonical": 'https://accbuddy.com/significance-of-registered-services-in-the-modern-digital-age'
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accbuddy offers genuine software product keys with discount">
+  <meta name="keyword" content="buy Windows 11 product key, buy Windows 10 product key, buy VMware Fusion PRO 13, buy VMware Workstation PRO 17">
+  <link rel="canonical" href="https://accbuddy.com/shopping-cart">
+
+  <title>Your Shopping Cart - AccBuddy</title>
+
+  <!-- link style start here -->
+  <link rel="stylesheet" href="css/style.min.css" media="all">
+  <link rel="stylesheet" href="css/marchent-page.min.css" media="all">
+
+  <!-- script start here -->
+  
+  <!-- =====start script write here -->
+
+  <script src="js/gt.js" defer></script>
+
+  
+  
+  
+  <script src="js/footer-form.js" defer></script>
+
+
+</head>
+
+<body>
         <!-- ============header section styles==========[start] -->
         <header class="ab-header-section">
             <div class="ab-container">
                 <div class="ab-header-wrapper">
                     <div class="ab-header-nav-box">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34"
                                 alt="ab brand logo">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
@@ -18,15 +44,15 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
                                     height="27" alt="currency icons" class="currency-icons">
-                                 <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                 <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +75,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -57,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -65,17 +91,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -83,7 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -100,7 +126,7 @@
                 <!-- [mobile menu here to start] -->
                 <div class="ab-mobile-slide-nav">
                     <div class="ab-alide-nav-brand">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
                                 alt="ab brand logo">
                         </a>
@@ -120,7 +146,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -128,7 +154,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -136,17 +162,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -154,7 +180,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -168,10 +194,10 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
@@ -218,78 +244,148 @@
             </div>
         </header>
         <!-- ============header section styles==========[end] -->
+<script src = './js/shopping-cart.js'></script>
+<!-- ============main content wrapper==========[start] -->
+<script src="./js/shopping-cart.js"></script>
 <div class="ab-main-content-wrapper">
     <div class="ab-container">
-        <div class="ab-main-content-box article-widgets-main-wrapper">
-            <main class="ab-main--content article-widgets-page">
+        <div class="ab-main-content-box payment-detail-wrapper-box ab-marchant-details-wrapper">
 
-                <section class="ab-article-widgets-section">
-                    <h1 class="ab-title ab-violate-color">The Significance of Registered Services in the Modern Digital Age</h1>
-                    <span class="ab-posted-date">30 jun 2023</span>
-                   </b>
-                    <img src="image/article_images/significance-of-registered-services-in-the-modern-digital-age.webp" alt="topic image"
-                    class="ab-article-details-image">         
-                    <div class="ab-article-widgets-content">
-                        <p class="term-desc">
-                            This Privacy Policy outlines how AccBuddy collects, uses, and protects your personal information when you visit our website and purchase our online accounts.
-                        </p>
-                        <div class="ab-article-widgets-wrap  single-column-article-widgets">
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">What Information We Collect</h3>
-                                <p class="term-text">When you visit our website or make a purchase, we may collect the following types of personal information</p>
+            <!-- main content start here -->
+            <main class="ab-main--content payment-details--page ab-marchant-details-page">
+                <div class="ab-order-details-content ab-order-details-popup open-info">
+                    <div class="ab-tablet-view-wrapper">
+
+                        <h1 class="ab-order-title ab-violate-color">Shopping Cart</h1>
+
+                        <ul class="account-info-items">
+    <li class="account-info-link"><a href="/">Order history</a></li>
+    <li class="account-info-link"><a href="/">Account settings</a></li>
+    <li class="account-info-link"><a href="/"> Logout</a></li>
+</ul>
+                    </div>
+                    <div class="ab-order-details-wrapper">
+                        <div class="ab-order-details-info-box">
+                            <div class="ab-order-details-order-info ab-screen-load">
+                                <div class="ab-order-details-left">
+                                    <div class="ab-order-title-box">
+                                        <h6 class="ab-order-info-title ab-violate-color">Gmail.com PVA</h6>
+                                        <img src="/image/gmail-small-icons0.svg" alt="gmail icons"
+                                            class="ab-order-account-icons" style="max-width: 5%;">
+                                    </div>
+                                    <p class="ab-order-info-desc">Accounts are phone verified
+                                        with
+                                        USA
+                                        numbers. Secret answers are NOT included, recovery
+                                        e-mails
+                                        are
+                                        included with passwords. US IPs only.
+                                        <br><br>
+                                        Accounts are NOT SUITABLE for Cash App or Google Voice
+                                        creation!
+                                        <br><br>
+                                        Gmail.com Stable USA Plus
+                                    </p>
+
+                                    <div class="ab-order-info-details">
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-quantity-title">Quantity</p>
+                                            <div class="ab-quatitly-fild">
+
+                                                <input type="text" class="ab-quantity-number" value="1" oninput="calculateTotal()">
+
+                                            </div>
+                                        </div>
+                                        <div class="ab-order-quatity-item">
+                                            <p class="ab-available-quantity ab-violate-color">(Available: <span>320</span>)</p>
+                                        </div>
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-price-title">Price</p>
+                                            <span class="ab-order-price">$0.15</span>
+                                        </div>
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-discount-title">Your Discount</p>
+                                            <span class="ab-order-price">-$2.00</span>
+                                        </div>
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-due-title">Amount due</p>
+                                            <span class="ab-order-price">$13.00</span>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                 
                             </div>
-                            <div class="ab-article-widgets-card-items">
-                                <h4 class="article-title ab-violate-color">Name and Contact Information</h4>
-                                <p class="term-text">We may collect your name, email address, phone number, and other contact information that you provide to us.</p>
-                            </div>
-                            <div class="ab-article-widgets-card-items">
-                                <h4 class="article-title ab-violate-color">Purchase History</h4>
-                                <p class="term-text">We may collect information about your purchase history on our website.</p>
-                            </div>
-                            <div class="ab-article-widgets-card-items">
-                                <h4 class="article-title ab-violate-color">Device Information</h4>
-                                <p class="term-text">We may collect information about the device you use to access our website, including your IP address, browser type, and operating system.</p>
-                            </div>
-                            <div class="ab-article-widgets-card-items">
-                                <h4 class="article-title ab-violate-color">Cookies</h4>
-                                <p class="term-text">We may use cookies to collect information about your use of our website.</p>
-                            </div>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">How We Use Your Information</h3>
-                                <p class="term-text">We may use your personal information for the following purposes:</p>
-                                <h4 class="article-title ab-violent-color">Order Processing</h4>
-                                <p class="term-text">We use your personal information to process and fulfill your orders for our online accounts.</p>
-                                <h4 class="article-title ab-violent-color">Communication</h4>
-                                <p class="term-text">We may use your personal information to communicate with you about your orders, to send you updates about our products and services, and to respond to your inquiries.</p>
-                                <h4 class="article-title ab-violent-color">Website Improvement</h4>
-                                <p class="term-text">We may use your personal information to improve our website and to personalize your experience.</p>
-                                <h4 class="article-title ab-violent-color">Fraud Prevention</h4>
-                                <p class="term-text">We may use your personal information to prevent fraud and protect our business and our customers.</p>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">How We Protect Your Information</h3>
-                                <p class="term-text">We take reasonable measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. We use encryption and other security measures to protect your information.</p>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">Sharing Your Information</h3>
-                                <p class="term-text">We may share your personal information with third-party service providers who perform services on our behalf, such as account creation and customer service. We may also share your personal information to comply with legal obligations or to protect our rights and the rights of our customers.</p>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">Your Rights</h3>
-                                <p class="term-text">You have the right to access, update, and delete your personal information that we have collected. You can contact us at support@accbuddy.com or through our contact form to request access to your personal information or to update or delete your personal information.</p>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">Changes to This Privacy Policy</h3>
-                                <p class="term-text">We may update this Privacy Policy from time to time. We will notify you of any material changes to this Privacy Policy by posting a notice on our website or by sending you an email.</p>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">Contact Us</h3>
-                                <p class="term-text">If you have any questions or concerns about this Privacy Policy, please contact us at support@accbuddy.com or through our contact form.</p>
-                            <div class="ab-article-widgets-card-items">
-                                <h3 class="article-title ab-orange-color">Consent</h3>
-                                <p class="term-text">By using our website and purchasing our products, you consent to the terms of this Privacy Policy.</p>
+                            <div class="ab-payment-details-page-main-wrapper">
+                                <div class="ab-order-payment-method">
+                                    <h6 class="ab-title ab-violate-color">Select payment method</h6>
+                                    <ul class="ab-payment-method-lits">
+                                        <li class="ab-payment-items">
+                                            <div class="ab-check-box-select">
+                                                <label for="abPayment1" class="ab-checkbox-content">
+                                                    <div class="ab-ckeck-mark-box">
+                                                        <input type="checkbox" name="checkbox" id="abPayment1" onclick ="showButton('abPayment1')">
+                                                        <div class="ab-custom-check"></div>
+                                                    </div>
+                                                    <div class="payment-methods"><img src="/image/paypal.svg"
+                                                            alt="paypal icons" class="payment-methods-img"></div>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="ab-payment-items">
+                                            <div class="ab-check-box-select">
+                                                <label for="abPayment2" class="ab-checkbox-content">
+                                                    <div class="ab-ckeck-mark-box">
+                                                        <input type="checkbox" name="checkbox" id="abPayment2" onclick ="showButton('abPayment2')">
+                                                        <div class="ab-custom-check"></div>
+                                                    </div>
+                                                    <div class="payment-methods">Another
+                                                        merchant</div>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- where user select merchant then need to pass a extra class
+                                             'select-merchant' then the email btn should be shown -->
+                                <div class="ab-order-details-popup-input-group select-merchant">
+                                    <!--
+                                    <div class="ab-order-info-input-group" >
+                                        <label class="ab-order-input-info-title">Email</label>
+                                        <input type="email" name="email" id="email" placeholder=""
+                                            class="ab-input-info-item">
+                                    </div >-->
+                                    <button id = 'pp-button' class="ab-button-style ab-buy-button ab-paypal-buy-button" onclick = "openPopup()">Buy now with <img
+                                            src="/image/paypal.svg" alt="paypal icons"
+                                            class="payment-methods-img"></button>
+                                                <button id = 'buy-button' class="ab-button-style ab-buy-button">Buy</button>
+                                </div>
+                                <!-- [end] -->
                             </div>
                         </div>
+                        <div class="ab-order-details-notes">
+                            <h6 class="ab-note-title ab-violate-color">Important!</h6>
+                            <p class="ab-note-desc">
+                                These accounts ARE NOT suitable for Youtube! Please, buy
+                                Youtube.com
+                                account in case you need Youtube functionality <br>
+                                No replacements/refunds will be offered if you ignore this
+                                message
+                                <br><br>
+                                Accounts are NOT SUITABLE for Whatsapp / Cashapp / Google Voice
+                                account creation. There will be no refund if you are going to
+                                buy
+                                them for the above purpose!
+                            </p>
+                        </div>
+                        <!-- start preloader screen here -->
+                        <div class="ab-preloader-screen">
+                            <img src="image/brand-logo-marquee.svg" alt="brand logo">
+                            <p class="ab-screen-highlight-title ab-violate-color">Please wait a second...</p>
                     </div>
-                </section>
-                <!-- [END] -->
-
-                <!-- promo content start -->
+                    <!-- [end] -->
+                    </div>
+                </div>
                 <!-- promo content start -->
 <div class="ab-promo-content-box">
     <h3 class="ab-promo-title"><span class="ab-color2-text">Your</span> One-Stop Destination To
@@ -299,12 +395,15 @@
             height="51.07" alt="brand logo"></div>
 </div>
 <!-- [END] -->
-
-
             </main>
 
             <!-- sidebar content start here -->
             <aside class="ab-main--sidebar-content">
+                <ul class="account-info-items">
+    <li class="account-info-link"><a href="/">Order history</a></li>
+    <li class="account-info-link"><a href="/">Account settings</a></li>
+    <li class="account-info-link"><a href="/"> Logout</a></li>
+</ul>
 
                 <!-- text block content start -->
                 <!-- text block content start -->
@@ -344,7 +443,7 @@
             <!-- footer top nav start -->
             <div class="ab-footer-top">
                 <div class="ab-footer-nav-box">
-                    <a href="./index.html" class="ab-footer-brand">
+                    <a href="./index" class="ab-footer-brand">
                         <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34" width="" height=""
                             alt="ab brand logo">
                         <img src="image/brand-logo-mobo.svg" class="mobo-logo" width="124" height="20"
@@ -353,15 +452,15 @@
                     <div class="ab-footer-nav">
                         <ul class="ab-footer-nav-items">
                             <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                            <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                            <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                            <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                            <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                            <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                            <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                            <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                            <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                                 </ul>
                         <div class="ab-currency-button">
                             <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
                                 alt="currency icons" class="currency-icons">
-                                <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                         </div>
                     </div>
                 </div>
@@ -452,12 +551,12 @@
                         </div>
                         <div class="ab-footer-link-wrap">
                             <ul class="ab-main-footer-links">
-                                <li class="ab-footer-link"><a href="./terms-of-service.html">Terms of Service</a></li>
-                                <li class="ab-footer-link"><a href="./shipping-policy.html">Shipping Policy</a></li>
-                                <li class="ab-footer-link"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                                <li class="ab-footer-link"><a href="./refund-policy.html">Refund Policy</a></li>
-                                <li class="ab-footer-link"><a href="./payment-policy.html">Payment Policy</a></li>
-                                <li class="ab-footer-link"><a href="./cookies-policy.html">Cookies Policy</a></li>
+                                <li class="ab-footer-link"><a href="./terms-of-service">Terms of Service</a></li>
+                                <li class="ab-footer-link"><a href="./shipping-policy">Shipping Policy</a></li>
+                                <li class="ab-footer-link"><a href="./privacy-policy">Privacy Policy</a></li>
+                                <li class="ab-footer-link"><a href="./refund-policy">Refund Policy</a></li>
+                                <li class="ab-footer-link"><a href="./payment-policy">Payment Policy</a></li>
+                                <li class="ab-footer-link"><a href="./cookies-policy">Cookies Policy</a></li>
                             </ul>
                         </div>
                     </div>

@@ -18,7 +18,28 @@ const terser = require("gulp-terser");
 const uglify = require("gulp-uglify");
 const replace = require('gulp-replace');
 const fs = require('fs');
+const del = require('del');
 
+//delete html 
+gulp.task('clean-html', function () {
+  return del('docs/**/*.html');
+});
+
+//replace links
+
+gulp.task('replace-html', function () {
+    return gulp.src('docs/**/*.html')
+        .pipe(replace('.html', ''))
+        .pipe(gulp.dest('docs'));
+});
+
+
+// rename files
+gulp.task('rename-files', function () {
+    return gulp.src('docs/**/*.html')
+        .pipe(rename({ extname: '' }))
+        .pipe(gulp.dest('docs'));
+});
 // moverobots
 
 gulp.task('move-robots', function() {
@@ -171,4 +192,10 @@ gulp.task("watch", () => {
 });
 
 // Default task
+
+// Default task
 gulp.task("default", gulp.parallel("css", "webfonts", "images", "fileInclude", "js", "sitemap", "move-robots","watch"));
+
+
+
+gulp.task("finish", gulp.series("replace-html", "rename-files","clean-html"));
