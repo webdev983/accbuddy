@@ -223,6 +223,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         noteDesc.innerHTML = productWarning;
     }
     await calculateTotal()
+    
     let preloaderScreen = document.querySelector('.ab-preloader-screen');
 
     // Check if the div element exists
