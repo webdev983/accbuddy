@@ -35,7 +35,7 @@
             <div class="ab-container">
                 <div class="ab-header-wrapper">
                     <div class="ab-header-nav-box">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34"
                                 alt="ab brand logo">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
@@ -44,15 +44,15 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
                                     height="27" alt="currency icons" class="currency-icons">
-                                 <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                 <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -83,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -91,17 +91,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -109,7 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -126,7 +126,7 @@
                 <!-- [mobile menu here to start] -->
                 <div class="ab-mobile-slide-nav">
                     <div class="ab-alide-nav-brand">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
                                 alt="ab brand logo">
                         </a>
@@ -146,7 +146,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -154,7 +154,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -162,17 +162,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -180,7 +180,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -194,10 +194,10 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
@@ -280,9 +280,9 @@
                                         uppercase, lowercase letters, and special characters.</span>
                                 </div>
                                 <button class="ab-button-style ab-submite-btn">Sign in</button>
-                                <a href="./reset-password.html" class="ab-reset-password-link">Forgot password?</a>
+                                <a href="./reset-password" class="ab-reset-password-link">Forgot password?</a>
                             </div>
-                            <a href="./reset-password.html" class="ab-button-style ab-reset-password-btn">Reset
+                            <a href="./reset-password" class="ab-button-style ab-reset-password-btn">Reset
                                 password</a>
                         </div>
                     </div>
@@ -291,12 +291,12 @@
                 <div class="ab-auth-details-main-flex">
                     <div class="ab-auth-details-content authentication-signup-page-wrap">
                         <h2 class="ab-order-title ab-violate-color"><img src="image/users-union-icons.svg" alt="auth user icons"
-                                class="auth-icons"> New user? <a href="./signup.html">Sign
+                                class="auth-icons"> New user? <a href="./signup">Sign
                                 up</a></h2>
                     </div>
                     <div class="ab-auth-details-content authentication-guest-page-wrap">
                         <h2 class="ab-order-title ab-violate-color"><img src="image/Vector.svg" alt="auth user icons" class="auth-icons">
-                            <a href="./guest-order.html">Find a guest order</a></h2>
+                            <a href="./guest-order">Find a guest order</a></h2>
                     </div>
                 </div>
                 <!-- promo content start -->
@@ -350,7 +350,7 @@
             <!-- footer top nav start -->
             <div class="ab-footer-top">
                 <div class="ab-footer-nav-box">
-                    <a href="./index.html" class="ab-footer-brand">
+                    <a href="./index" class="ab-footer-brand">
                         <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34" width="" height=""
                             alt="ab brand logo">
                         <img src="image/brand-logo-mobo.svg" class="mobo-logo" width="124" height="20"
@@ -359,15 +359,15 @@
                     <div class="ab-footer-nav">
                         <ul class="ab-footer-nav-items">
                             <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                            <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                            <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                            <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                            <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                            <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                            <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                            <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                            <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                                 </ul>
                         <div class="ab-currency-button">
                             <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
                                 alt="currency icons" class="currency-icons">
-                                <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                         </div>
                     </div>
                 </div>
@@ -458,12 +458,12 @@
                         </div>
                         <div class="ab-footer-link-wrap">
                             <ul class="ab-main-footer-links">
-                                <li class="ab-footer-link"><a href="./terms-of-service.html">Terms of Service</a></li>
-                                <li class="ab-footer-link"><a href="./shipping-policy.html">Shipping Policy</a></li>
-                                <li class="ab-footer-link"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                                <li class="ab-footer-link"><a href="./refund-policy.html">Refund Policy</a></li>
-                                <li class="ab-footer-link"><a href="./payment-policy.html">Payment Policy</a></li>
-                                <li class="ab-footer-link"><a href="./cookies-policy.html">Cookies Policy</a></li>
+                                <li class="ab-footer-link"><a href="./terms-of-service">Terms of Service</a></li>
+                                <li class="ab-footer-link"><a href="./shipping-policy">Shipping Policy</a></li>
+                                <li class="ab-footer-link"><a href="./privacy-policy">Privacy Policy</a></li>
+                                <li class="ab-footer-link"><a href="./refund-policy">Refund Policy</a></li>
+                                <li class="ab-footer-link"><a href="./payment-policy">Payment Policy</a></li>
+                                <li class="ab-footer-link"><a href="./cookies-policy">Cookies Policy</a></li>
                             </ul>
                         </div>
                     </div>

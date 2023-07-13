@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop confidently with AccBuddy. Our fair and clear refund policy ensures your satisfaction is our priority">
-  <meta name="keyword" content="accbuddy refund policy">
-  <link rel="canonical" href="https://accbuddy.com/refund-policy">
+  <meta name="description" content="Are you a supplier? Join us at AccBuddy. Our dedicated supplier portal offers comprehensive support and resources for all our partners">
+  <meta name="keyword" content="accbuddy suppliers">
+  <link rel="canonical" href="https://accbuddy.com/suppliers">
 
-  <title>Our Refund Policy - AccBuddy</title>
+  <title>Become Supplier - AccBuddy</title>
 
   <!-- link style start here -->
   <link rel="stylesheet" href="css/style.min.css" media="all">
@@ -35,7 +35,7 @@
             <div class="ab-container">
                 <div class="ab-header-wrapper">
                     <div class="ab-header-nav-box">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34"
                                 alt="ab brand logo">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
@@ -44,15 +44,15 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
                                     height="27" alt="currency icons" class="currency-icons">
-                                 <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                 <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -83,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -91,17 +91,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -109,7 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -126,7 +126,7 @@
                 <!-- [mobile menu here to start] -->
                 <div class="ab-mobile-slide-nav">
                     <div class="ab-alide-nav-brand">
-                        <a href="./index.html" class="ab-header-brand">
+                        <a href="./index" class="ab-header-brand">
                             <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo"
                                 alt="ab brand logo">
                         </a>
@@ -146,7 +146,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./order-history.html">
+                                    <a href="./order-history">
                                         <img src="image/history-menu-icons.svg" width="29" height="28"
                                             alt="history menu icons" class="history-icons">
                                         <p>Order
@@ -154,7 +154,7 @@
                                     </a>
                                 </li>
                                 <li class="ab-logged-user-menu-list">
-                                    <a href="./account.html">
+                                    <a href="./account">
                                         <img src="image/users-outline-icon.svg" width="23.04" height="27.49"
                                             alt="user icons" class="user-icons">
                                         <p>Account
@@ -162,17 +162,17 @@
                                     </a>
                                 </li>
                             </ul>
-                            <a href="./signup.html" class="logged-out-btn">Logout</a>
+                            <a href="./signup" class="logged-out-btn">Logout</a>
                         </div>
                         <!-- [END] -->
                         <!-- logged user menu -->
                         <div class="ab--user-menu">
-                            <a href="./signin.html" class="user-menu-btn"><img
+                            <a href="./signin" class="user-menu-btn"><img
                                     src="image/users-fill-white.svg" width="21" height="26" alt=""
                                     class="user-icons"> Sign in</a>
                             <ul class="ab--user-menu-item">
                                 <li class="ab--user-menu-list">
-                                    <a href="./signup.html">
+                                    <a href="./signup">
                                         <img src="image/users-union-icons.svg" width="29" height="26"
                                             alt="user icons" class="user-icons">
                                         <p>New user?
@@ -180,7 +180,7 @@
                                     </a>
                                 </li>
                                 <li class="ab--user-menu-list">
-                                    <a href="./track-order.html">
+                                    <a href="./track-order">
                                         <img src="image/chart-violet.svg" height="30" height="25"
                                             alt="history menu icons" class="history-icons">
                                         <p>Find an
@@ -194,10 +194,10 @@
                         <div class="ab-header-nav">
                             <ul class="ab-header-nav-items">
                                 <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                                <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                                <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                                <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                                <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                                <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                                <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                                <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                     </ul>
                             <div class="ab-currency-button">
                                 <img src="image/currency-icons.svg" width="27" height="27" width="27"
@@ -250,23 +250,14 @@
             <main class="ab-main--content article-widgets-page">
 
                 <section class="ab-article-widgets-section">
-                    <h1 class="ab-title ab-violate-color">Refund Policy</h1>
+                    <h1 class="ab-title ab-violate-color">want to sell with us?</h1>
                     <div class="ab-article-widgets-content">
-                        <p class="term-desc">
-                            At AccBuddy, we value customer satisfaction and strive to provide top-quality online accounts. If for any reason you are not pleased with your purchase, we offer the following refund policy:
-                        </p>
                         <div class="ab-article-widgets-wrap  single-column-article-widgets">
                             <div class="ab-article-widgets-card-items">
-                                <h4 class="article-title ab-violate-color">Refunds</h4>
-                                <p class="term-text">We offer refunds for all online accounts as long as they have not been activated or used. Please note that we cannot issue a refund for any accounts that have already been activated or used.</p>
+                                <p class="term-text">want to discuss terms? write us at buddy@accbuddy.com or use contact us form down this page</p>
+                  
                             </div>
                             <div class="ab-article-widgets-card-items">
-                                <h4 class="article-title ab-violate-color">30-Day Money-Back Guarantee</h4>
-                                <p class="term-text">If you are not satisfied with your purchase and the online account has not been activated or used, we offer a 30-day money-back guarantee. To initiate a refund, please contact us by email at support@accbuddy.com or use the contact form on our website. In your message, include your order number, the type of account, and the reason for the refund request. Our customer service team will review your request and provide further instructions.</p>
-                            </div>
-
-                        </div>
-                        <p class="term-text"></p>
                     </div>
                 </section>
                 <!-- [END] -->
@@ -300,18 +291,6 @@
 </div>
 <!-- [END] -->
 
-                <!-- text block content start -->
-                <!-- text block content start -->
-<div class="ab-block-content-box color-bg-block ">
-    <h4 class="block-text-title">
-       <span class="ab-color2-text">Your</span> One-Stop <br> Destination <br> To Buy <span
-            class="ab-color2-text">Verified</span> <br> Social Media <br> & Email <br> <span
-            class="ab-color2-text">Accounts</span>!
-    </h4>
-    <div class="block-box-brand"><img src="image/block-brand-logo1.svg" width="88"
-            height="75" alt="brand logo"></div>
-</div>
-<!-- [END] -->
             </aside>
 
         </div>
@@ -326,7 +305,7 @@
             <!-- footer top nav start -->
             <div class="ab-footer-top">
                 <div class="ab-footer-nav-box">
-                    <a href="./index.html" class="ab-footer-brand">
+                    <a href="./index" class="ab-footer-brand">
                         <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34" width="" height=""
                             alt="ab brand logo">
                         <img src="image/brand-logo-mobo.svg" class="mobo-logo" width="124" height="20"
@@ -335,15 +314,15 @@
                     <div class="ab-footer-nav">
                         <ul class="ab-footer-nav-items">
                             <li class="ab-nav-link-items"><a href="./">catalog</a></li>
-                            <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
-                            <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
-                            <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
-                            <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                            <li class="ab-nav-link-items"><a href="./articles">articles</a></li>
+                            <li class="ab-nav-link-items"><a href="./about-us">about us</a></li>
+                            <li class="ab-nav-link-items"><a href="./contact-us">contacts</a></li>
+                            <li class="ab-nav-link-items"><a href="./faq">FAQ</a></li>
                                 </ul>
                         <div class="ab-currency-button">
                             <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
                                 alt="currency icons" class="currency-icons">
-                                <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                                <a href="./suppliers"><span>Earn Money Selling Accounts</span></a>
                         </div>
                     </div>
                 </div>
@@ -434,12 +413,12 @@
                         </div>
                         <div class="ab-footer-link-wrap">
                             <ul class="ab-main-footer-links">
-                                <li class="ab-footer-link"><a href="./terms-of-service.html">Terms of Service</a></li>
-                                <li class="ab-footer-link"><a href="./shipping-policy.html">Shipping Policy</a></li>
-                                <li class="ab-footer-link"><a href="./privacy-policy.html">Privacy Policy</a></li>
-                                <li class="ab-footer-link"><a href="./refund-policy.html">Refund Policy</a></li>
-                                <li class="ab-footer-link"><a href="./payment-policy.html">Payment Policy</a></li>
-                                <li class="ab-footer-link"><a href="./cookies-policy.html">Cookies Policy</a></li>
+                                <li class="ab-footer-link"><a href="./terms-of-service">Terms of Service</a></li>
+                                <li class="ab-footer-link"><a href="./shipping-policy">Shipping Policy</a></li>
+                                <li class="ab-footer-link"><a href="./privacy-policy">Privacy Policy</a></li>
+                                <li class="ab-footer-link"><a href="./refund-policy">Refund Policy</a></li>
+                                <li class="ab-footer-link"><a href="./payment-policy">Payment Policy</a></li>
+                                <li class="ab-footer-link"><a href="./cookies-policy">Cookies Policy</a></li>
                             </ul>
                         </div>
                     </div>
